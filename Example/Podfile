@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Alacrity_Example' do
+  pod 'Alacrity', :path => '../'
+
+  target 'Alacrity_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
