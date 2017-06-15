@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		145D7CAA1EDC6A3900C64881 /* UILabel+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D7CA91EDC6A3900C64881 /* UILabel+Alacrity.swift */; };
+		145D7CAC1EDC6AEB00C64881 /* UITextView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D7CAB1EDC6AEB00C64881 /* UITextView+Alacrity.swift */; };
+		145D7CAE1EDC6C0A00C64881 /* UITextField+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D7CAD1EDC6C0A00C64881 /* UITextField+Alacrity.swift */; };
+		145D7CB01EDC6CB500C64881 /* UIView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D7CAF1EDC6CB500C64881 /* UIView+Alacrity.swift */; };
+		14669F831EDC66C7001FF472 /* AlacrityDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14669F821EDC66C7001FF472 /* AlacrityDSL.swift */; };
+		14669F861EDC6953001FF472 /* TextManagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14669F851EDC6953001FF472 /* TextManagingView.swift */; };
+		4AE076F00D500D82CCDFFE3F60B0C3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4F468CAD3620C40AF32B8FF1828B1C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7A7826B05B9BF2F27C97463514AFBB88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		97FBAADAA9D4C07C49C1330B7EAA0524 /* Pods-Alacrity_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C925CC63BFDD3C10800368463FE12D49 /* Pods-Alacrity_Tests-dummy.m */; };
+		9EE14365AFE682CF8C4429651D3DC430 /* Alacrity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF400E46550AE842DDF1D79851347A82 /* Alacrity-dummy.m */; };
+		AC33F7567E968F2F10B5295AA4C0882D /* Pods-Alacrity_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB6D2263CF1BFBE42475573348D0892 /* Pods-Alacrity_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4A7415E0C6554D24F7C162B08175ACA /* Pods-Alacrity_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F2270DD96368FC6BF84C2579D6B6DA /* Pods-Alacrity_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D14FC2136DC0888BAA56E2B55D4B4371 /* Pods-Alacrity_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB7180E75E85EE3139533E68898597B /* Pods-Alacrity_Example-dummy.m */; };
+		EFABA77A18DA483FD410A18F1FF97AA0 /* Alacrity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1BC7167ADE01FDFDB73AC5D2D367378 /* Alacrity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ED7964375CB85167D2FD3C351357A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD7EB1EF59B00464C04C21EEE06225C7;
+			remoteInfo = Alacrity;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F9C745FB2618667D6D79D30F8D340B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F8964DE59D8BBF2466FF7F0D6CCB80 /* Pods-Alacrity_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alacrity_Example.modulemap"; sourceTree = "<group>"; };
+		102941D526E107F9F94736DED16F71D9 /* Pods-Alacrity_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alacrity_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		145D7CA91EDC6A3900C64881 /* UILabel+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Alacrity.swift"; sourceTree = "<group>"; };
+		145D7CAB1EDC6AEB00C64881 /* UITextView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Alacrity.swift"; sourceTree = "<group>"; };
+		145D7CAD1EDC6C0A00C64881 /* UITextField+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Alacrity.swift"; sourceTree = "<group>"; };
+		145D7CAF1EDC6CB500C64881 /* UIView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Alacrity.swift"; sourceTree = "<group>"; };
+		14669F821EDC66C7001FF472 /* AlacrityDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityDSL.swift; sourceTree = "<group>"; };
+		14669F851EDC6953001FF472 /* TextManagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextManagingView.swift; sourceTree = "<group>"; };
+		1E1B4C884291BC64AB5413A986901B93 /* Alacrity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alacrity-prefix.pch"; sourceTree = "<group>"; };
+		419786245A23855153465741ADF4832A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49770D7B801A31D6740CF48AF9C09DC6 /* Pods-Alacrity_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alacrity_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4BEC564E9C78301C42B425D714C35175 /* Pods-Alacrity_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alacrity_Example-frameworks.sh"; sourceTree = "<group>"; };
+		59FF071C3B0559C90DE4BDD31F65ABA6 /* Alacrity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alacrity.xcconfig; sourceTree = "<group>"; };
+		5EB6D2263CF1BFBE42475573348D0892 /* Pods-Alacrity_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alacrity_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F35058227E59C80FD4A1292D2C4D355 /* Pods-Alacrity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7EB7180E75E85EE3139533E68898597B /* Pods-Alacrity_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alacrity_Example-dummy.m"; sourceTree = "<group>"; };
+		84EF638C4EDBFADB4DCE8AF20229525C /* Pods_Alacrity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		973E3CE7FA1C739DEF19D649DD9CB6B3 /* Pods-Alacrity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		99F2270DD96368FC6BF84C2579D6B6DA /* Pods-Alacrity_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alacrity_Example-umbrella.h"; sourceTree = "<group>"; };
+		B1BC7167ADE01FDFDB73AC5D2D367378 /* Alacrity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alacrity-umbrella.h"; sourceTree = "<group>"; };
+		B468C02B3E30AB9C6CE5E4D89AC478E7 /* Pods-Alacrity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alacrity_Tests.modulemap"; sourceTree = "<group>"; };
+		BD32669EDDBF74644862AC3284B0E826 /* Pods-Alacrity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5B9EC866B27C44F78F0724EA81161AE /* Pods-Alacrity_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alacrity_Tests-resources.sh"; sourceTree = "<group>"; };
+		C925CC63BFDD3C10800368463FE12D49 /* Pods-Alacrity_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alacrity_Tests-dummy.m"; sourceTree = "<group>"; };
+		CAD3684A571809B05F54E55902F4C1B0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC99F67F0ADC10C1D40F907D6DA1D92A /* Pods-Alacrity_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alacrity_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CF8D4E7DD9D6F095B51B52ED620A8314 /* Pods-Alacrity_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alacrity_Example-resources.sh"; sourceTree = "<group>"; };
+		D47F130CC9913D5615E0792E8B9000CD /* Alacrity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alacrity.modulemap; sourceTree = "<group>"; };
+		EA909F49AA46A5E5DBAF44D54902E083 /* Pods_Alacrity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2FE498E7BCAC08CDBC303335FBE7066 /* Pods-Alacrity_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alacrity_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F86D8CBD0B1110C5852F36250F81E7DC /* Pods-Alacrity_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alacrity_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9E76F3E7E978C5E2C86A4113C896897 /* Alacrity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alacrity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE05B5B470B72208536BC3408014B1D1 /* Pods-Alacrity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FF400E46550AE842DDF1D79851347A82 /* Alacrity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alacrity-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		097643EF05F01DC5F9D154E02AB90BAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A7826B05B9BF2F27C97463514AFBB88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AEB595DAECE66EDB7158B4E0DDFA6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE076F00D500D82CCDFFE3F60B0C3FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E41B9EEA38269C79112BCB5B59A6AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F468CAD3620C40AF32B8FF1828B1C14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C839B52A512DBCD44F10C59E94602FF /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				14669F821EDC66C7001FF472 /* AlacrityDSL.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		145D7CA81EDC6A1A00C64881 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				145D7CA91EDC6A3900C64881 /* UILabel+Alacrity.swift */,
+				145D7CAB1EDC6AEB00C64881 /* UITextView+Alacrity.swift */,
+				145D7CAD1EDC6C0A00C64881 /* UITextField+Alacrity.swift */,
+				145D7CAF1EDC6CB500C64881 /* UIView+Alacrity.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14669F841EDC6920001FF472 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				14669F851EDC6953001FF472 /* TextManagingView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		47099CECFF338CA2867053685B44A650 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D47F130CC9913D5615E0792E8B9000CD /* Alacrity.modulemap */,
+				59FF071C3B0559C90DE4BDD31F65ABA6 /* Alacrity.xcconfig */,
+				FF400E46550AE842DDF1D79851347A82 /* Alacrity-dummy.m */,
+				1E1B4C884291BC64AB5413A986901B93 /* Alacrity-prefix.pch */,
+				B1BC7167ADE01FDFDB73AC5D2D367378 /* Alacrity-umbrella.h */,
+				419786245A23855153465741ADF4832A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Alacrity";
+			sourceTree = "<group>";
+		};
+		61B6853E28EF36C1495D31000DE9218A /* Alacrity */ = {
+			isa = PBXGroup;
+			children = (
+				843E79B23FFEEE9DC863D50AA6CD0DD4 /* Source */,
+				47099CECFF338CA2867053685B44A650 /* Support Files */,
+			);
+			name = Alacrity;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		63800BED09FB81D7B77B7636A5F83B56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9E76F3E7E978C5E2C86A4113C896897 /* Alacrity.framework */,
+				EA909F49AA46A5E5DBAF44D54902E083 /* Pods_Alacrity_Example.framework */,
+				84EF638C4EDBFADB4DCE8AF20229525C /* Pods_Alacrity_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B8230D823394E773E2B4B4379F4406B /* Pods-Alacrity_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				06F9C745FB2618667D6D79D30F8D340B /* Info.plist */,
+				B468C02B3E30AB9C6CE5E4D89AC478E7 /* Pods-Alacrity_Tests.modulemap */,
+				49770D7B801A31D6740CF48AF9C09DC6 /* Pods-Alacrity_Tests-acknowledgements.markdown */,
+				F86D8CBD0B1110C5852F36250F81E7DC /* Pods-Alacrity_Tests-acknowledgements.plist */,
+				C925CC63BFDD3C10800368463FE12D49 /* Pods-Alacrity_Tests-dummy.m */,
+				CC99F67F0ADC10C1D40F907D6DA1D92A /* Pods-Alacrity_Tests-frameworks.sh */,
+				C5B9EC866B27C44F78F0724EA81161AE /* Pods-Alacrity_Tests-resources.sh */,
+				5EB6D2263CF1BFBE42475573348D0892 /* Pods-Alacrity_Tests-umbrella.h */,
+				BD32669EDDBF74644862AC3284B0E826 /* Pods-Alacrity_Tests.debug.xcconfig */,
+				6F35058227E59C80FD4A1292D2C4D355 /* Pods-Alacrity_Tests.release.xcconfig */,
+			);
+			name = "Pods-Alacrity_Tests";
+			path = "Target Support Files/Pods-Alacrity_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				ACACC938A3566287F7770C64227A53F3 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				63800BED09FB81D7B77B7636A5F83B56 /* Products */,
+				D519E9C8B6212C79DEABE804DDE498EB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		843E79B23FFEEE9DC863D50AA6CD0DD4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				145D7CA81EDC6A1A00C64881 /* Extensions */,
+				14669F841EDC6920001FF472 /* Protocols */,
+				0C839B52A512DBCD44F10C59E94602FF /* Structs */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9B2516671C5D820A608EB37357DEE6FC /* Pods-Alacrity_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CAD3684A571809B05F54E55902F4C1B0 /* Info.plist */,
+				09F8964DE59D8BBF2466FF7F0D6CCB80 /* Pods-Alacrity_Example.modulemap */,
+				F2FE498E7BCAC08CDBC303335FBE7066 /* Pods-Alacrity_Example-acknowledgements.markdown */,
+				102941D526E107F9F94736DED16F71D9 /* Pods-Alacrity_Example-acknowledgements.plist */,
+				7EB7180E75E85EE3139533E68898597B /* Pods-Alacrity_Example-dummy.m */,
+				4BEC564E9C78301C42B425D714C35175 /* Pods-Alacrity_Example-frameworks.sh */,
+				CF8D4E7DD9D6F095B51B52ED620A8314 /* Pods-Alacrity_Example-resources.sh */,
+				99F2270DD96368FC6BF84C2579D6B6DA /* Pods-Alacrity_Example-umbrella.h */,
+				973E3CE7FA1C739DEF19D649DD9CB6B3 /* Pods-Alacrity_Example.debug.xcconfig */,
+				FE05B5B470B72208536BC3408014B1D1 /* Pods-Alacrity_Example.release.xcconfig */,
+			);
+			name = "Pods-Alacrity_Example";
+			path = "Target Support Files/Pods-Alacrity_Example";
+			sourceTree = "<group>";
+		};
+		ACACC938A3566287F7770C64227A53F3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61B6853E28EF36C1495D31000DE9218A /* Alacrity */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D519E9C8B6212C79DEABE804DDE498EB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B2516671C5D820A608EB37357DEE6FC /* Pods-Alacrity_Example */,
+				7B8230D823394E773E2B4B4379F4406B /* Pods-Alacrity_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D09431A67CA36DA48A2007870502977 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFABA77A18DA483FD410A18F1FF97AA0 /* Alacrity-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DC3DE7809D7C3996D395F343A25AF89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC33F7567E968F2F10B5295AA4C0882D /* Pods-Alacrity_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE892711F7E22B835571EE5DE912DE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A7415E0C6554D24F7C162B08175ACA /* Pods-Alacrity_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4F5E7E19AF8D0573CBDFBC261DF75AE8 /* Pods-Alacrity_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C3D66C489A15CDAF682457F58F77A8 /* Build configuration list for PBXNativeTarget "Pods-Alacrity_Example" */;
+			buildPhases = (
+				C6386C5541AD20DA4AECC176C785BDA2 /* Sources */,
+				84AEB595DAECE66EDB7158B4E0DDFA6A /* Frameworks */,
+				8EE892711F7E22B835571EE5DE912DE5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49E67F9FEF4DFA43A288ACD84DF0B0DF /* PBXTargetDependency */,
+			);
+			name = "Pods-Alacrity_Example";
+			productName = "Pods-Alacrity_Example";
+			productReference = EA909F49AA46A5E5DBAF44D54902E083 /* Pods_Alacrity_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD7EB1EF59B00464C04C21EEE06225C7 /* Alacrity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D53FD4AC073EEF05D0C67D0A4C9EF39 /* Build configuration list for PBXNativeTarget "Alacrity" */;
+			buildPhases = (
+				36AC9831F22578794B12126E2BBB733B /* Sources */,
+				097643EF05F01DC5F9D154E02AB90BAA /* Frameworks */,
+				1D09431A67CA36DA48A2007870502977 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alacrity;
+			productName = Alacrity;
+			productReference = F9E76F3E7E978C5E2C86A4113C896897 /* Alacrity.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFDBA34FC0F6017FFEF4BAA2894D2C3D /* Pods-Alacrity_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D3B775ED6C14D1E18CFA1C6697B874B /* Build configuration list for PBXNativeTarget "Pods-Alacrity_Tests" */;
+			buildPhases = (
+				212B1BBFDA4F7452246B6C042FC54B2C /* Sources */,
+				C1E41B9EEA38269C79112BCB5B59A6AD /* Frameworks */,
+				5DC3DE7809D7C3996D395F343A25AF89 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Alacrity_Tests";
+			productName = "Pods-Alacrity_Tests";
+			productReference = 84EF638C4EDBFADB4DCE8AF20229525C /* Pods_Alacrity_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					AD7EB1EF59B00464C04C21EEE06225C7 = {
+						LastSwiftMigration = 0830;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 63800BED09FB81D7B77B7636A5F83B56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD7EB1EF59B00464C04C21EEE06225C7 /* Alacrity */,
+				4F5E7E19AF8D0573CBDFBC261DF75AE8 /* Pods-Alacrity_Example */,
+				CFDBA34FC0F6017FFEF4BAA2894D2C3D /* Pods-Alacrity_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		212B1BBFDA4F7452246B6C042FC54B2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97FBAADAA9D4C07C49C1330B7EAA0524 /* Pods-Alacrity_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36AC9831F22578794B12126E2BBB733B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14669F861EDC6953001FF472 /* TextManagingView.swift in Sources */,
+				14669F831EDC66C7001FF472 /* AlacrityDSL.swift in Sources */,
+				145D7CAE1EDC6C0A00C64881 /* UITextField+Alacrity.swift in Sources */,
+				145D7CB01EDC6CB500C64881 /* UIView+Alacrity.swift in Sources */,
+				9EE14365AFE682CF8C4429651D3DC430 /* Alacrity-dummy.m in Sources */,
+				145D7CAC1EDC6AEB00C64881 /* UITextView+Alacrity.swift in Sources */,
+				145D7CAA1EDC6A3900C64881 /* UILabel+Alacrity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6386C5541AD20DA4AECC176C785BDA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14FC2136DC0888BAA56E2B55D4B4371 /* Pods-Alacrity_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49E67F9FEF4DFA43A288ACD84DF0B0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alacrity;
+			target = AD7EB1EF59B00464C04C21EEE06225C7 /* Alacrity */;
+			targetProxy = 9ED7964375CB85167D2FD3C351357A0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25BE300A3E9DF4FF312C3F4E3379942C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FF071C3B0559C90DE4BDD31F65ABA6 /* Alacrity.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alacrity/Alacrity-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alacrity/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alacrity/Alacrity.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alacrity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		29BCB1B3E2313EA5F5ED6DFDB7F67E25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD32669EDDBF74644862AC3284B0E826 /* Pods-Alacrity_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Alacrity_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alacrity_Tests/Pods-Alacrity_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alacrity_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89146F077AA1CA46323CE9B1713F1880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59FF071C3B0559C90DE4BDD31F65ABA6 /* Alacrity.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alacrity/Alacrity-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alacrity/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alacrity/Alacrity.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alacrity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9383B446784FD34341999901B1469535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F35058227E59C80FD4A1292D2C4D355 /* Pods-Alacrity_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Alacrity_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alacrity_Tests/Pods-Alacrity_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alacrity_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8D1F3D312A1A659AF7D0427C3E818DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973E3CE7FA1C739DEF19D649DD9CB6B3 /* Pods-Alacrity_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Alacrity_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alacrity_Example/Pods-Alacrity_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alacrity_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E31E627A906A98990519C32B2D729506 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE05B5B470B72208536BC3408014B1D1 /* Pods-Alacrity_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Alacrity_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Alacrity_Example/Pods-Alacrity_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Alacrity_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06C3D66C489A15CDAF682457F58F77A8 /* Build configuration list for PBXNativeTarget "Pods-Alacrity_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D1F3D312A1A659AF7D0427C3E818DA /* Debug */,
+				E31E627A906A98990519C32B2D729506 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D53FD4AC073EEF05D0C67D0A4C9EF39 /* Build configuration list for PBXNativeTarget "Alacrity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89146F077AA1CA46323CE9B1713F1880 /* Debug */,
+				25BE300A3E9DF4FF312C3F4E3379942C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D3B775ED6C14D1E18CFA1C6697B874B /* Build configuration list for PBXNativeTarget "Pods-Alacrity_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29BCB1B3E2313EA5F5ED6DFDB7F67E25 /* Debug */,
+				9383B446784FD34341999901B1469535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

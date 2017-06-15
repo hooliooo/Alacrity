@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Alacrity'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Alacrity.'
+  s.summary          = 'Fluent interface approach to modifying UIViews'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -22,21 +22,16 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/hooliooo/Alacrity'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hooliooo' => 'julio.alorro@ffuf.de' }
-  s.source           = { :git => 'https://github.com/hooliooo/Alacrity.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/hooliooo/Alacrity.git', :tag => s.version }
 
-  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'Alacrity/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Alacrity' => ['Alacrity/Assets/*.png']
-  # }
+  s.ios.deployment_target = '10.0'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Alacrity/Source/**/*.swift'
+
+  s.frameworks = 'UIKit'
+
 end

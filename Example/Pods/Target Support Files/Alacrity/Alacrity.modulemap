@@ -1,0 +1,6 @@
+framework module Alacrity {
+  umbrella header "Alacrity-umbrella.h"
+
+  export *
+  module * { export * }
+}

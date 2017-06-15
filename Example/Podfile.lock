@@ -1,0 +1,16 @@
+PODS:
+  - Alacrity (0.1.0)
+
+DEPENDENCIES:
+  - Alacrity (from `../`)
+
+EXTERNAL SOURCES:
+  Alacrity:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alacrity: 09f56bac4fab419989158e39de8ab2c11122ac58
+
+PODFILE CHECKSUM: d0c68cecd17db7ab8c350c7861c3be00e8d002c7
+
+COCOAPODS: 1.2.1
