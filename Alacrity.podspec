@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/hooliooo/Alacrity'
 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hooliooo' => 'julio.alorro@ffuf.de' }
+  s.author           = { 'Julio Alorro' => 'alorro3@gmail.com' }
   s.source           = { :git => 'https://github.com/hooliooo/Alacrity.git', :tag => s.version }
 
 

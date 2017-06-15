@@ -22,7 +22,7 @@ pod "Alacrity"
 
 ## Author
 
-hooliooo, julio.alorro@ffuf.de
+Julio Alorro
 
 ## License
 
