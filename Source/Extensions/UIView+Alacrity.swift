@@ -10,8 +10,9 @@ import UIKit
 
 public extension UIView {
 
-    final var ary: AlacrityDSL {
-        return AlacrityDSL(view: self)
+    var avd: AlacrityViewDSL {
+        return AlacrityViewDSL(view: self)
     }
 
 }
+

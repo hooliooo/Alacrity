@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		02AA157E7706F53F0C905D9E /* Pods-Alacrity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alacrity_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alacrity_Tests/Pods-Alacrity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		070F23DFA7F54D149F54DC2C /* Pods-Alacrity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alacrity_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alacrity_Example/Pods-Alacrity_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		13335BF597DF14E61D49DAB5 /* Alacrity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Alacrity.podspec; path = ../Alacrity.podspec; sourceTree = "<group>"; };
+		13335BF597DF14E61D49DAB5 /* Alacrity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Alacrity.podspec; path = ../Alacrity.podspec; sourceTree = "<group>"; };
 		1C2651C6BCC65690F8EE9EC5 /* Pods-Alacrity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alacrity_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alacrity_Example/Pods-Alacrity_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5D92C714088D2191C683753D /* Pods-Alacrity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alacrity_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alacrity_Tests/Pods-Alacrity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Alacrity_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alacrity_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,8 +43,8 @@
 		607FACE51AFB9204008FA782 /* Alacrity_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Alacrity_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B86AFE98D523921BC04DD89E /* Pods_Alacrity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8C434CD568C13B95388120 /* Pods_Alacrity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -219,6 +219,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S886WPSL95;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -523,10 +524,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D92C714088D2191C683753D /* Pods-Alacrity_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = S886WPSL95;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -543,10 +542,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 02AA157E7706F53F0C905D9E /* Pods-Alacrity_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = S886WPSL95;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";

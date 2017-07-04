@@ -10,20 +10,42 @@ import UIKit
 
 extension UITextView: TextManagingView {
 
-    public var _font: UIFont {
-        get { return self.font! }
+    var _font: UIFont {
+        get {
+            guard let font = self.font else {
+                self.font = UIFont.systemFont(ofSize: 17.0) // if nil, set a default font
+                return self.font!
+            }
+
+            return font
+
+        }
 
         set { self.font = newValue }
     }
 
-    public var _textColor: UIColor {
-        get { return self.textColor! }
+    var _textColor: UIColor {
+        get {
+            guard let textColor = self.textColor else {
+                self.textColor = UIColor.black // if nil, set a default color
+                return self.textColor!
+            }
+
+            return textColor
+        }
 
         set { self.textColor = newValue }
     }
 
-    public var _text: String {
-        get { return self.text ?? "" }
+    var _text: String {
+        get {
+            guard let text = self.text else {
+                self.text = "" // if nil, set an empty string
+                return self.text!
+            }
+
+            return text
+        }
 
         set { self.text = newValue }
     }

@@ -11,8 +11,13 @@
 		145D7CAC1EDC6AEB00C64881 /* UITextView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D7CAB1EDC6AEB00C64881 /* UITextView+Alacrity.swift */; };
 		145D7CAE1EDC6C0A00C64881 /* UITextField+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D7CAD1EDC6C0A00C64881 /* UITextField+Alacrity.swift */; };
 		145D7CB01EDC6CB500C64881 /* UIView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145D7CAF1EDC6CB500C64881 /* UIView+Alacrity.swift */; };
-		14669F831EDC66C7001FF472 /* AlacrityDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14669F821EDC66C7001FF472 /* AlacrityDSL.swift */; };
+		14669F831EDC66C7001FF472 /* AlacrityViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14669F821EDC66C7001FF472 /* AlacrityViewDSL.swift */; };
 		14669F861EDC6953001FF472 /* TextManagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14669F851EDC6953001FF472 /* TextManagingView.swift */; };
+		149001BF1EF370140032A378 /* AdjustableTextManagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149001BE1EF370140032A378 /* AdjustableTextManagingView.swift */; };
+		1493A01E1F0BCD9800C04DAE /* TextManagingViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493A01D1F0BCD9800C04DAE /* TextManagingViewDSL.swift */; };
+		1493A0201F0BD05C00C04DAE /* AlacrityLabelDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493A01F1F0BD05C00C04DAE /* AlacrityLabelDSL.swift */; };
+		1493A0221F0BD33200C04DAE /* AlacrityTextFieldDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493A0211F0BD33200C04DAE /* AlacrityTextFieldDSL.swift */; };
+		1493A0241F0BD4A700C04DAE /* TextFieldDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493A0231F0BD4A700C04DAE /* TextFieldDSL.swift */; };
 		4AE076F00D500D82CCDFFE3F60B0C3FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		4F468CAD3620C40AF32B8FF1828B1C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7A7826B05B9BF2F27C97463514AFBB88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -42,8 +47,13 @@
 		145D7CAB1EDC6AEB00C64881 /* UITextView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Alacrity.swift"; sourceTree = "<group>"; };
 		145D7CAD1EDC6C0A00C64881 /* UITextField+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Alacrity.swift"; sourceTree = "<group>"; };
 		145D7CAF1EDC6CB500C64881 /* UIView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Alacrity.swift"; sourceTree = "<group>"; };
-		14669F821EDC66C7001FF472 /* AlacrityDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityDSL.swift; sourceTree = "<group>"; };
+		14669F821EDC66C7001FF472 /* AlacrityViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityViewDSL.swift; sourceTree = "<group>"; };
 		14669F851EDC6953001FF472 /* TextManagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextManagingView.swift; sourceTree = "<group>"; };
+		149001BE1EF370140032A378 /* AdjustableTextManagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjustableTextManagingView.swift; sourceTree = "<group>"; };
+		1493A01D1F0BCD9800C04DAE /* TextManagingViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextManagingViewDSL.swift; sourceTree = "<group>"; };
+		1493A01F1F0BD05C00C04DAE /* AlacrityLabelDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityLabelDSL.swift; sourceTree = "<group>"; };
+		1493A0211F0BD33200C04DAE /* AlacrityTextFieldDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityTextFieldDSL.swift; sourceTree = "<group>"; };
+		1493A0231F0BD4A700C04DAE /* TextFieldDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDSL.swift; sourceTree = "<group>"; };
 		1E1B4C884291BC64AB5413A986901B93 /* Alacrity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alacrity-prefix.pch"; sourceTree = "<group>"; };
 		419786245A23855153465741ADF4832A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49770D7B801A31D6740CF48AF9C09DC6 /* Pods-Alacrity_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alacrity_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -105,7 +115,9 @@
 		0C839B52A512DBCD44F10C59E94602FF /* Structs */ = {
 			isa = PBXGroup;
 			children = (
-				14669F821EDC66C7001FF472 /* AlacrityDSL.swift */,
+				14669F821EDC66C7001FF472 /* AlacrityViewDSL.swift */,
+				1493A01F1F0BD05C00C04DAE /* AlacrityLabelDSL.swift */,
+				1493A0211F0BD33200C04DAE /* AlacrityTextFieldDSL.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -125,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				14669F851EDC6953001FF472 /* TextManagingView.swift */,
+				149001BE1EF370140032A378 /* AdjustableTextManagingView.swift */,
+				1493A01D1F0BCD9800C04DAE /* TextManagingViewDSL.swift */,
+				1493A0231F0BD4A700C04DAE /* TextFieldDSL.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -381,13 +396,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149001BF1EF370140032A378 /* AdjustableTextManagingView.swift in Sources */,
 				14669F861EDC6953001FF472 /* TextManagingView.swift in Sources */,
-				14669F831EDC66C7001FF472 /* AlacrityDSL.swift in Sources */,
+				14669F831EDC66C7001FF472 /* AlacrityViewDSL.swift in Sources */,
 				145D7CAE1EDC6C0A00C64881 /* UITextField+Alacrity.swift in Sources */,
 				145D7CB01EDC6CB500C64881 /* UIView+Alacrity.swift in Sources */,
+				1493A0221F0BD33200C04DAE /* AlacrityTextFieldDSL.swift in Sources */,
+				1493A01E1F0BCD9800C04DAE /* TextManagingViewDSL.swift in Sources */,
 				9EE14365AFE682CF8C4429651D3DC430 /* Alacrity-dummy.m in Sources */,
 				145D7CAC1EDC6AEB00C64881 /* UITextView+Alacrity.swift in Sources */,
+				1493A0241F0BD4A700C04DAE /* TextFieldDSL.swift in Sources */,
 				145D7CAA1EDC6A3900C64881 /* UILabel+Alacrity.swift in Sources */,
+				1493A0201F0BD05C00C04DAE /* AlacrityLabelDSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
