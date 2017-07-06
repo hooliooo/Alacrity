@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TextManagingView: class {
+public protocol TextManagingView: class {
     var _textColor: UIColor { get set }
 
     var _font: UIFont { get set }

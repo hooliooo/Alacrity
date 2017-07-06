@@ -12,16 +12,41 @@ public struct AlacrityLabelDSL {
 
     // MARK: Initializer
     internal init(label: UILabel) {
-        self._label = label
+        self.label = label
     }
 
     // MARK: Stored Properties
-    unowned let _label: UILabel
+    unowned let label: UILabel
 }
 
-extension AlacrityLabelDSL: TextManagingViewDSL {
+public extension AlacrityLabelDSL {
+    @discardableResult
+    func textColor(_ textColor: UIColor) -> AlacrityLabelDSL {
+        self.label.textColor = textColor
+        return self
+    }
 
-    var view: UILabel {
-        return self._label
+    @discardableResult
+    func font(_ font: UIFont) -> AlacrityLabelDSL {
+        self.label.font = font
+        return self
+    }
+
+    @discardableResult
+    func textAlignment(_ textAlignment: NSTextAlignment) -> AlacrityLabelDSL {
+        self.label.textAlignment = textAlignment
+        return self
+    }
+
+    @discardableResult
+    func text(_ text: String) -> AlacrityLabelDSL {
+        self.label.text = text
+        return self
+    }
+
+    @discardableResult
+    func adjustsFontSizeToFitWidth(_ bool: Bool) -> AlacrityLabelDSL {
+        self.label.adjustsFontSizeToFitWidth = bool
+        return self
     }
 }

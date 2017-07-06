@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import UIKit
 
 public struct AlacrityTextFieldDSL {
 
@@ -22,7 +22,7 @@ public struct AlacrityTextFieldDSL {
 
 extension AlacrityTextFieldDSL: TextManagingViewDSL, TextFieldDSL {
 
-    var view: UITextField {
+    public var view: UITextField {
         return self._textField
     }
 }

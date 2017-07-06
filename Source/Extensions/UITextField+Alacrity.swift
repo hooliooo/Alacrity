@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITextField {
+public extension UITextField {
     var atfd: AlacrityTextFieldDSL {
         return AlacrityTextFieldDSL(textField: self)
     }
@@ -16,7 +16,7 @@ extension UITextField {
 
 extension UITextField: TextManagingView {
 
-    var _font: UIFont {
+    public var _font: UIFont {
         get {
             guard let font = self.font else {
                 self.font = UIFont.systemFont(ofSize: 17.0) // if nil, set a default font
@@ -30,7 +30,7 @@ extension UITextField: TextManagingView {
         set { self.font = newValue }
     }
 
-    var _textColor: UIColor {
+    public var _textColor: UIColor {
         get {
             guard let textColor = self.textColor else {
                 self.textColor = UIColor.black // if nil, set a default color
@@ -43,7 +43,7 @@ extension UITextField: TextManagingView {
         set { self.textColor = newValue }
     }
 
-    var _text: String {
+    public var _text: String {
         get {
             guard let text = self.text else {
                 self.text = "" // if nil, set an empty string

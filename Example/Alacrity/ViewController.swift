@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import Alacrity
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let lbl = UILabel()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

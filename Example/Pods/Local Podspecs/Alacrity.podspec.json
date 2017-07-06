@@ -1,7 +1,7 @@
 {
   "name": "Alacrity",
   "version": "0.1.0",
-  "summary": "A short description of Alacrity.",
+  "summary": "Fluent interface approach to modifying UIViews",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/hooliooo/Alacrity",
   "license": {
@@ -9,14 +9,15 @@
     "file": "LICENSE"
   },
   "authors": {
-    "hooliooo": "julio.alorro@ffuf.de"
+    "Julio Alorro": "alorro3@gmail.com"
   },
   "source": {
     "git": "https://github.com/hooliooo/Alacrity.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "Alacrity/Classes/**/*"
+  "source_files": "Source/**/*.swift",
+  "frameworks": "UIKit"
 }
