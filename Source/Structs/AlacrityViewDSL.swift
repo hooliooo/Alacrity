@@ -22,6 +22,28 @@ public struct AlacrityViewDSL {
 
 // MARK: - UIView Methods
 public extension AlacrityViewDSL {
+    func test() {
+        
+    }
+
+    @discardableResult
+    func alpha(_ value: CGFloat) -> AlacrityViewDSL {
+        self.view.alpha = value
+        return self
+    }
+
+    @discardableResult
+    func autoresizesSubviews(_ bool: Bool) -> AlacrityViewDSL {
+        self.view.autoresizesSubviews = bool
+        return self
+    }
+
+    @discardableResult
+    func autoresizingMask(_ autoresizingMask: UIViewAutoresizing) -> AlacrityViewDSL {
+        self.view.autoresizingMask = autoresizingMask
+        return self
+    }
+
     @discardableResult
     func backgroundColor(_ backgroundColor: UIColor) -> AlacrityViewDSL {
         self.view.backgroundColor = backgroundColor
@@ -38,12 +60,6 @@ public extension AlacrityViewDSL {
     @discardableResult
     func translatesAutoresizingMaskIntoConstraints(_ bool: Bool) -> AlacrityViewDSL {
         self.view.translatesAutoresizingMaskIntoConstraints = bool
-        return self
-    }
-
-    @discardableResult
-    func alpha(_ value: CGFloat) -> AlacrityViewDSL {
-        self.view.alpha = value
         return self
     }
 
@@ -79,35 +95,12 @@ public extension AlacrityViewDSL {
 
     @discardableResult
     func subviews(forAutoLayout subviews: [UIView]) -> AlacrityViewDSL {
-        subviews.forEach { (subview: UIView) -> Void in
-
-            self.subview(forAutoLayout: subview)
-
-        }
-
+        subviews.forEach { (subview: UIView) -> Void in self.subview(forAutoLayout: subview) }
         return self
     }
 
     @discardableResult
     func subviews(forAutoLayout subviews: UIView...) -> AlacrityViewDSL {
-
         return self.subviews(forAutoLayout: subviews)
-
     }
 }
-
-//// MARK: - AdjustableTextManagingView Methods 
-//public extension AlacrityViewDSL {
-//    @discardableResult
-//    func adjustsFontSizeToFitWidth(_ bool: Bool) -> AlacrityViewDSL {
-//        switch self.view {
-//            case let view as AdjustableTextManagingView:
-//                view._adjustsFontSizeToFitWidth = bool
-//
-//            default:
-//                fatalError("view is not UILabel or UITextField")
-//        }
-//
-//        return self
-//    }
-//}
