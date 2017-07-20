@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Alacrity_Tests.xctest"
-               BlueprintName = "Alacrity_Tests"
+               BuildableName = "AlacrityTests.xctest"
+               BlueprintName = "AlacrityTests"
                ReferencedContainer = "container:Alacrity.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Alacrity_Tests.xctest"
-               BlueprintName = "Alacrity_Tests"
+               BuildableName = "AlacrityTests.xctest"
+               BlueprintName = "AlacrityTests"
                ReferencedContainer = "container:Alacrity.xcodeproj">
             </BuildableReference>
          </TestableReference>
