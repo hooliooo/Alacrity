@@ -42,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		06F9C745FB2618667D6D79D30F8D340B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09F8964DE59D8BBF2466FF7F0D6CCB80 /* Pods-Alacrity_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Alacrity_Example.modulemap"; sourceTree = "<group>"; };
+		09F8964DE59D8BBF2466FF7F0D6CCB80 /* Pods-Alacrity_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alacrity_Example.modulemap"; sourceTree = "<group>"; };
 		102941D526E107F9F94736DED16F71D9 /* Pods-Alacrity_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alacrity_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1635E6BE3EBC62C13D4D5C3EB3F5E0FD /* AdjustableTextManagingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdjustableTextManagingView.swift; sourceTree = "<group>"; };
 		264A24EF04F90090858AC83821AA9D9B /* UITextView+Alacrity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextView+Alacrity.swift"; sourceTree = "<group>"; };
@@ -50,20 +50,20 @@
 		49770D7B801A31D6740CF48AF9C09DC6 /* Pods-Alacrity_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alacrity_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4BEC564E9C78301C42B425D714C35175 /* Pods-Alacrity_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Alacrity_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4FD732FF841A1285F403BE1E1F89E533 /* Alacrity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alacrity.xcconfig; sourceTree = "<group>"; };
-		5E1A4819D7EE7BDCE2F4BF9D4C67513C /* Alacrity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alacrity.modulemap; sourceTree = "<group>"; };
+		5E1A4819D7EE7BDCE2F4BF9D4C67513C /* Alacrity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alacrity.modulemap; sourceTree = "<group>"; };
 		5EB6D2263CF1BFBE42475573348D0892 /* Pods-Alacrity_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alacrity_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6F35058227E59C80FD4A1292D2C4D355 /* Pods-Alacrity_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71206FC8699874E5223F709308B6E874 /* Alacrity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alacrity-dummy.m"; sourceTree = "<group>"; };
 		7EB7180E75E85EE3139533E68898597B /* Pods-Alacrity_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Alacrity_Example-dummy.m"; sourceTree = "<group>"; };
-		84EF638C4EDBFADB4DCE8AF20229525C /* Pods_Alacrity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Alacrity_Tests.framework; path = "Pods-Alacrity_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EF638C4EDBFADB4DCE8AF20229525C /* Pods_Alacrity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		885A0F8AE8F79C9E781B107AA58BD50A /* TextManagingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextManagingView.swift; sourceTree = "<group>"; };
 		894557F7AB82282084A33C81A8F65500 /* TextFieldDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextFieldDSL.swift; sourceTree = "<group>"; };
 		8989E94F0E5D976A5665BADCB80B7A4E /* UITextField+Alacrity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+Alacrity.swift"; sourceTree = "<group>"; };
 		90A3DC995969C7E44D841843BF3B3305 /* AlacrityLabelDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlacrityLabelDSL.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		973E3CE7FA1C739DEF19D649DD9CB6B3 /* Pods-Alacrity_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		99F2270DD96368FC6BF84C2579D6B6DA /* Pods-Alacrity_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Alacrity_Example-umbrella.h"; sourceTree = "<group>"; };
-		B468C02B3E30AB9C6CE5E4D89AC478E7 /* Pods-Alacrity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Alacrity_Tests.modulemap"; sourceTree = "<group>"; };
+		B468C02B3E30AB9C6CE5E4D89AC478E7 /* Pods-Alacrity_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Alacrity_Tests.modulemap"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		B990C3FEA128EDB0FF6D7847650200A3 /* TextManagingViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextManagingViewDSL.swift; sourceTree = "<group>"; };
 		BD32669EDDBF74644862AC3284B0E826 /* Pods-Alacrity_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,12 +77,12 @@
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E1CC8F3C7092857FFA184381A2A64E37 /* Alacrity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alacrity-prefix.pch"; sourceTree = "<group>"; };
 		E658F3549B49EFD6245D3B25606F05B3 /* Alacrity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alacrity-umbrella.h"; sourceTree = "<group>"; };
-		EA909F49AA46A5E5DBAF44D54902E083 /* Pods_Alacrity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Alacrity_Example.framework; path = "Pods-Alacrity_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA909F49AA46A5E5DBAF44D54902E083 /* Pods_Alacrity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F044ADC36F22BCA3B56E29CEE6130C5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0FA4D232F61008E094C1354804C6287 /* AlacrityTextFieldDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AlacrityTextFieldDSL.swift; sourceTree = "<group>"; };
 		F2FE498E7BCAC08CDBC303335FBE7066 /* Pods-Alacrity_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Alacrity_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F86D8CBD0B1110C5852F36250F81E7DC /* Pods-Alacrity_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Alacrity_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F9E76F3E7E978C5E2C86A4113C896897 /* Alacrity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alacrity.framework; path = Alacrity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9E76F3E7E978C5E2C86A4113C896897 /* Alacrity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alacrity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE05B5B470B72208536BC3408014B1D1 /* Pods-Alacrity_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Alacrity_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +123,6 @@
 				885A0F8AE8F79C9E781B107AA58BD50A /* TextManagingView.swift */,
 				B990C3FEA128EDB0FF6D7847650200A3 /* TextManagingViewDSL.swift */,
 			);
-			name = Protocols;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -147,11 +146,10 @@
 		4D820F821CACB4A2A17852F8AB25A101 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				CF5BA49C9253D9F2E0740CA5D667F356 /* AlacrityViewDSL.swift */,
 				90A3DC995969C7E44D841843BF3B3305 /* AlacrityLabelDSL.swift */,
 				F0FA4D232F61008E094C1354804C6287 /* AlacrityTextFieldDSL.swift */,
-				CF5BA49C9253D9F2E0740CA5D667F356 /* AlacrityViewDSL.swift */,
 			);
-			name = Structs;
 			path = Structs;
 			sourceTree = "<group>";
 		};
@@ -238,7 +236,6 @@
 				264A24EF04F90090858AC83821AA9D9B /* UITextView+Alacrity.swift */,
 				394D51D9E750179302B6B0772A45376F /* UIView+Alacrity.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -258,7 +255,6 @@
 				0D1BA4EC47BB39424ED298294A22ECF9 /* Protocols */,
 				4D820F821CACB4A2A17852F8AB25A101 /* Structs */,
 			);
-			name = Source;
 			path = Source;
 			sourceTree = "<group>";
 		};
