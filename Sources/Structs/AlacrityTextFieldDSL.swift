@@ -16,7 +16,7 @@ public struct AlacrityTextFieldDSL {
     }
 
     // MARK: Stored Properties
-    unowned let textField: UITextField
+    let textField: UITextField
 
 }
 

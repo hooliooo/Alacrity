@@ -16,7 +16,7 @@ public struct AlacrityViewDSL {
     }
 
     // MARK: Stored Properties
-    unowned let view: UIView
+    let view: UIView
 
 }
 
@@ -135,6 +135,12 @@ public extension AlacrityViewDSL {
     @discardableResult
     func removeFromSuperview() -> AlacrityViewDSL {
         self.view.removeFromSuperview()
+        return self
+    }
+
+    @discardableResult
+    func tag(_ tag: Int) -> AlacrityViewDSL {
+        self.view.tag = tag
         return self
     }
 

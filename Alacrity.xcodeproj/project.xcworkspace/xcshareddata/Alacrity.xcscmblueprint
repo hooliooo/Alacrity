@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1511E9C1E7F032A0E7073CBB366C6B9EC9D439CE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DBC0EF2385A619266DF3D38961631DE535F9D811" : 9223372036854775807,
+    "1511E9C1E7F032A0E7073CBB366C6B9EC9D439CE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B61A5F5E-598E-4CD5-91D4-7A0A95CAEF15",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DBC0EF2385A619266DF3D38961631DE535F9D811" : "Astral\/",
+    "1511E9C1E7F032A0E7073CBB366C6B9EC9D439CE" : "Alacrity\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Alacrity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Alacrity.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:hooliooo\/Alacrity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1511E9C1E7F032A0E7073CBB366C6B9EC9D439CE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:hooliooo\/Astral.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBC0EF2385A619266DF3D38961631DE535F9D811"
+    }
+  ]
+}

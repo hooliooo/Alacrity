@@ -16,7 +16,7 @@ public struct AlacrityLabelDSL {
     }
 
     // MARK: Stored Properties
-    unowned let label: UILabel
+    let label: UILabel
 }
 
 public extension AlacrityLabelDSL {
@@ -121,4 +121,5 @@ public extension AlacrityLabelDSL {
         self.label.textColor = textColor
         return self
     }
+    
 }
