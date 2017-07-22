@@ -22,9 +22,11 @@ class AlacrityTests: XCTestCase {
     }
     
     func testViewDSL() {
-        let view: UIView = UIView().avd.backgroundColor(UIColor.green)
-                                       .alpha(0.5)
-                                       .view
+        let view: UIView = UIView().avd
+            .backgroundColor(UIColor.green)
+            .alpha(0.5)
+            .view
+        
         XCTAssertTrue(view.backgroundColor == UIColor.green)
         XCTAssertTrue(view.alpha == 0.5)
 

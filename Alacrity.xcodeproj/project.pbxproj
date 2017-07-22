@@ -21,6 +21,8 @@
 		140DB9031F20F44A00999761 /* AlacrityTextFieldDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DB8CE1F20F36000999761 /* AlacrityTextFieldDSL.swift */; };
 		140DB9041F20F44A00999761 /* AlacrityViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DB8CF1F20F36000999761 /* AlacrityViewDSL.swift */; };
 		140DB9071F20F4F600999761 /* Alacrity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140DB8E11F20F37C00999761 /* Alacrity.framework */; };
+		1425EAF21F2336C0004E65BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF11F2336C0004E65BD /* UIKit.framework */; };
+		1425EAF41F2336C8004E65BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF31F2336C8004E65BD /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		140DB8E91F20F37C00999761 /* AlacrityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlacrityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		140DB8EE1F20F37C00999761 /* AlacrityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlacrityTests.swift; sourceTree = "<group>"; };
 		140DB8F01F20F37C00999761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1425EAF11F2336C0004E65BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1425EAF31F2336C8004E65BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../Astral/LICENSE; sourceTree = "<group>"; };
 		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../Astral/README.md; sourceTree = "<group>"; };
 		B86AFE98D523921BC04DD89E /* Pods_Alacrity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1425EAF41F2336C8004E65BD /* Foundation.framework in Frameworks */,
+				1425EAF21F2336C0004E65BD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +118,9 @@
 		140DB8CB1F20F36000999761 /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				140DB8CF1F20F36000999761 /* AlacrityViewDSL.swift */,
 				140DB8CD1F20F36000999761 /* AlacrityLabelDSL.swift */,
 				140DB8CE1F20F36000999761 /* AlacrityTextFieldDSL.swift */,
-				140DB8CF1F20F36000999761 /* AlacrityViewDSL.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 		8E30309E8DDE35D639DF7D51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1425EAF31F2336C8004E65BD /* Foundation.framework */,
+				1425EAF11F2336C0004E65BD /* UIKit.framework */,
 				DB8C434CD568C13B95388120 /* Pods_Alacrity_Example.framework */,
 				B86AFE98D523921BC04DD89E /* Pods_Alacrity_Tests.framework */,
 			);
@@ -513,6 +521,7 @@
 				140DB8F41F20F37C00999761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		140DB8F51F20F37C00999761 /* Build configuration list for PBXNativeTarget "AlacrityTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +530,7 @@
 				140DB8F71F20F37C00999761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Alacrity" */ = {
 			isa = XCConfigurationList;
