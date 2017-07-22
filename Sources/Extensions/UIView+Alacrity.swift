@@ -1,9 +1,7 @@
 //
-//  UIView+Alacrity.swift
-//  Pods
-//
-//  Created by Julio Alorro on 5/29/17.
-//
+//  Alacrity
+//  Copyright © 2017 Julio Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import UIKit

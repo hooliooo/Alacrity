@@ -1,9 +1,7 @@
 //
-//  AlacrityDSL.swift
 //  Alacrity
-//
-//  Created by Julio Alorro on 5/24/17.
-//
+//  Copyright © 2017 Julio Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import UIKit

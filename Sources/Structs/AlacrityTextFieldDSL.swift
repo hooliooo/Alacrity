@@ -1,9 +1,7 @@
 //
-//  AlacrityTextFieldDSL.swift
-//  Pods
-//
-//  Created by Julio Alorro on 7/4/17.
-//
+//  Alacrity
+//  Copyright © 2017 Julio Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import UIKit

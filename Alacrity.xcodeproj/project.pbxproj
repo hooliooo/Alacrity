@@ -23,6 +23,7 @@
 		140DB9071F20F4F600999761 /* Alacrity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140DB8E11F20F37C00999761 /* Alacrity.framework */; };
 		1425EAF21F2336C0004E65BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF11F2336C0004E65BD /* UIKit.framework */; };
 		1425EAF41F2336C8004E65BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF31F2336C8004E65BD /* Foundation.framework */; };
+		1425EAF61F2358A2004E65BD /* AlacrityTextViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +57,9 @@
 		140DB8F01F20F37C00999761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1425EAF11F2336C0004E65BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1425EAF31F2336C8004E65BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityTextViewDSL.swift; sourceTree = "<group>"; };
 		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../Astral/LICENSE; sourceTree = "<group>"; };
 		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../Astral/README.md; sourceTree = "<group>"; };
-		B86AFE98D523921BC04DD89E /* Pods_Alacrity_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB8C434CD568C13B95388120 /* Pods_Alacrity_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alacrity_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +121,7 @@
 				140DB8CF1F20F36000999761 /* AlacrityViewDSL.swift */,
 				140DB8CD1F20F36000999761 /* AlacrityLabelDSL.swift */,
 				140DB8CE1F20F36000999761 /* AlacrityTextFieldDSL.swift */,
+				1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -180,8 +181,6 @@
 			children = (
 				1425EAF31F2336C8004E65BD /* Foundation.framework */,
 				1425EAF11F2336C0004E65BD /* UIKit.framework */,
-				DB8C434CD568C13B95388120 /* Pods_Alacrity_Example.framework */,
-				B86AFE98D523921BC04DD89E /* Pods_Alacrity_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,6 +306,7 @@
 				140DB8FB1F20F43A00999761 /* UITextField+Alacrity.swift in Sources */,
 				140DB8FF1F20F43E00999761 /* TextFieldDSL.swift in Sources */,
 				140DB9031F20F44A00999761 /* AlacrityTextFieldDSL.swift in Sources */,
+				1425EAF61F2358A2004E65BD /* AlacrityTextViewDSL.swift in Sources */,
 				140DB8FA1F20F43A00999761 /* UILabel+Alacrity.swift in Sources */,
 				140DB9001F20F43E00999761 /* TextManagingView.swift in Sources */,
 				140DB8FE1F20F43E00999761 /* AdjustableTextManagingView.swift in Sources */,
