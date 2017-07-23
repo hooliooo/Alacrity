@@ -30,15 +30,6 @@ public extension AlacritySwitchDSL {
     }
 
     /**
-     Sets the tintColor property of underlying UISwitch. Returns the DSL instance.
-    */
-    @discardableResult
-    func tintColor(_ tintColor: UIColor) -> AlacritySwitchDSL {
-        self.control.tintColor = tintColor
-        return self
-    }
-
-    /**
      Sets the thumbTintColor property of underlying UISwitch. Returns the DSL instance.
     */
     @discardableResult

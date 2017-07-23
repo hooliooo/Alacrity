@@ -48,15 +48,6 @@ public extension AlacrityStepperDSL {
     }
 
     /**
-     Sets the tintColor property of underlying UIStepper. Returns the DSL instance.
-    */
-    @discardableResult
-    func tintColor(_ tintColor: UIColor) -> AlacrityStepperDSL {
-        self.stepper.tintColor = tintColor
-        return self
-    }
-
-    /**
      Sets the value property of underlying UIStepper. Returns the DSL instance.
     */
     @discardableResult

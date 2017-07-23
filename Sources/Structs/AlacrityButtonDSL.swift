@@ -129,15 +129,6 @@ public extension AlacrityButtonDSL {
     }
 
     /**
-     Sets the tintColor property of underlying UIButton. Returns the DSL instance.
-    */
-    @discardableResult
-    func tintColor(_ tintColor: UIColor) -> AlacrityButtonDSL {
-        self.button.tintColor = tintColor
-        return self
-    }
-
-    /**
      Sets the titleEdgeInsets property of underlying UIButton. Returns the DSL instance.
     */
     @discardableResult

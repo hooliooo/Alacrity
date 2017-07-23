@@ -21,15 +21,6 @@ public struct AlacritySegmentedControlDSL {
 public extension AlacritySegmentedControlDSL {
 
     /**
-     Sets the tintColor property of underlying UISegmentedControl. Returns the DSL instance.
-    */
-    @discardableResult
-    func tintColor(_ tintColor: UIColor) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.tintColor = tintColor
-        return self
-    }
-
-    /**
      Sets the isMomentary property of underlying UISegmentedControl. Returns the DSL instance.
     */
     @discardableResult
