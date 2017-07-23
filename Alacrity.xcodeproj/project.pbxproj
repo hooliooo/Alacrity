@@ -31,6 +31,12 @@
 		149751C31F24D215002572E0 /* UIStepper+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751C21F24D215002572E0 /* UIStepper+Alacrity.swift */; };
 		149751C51F24D262002572E0 /* AlacritySwitchDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751C41F24D262002572E0 /* AlacritySwitchDSL.swift */; };
 		149751C71F24D3D4002572E0 /* UISwitch+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751C61F24D3D4002572E0 /* UISwitch+Alacrity.swift */; };
+		149751C91F24D805002572E0 /* AlacrityActivityIndicatorDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751C81F24D805002572E0 /* AlacrityActivityIndicatorDSL.swift */; };
+		149751CB1F24D989002572E0 /* UIActivityIndicatorView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751CA1F24D989002572E0 /* UIActivityIndicatorView+Alacrity.swift */; };
+		149751CD1F24D9EA002572E0 /* AlacrityImageViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751CC1F24D9EA002572E0 /* AlacrityImageViewDSL.swift */; };
+		149751CF1F24DB9F002572E0 /* UIImageView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751CE1F24DB9F002572E0 /* UIImageView+Alacrity.swift */; };
+		149751D11F24DBE0002572E0 /* AlacrityPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751D01F24DBE0002572E0 /* AlacrityPickerView.swift */; };
+		149751D31F24DDBF002572E0 /* UIPickerView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149751D21F24DDBF002572E0 /* UIPickerView+Alacrity.swift */; };
 		14A62BAD1F245EE600CA75CB /* UIButton+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */; };
 		14A62BAF1F24646900CA75CB /* AlacrityDatePickerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BAE1F24646900CA75CB /* AlacrityDatePickerDSL.swift */; };
 		14A62BB11F24647700CA75CB /* UIDatePicker+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BB01F24647700CA75CB /* UIDatePicker+Alacrity.swift */; };
@@ -79,6 +85,12 @@
 		149751C21F24D215002572E0 /* UIStepper+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStepper+Alacrity.swift"; sourceTree = "<group>"; };
 		149751C41F24D262002572E0 /* AlacritySwitchDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacritySwitchDSL.swift; sourceTree = "<group>"; };
 		149751C61F24D3D4002572E0 /* UISwitch+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Alacrity.swift"; sourceTree = "<group>"; };
+		149751C81F24D805002572E0 /* AlacrityActivityIndicatorDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityActivityIndicatorDSL.swift; sourceTree = "<group>"; };
+		149751CA1F24D989002572E0 /* UIActivityIndicatorView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Alacrity.swift"; sourceTree = "<group>"; };
+		149751CC1F24D9EA002572E0 /* AlacrityImageViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityImageViewDSL.swift; sourceTree = "<group>"; };
+		149751CE1F24DB9F002572E0 /* UIImageView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Alacrity.swift"; sourceTree = "<group>"; };
+		149751D01F24DBE0002572E0 /* AlacrityPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityPickerView.swift; sourceTree = "<group>"; };
+		149751D21F24DDBF002572E0 /* UIPickerView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPickerView+Alacrity.swift"; sourceTree = "<group>"; };
 		14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Alacrity.swift"; sourceTree = "<group>"; };
 		14A62BAE1F24646900CA75CB /* AlacrityDatePickerDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityDatePickerDSL.swift; sourceTree = "<group>"; };
 		14A62BB01F24647700CA75CB /* UIDatePicker+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Alacrity.swift"; sourceTree = "<group>"; };
@@ -135,6 +147,9 @@
 				149751BE1F24CF54002572E0 /* UISlider+Alacrity.swift */,
 				149751C21F24D215002572E0 /* UIStepper+Alacrity.swift */,
 				149751C61F24D3D4002572E0 /* UISwitch+Alacrity.swift */,
+				149751CA1F24D989002572E0 /* UIActivityIndicatorView+Alacrity.swift */,
+				149751CE1F24DB9F002572E0 /* UIImageView+Alacrity.swift */,
+				149751D21F24DDBF002572E0 /* UIPickerView+Alacrity.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -164,6 +179,9 @@
 				149751BC1F24CB55002572E0 /* AlacritySliderDSL.swift */,
 				149751C01F24CFA5002572E0 /* AlacrityStepperDSL.swift */,
 				149751C41F24D262002572E0 /* AlacritySwitchDSL.swift */,
+				149751C81F24D805002572E0 /* AlacrityActivityIndicatorDSL.swift */,
+				149751CC1F24D9EA002572E0 /* AlacrityImageViewDSL.swift */,
+				149751D01F24DBE0002572E0 /* AlacrityPickerView.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -343,22 +361,28 @@
 				149751BD1F24CB55002572E0 /* AlacritySliderDSL.swift in Sources */,
 				140DB9021F20F44A00999761 /* AlacrityLabelDSL.swift in Sources */,
 				14A62BB91F246F9A00CA75CB /* UISegmentedControl+Alacrity.swift in Sources */,
+				149751CF1F24DB9F002572E0 /* UIImageView+Alacrity.swift in Sources */,
 				140DB8FC1F20F43A00999761 /* UITextView+Alacrity.swift in Sources */,
 				14A62BAD1F245EE600CA75CB /* UIButton+Alacrity.swift in Sources */,
 				140DB9011F20F43E00999761 /* TextManagingViewDSL.swift in Sources */,
 				14A62BB31F24681B00CA75CB /* AlacrityPageControlDSL.swift in Sources */,
+				149751CD1F24D9EA002572E0 /* AlacrityImageViewDSL.swift in Sources */,
 				14A62BB11F24647700CA75CB /* UIDatePicker+Alacrity.swift in Sources */,
 				140DB8FD1F20F43A00999761 /* UIView+Alacrity.swift in Sources */,
 				14A62BB51F2469C000CA75CB /* UIPageControl+Alacrity.swift in Sources */,
 				149751C11F24CFA5002572E0 /* AlacrityStepperDSL.swift in Sources */,
 				140DB9041F20F44A00999761 /* AlacrityViewDSL.swift in Sources */,
+				149751CB1F24D989002572E0 /* UIActivityIndicatorView+Alacrity.swift in Sources */,
 				149751C71F24D3D4002572E0 /* UISwitch+Alacrity.swift in Sources */,
 				140DB8FB1F20F43A00999761 /* UITextField+Alacrity.swift in Sources */,
+				149751D31F24DDBF002572E0 /* UIPickerView+Alacrity.swift in Sources */,
+				149751D11F24DBE0002572E0 /* AlacrityPickerView.swift in Sources */,
 				140DB8FF1F20F43E00999761 /* TextFieldDSL.swift in Sources */,
 				149751BF1F24CF54002572E0 /* UISlider+Alacrity.swift in Sources */,
 				140DB9031F20F44A00999761 /* AlacrityTextFieldDSL.swift in Sources */,
 				149751C31F24D215002572E0 /* UIStepper+Alacrity.swift in Sources */,
 				1425EAF61F2358A2004E65BD /* AlacrityTextViewDSL.swift in Sources */,
+				149751C91F24D805002572E0 /* AlacrityActivityIndicatorDSL.swift in Sources */,
 				140DB8FA1F20F43A00999761 /* UILabel+Alacrity.swift in Sources */,
 				140DB9001F20F43E00999761 /* TextManagingView.swift in Sources */,
 				149751C51F24D262002572E0 /* AlacritySwitchDSL.swift in Sources */,
