@@ -26,6 +26,10 @@
 		1425EAF61F2358A2004E65BD /* AlacrityTextViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */; };
 		1425EAF81F239586004E65BD /* AlacrityButtonDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425EAF71F239586004E65BD /* AlacrityButtonDSL.swift */; };
 		14A62BAD1F245EE600CA75CB /* UIButton+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */; };
+		14A62BAF1F24646900CA75CB /* AlacrityDatePickerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BAE1F24646900CA75CB /* AlacrityDatePickerDSL.swift */; };
+		14A62BB11F24647700CA75CB /* UIDatePicker+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BB01F24647700CA75CB /* UIDatePicker+Alacrity.swift */; };
+		14A62BB31F24681B00CA75CB /* AlacrityPageControlDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BB21F24681B00CA75CB /* AlacrityPageControlDSL.swift */; };
+		14A62BB51F2469C000CA75CB /* UIPageControl+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BB41F2469C000CA75CB /* UIPageControl+Alacrity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityTextViewDSL.swift; sourceTree = "<group>"; };
 		1425EAF71F239586004E65BD /* AlacrityButtonDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityButtonDSL.swift; sourceTree = "<group>"; };
 		14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Alacrity.swift"; sourceTree = "<group>"; };
+		14A62BAE1F24646900CA75CB /* AlacrityDatePickerDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityDatePickerDSL.swift; sourceTree = "<group>"; };
+		14A62BB01F24647700CA75CB /* UIDatePicker+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDatePicker+Alacrity.swift"; sourceTree = "<group>"; };
+		14A62BB21F24681B00CA75CB /* AlacrityPageControlDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityPageControlDSL.swift; sourceTree = "<group>"; };
+		14A62BB41F2469C000CA75CB /* UIPageControl+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Alacrity.swift"; sourceTree = "<group>"; };
 		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +113,8 @@
 				140DB8C31F20F36000999761 /* UITextField+Alacrity.swift */,
 				140DB8C41F20F36000999761 /* UITextView+Alacrity.swift */,
 				14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */,
+				14A62BB01F24647700CA75CB /* UIDatePicker+Alacrity.swift */,
+				14A62BB41F2469C000CA75CB /* UIPageControl+Alacrity.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -128,6 +138,8 @@
 				140DB8CE1F20F36000999761 /* AlacrityTextFieldDSL.swift */,
 				1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */,
 				1425EAF71F239586004E65BD /* AlacrityButtonDSL.swift */,
+				14A62BAE1F24646900CA75CB /* AlacrityDatePickerDSL.swift */,
+				14A62BB21F24681B00CA75CB /* AlacrityPageControlDSL.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -308,7 +320,10 @@
 				140DB8FC1F20F43A00999761 /* UITextView+Alacrity.swift in Sources */,
 				14A62BAD1F245EE600CA75CB /* UIButton+Alacrity.swift in Sources */,
 				140DB9011F20F43E00999761 /* TextManagingViewDSL.swift in Sources */,
+				14A62BB31F24681B00CA75CB /* AlacrityPageControlDSL.swift in Sources */,
+				14A62BB11F24647700CA75CB /* UIDatePicker+Alacrity.swift in Sources */,
 				140DB8FD1F20F43A00999761 /* UIView+Alacrity.swift in Sources */,
+				14A62BB51F2469C000CA75CB /* UIPageControl+Alacrity.swift in Sources */,
 				140DB9041F20F44A00999761 /* AlacrityViewDSL.swift in Sources */,
 				140DB8FB1F20F43A00999761 /* UITextField+Alacrity.swift in Sources */,
 				140DB8FF1F20F43E00999761 /* TextFieldDSL.swift in Sources */,
@@ -317,6 +332,7 @@
 				140DB8FA1F20F43A00999761 /* UILabel+Alacrity.swift in Sources */,
 				140DB9001F20F43E00999761 /* TextManagingView.swift in Sources */,
 				140DB8FE1F20F43E00999761 /* AdjustableTextManagingView.swift in Sources */,
+				14A62BAF1F24646900CA75CB /* AlacrityDatePickerDSL.swift in Sources */,
 				1425EAF81F239586004E65BD /* AlacrityButtonDSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
