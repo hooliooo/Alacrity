@@ -8,15 +8,18 @@ import UIKit
 
 public struct AlacrityPageControlDSL {
 
+    // MARK: Initializer
     internal init(pageControl: UIPageControl) {
         self.pageControl = pageControl
     }
 
+    // MARK: Stored Properties
     public let pageControl: UIPageControl
 
 }
 
 public extension AlacrityPageControlDSL {
+    
     /**
      Sets the numberOfPages property of underlying UIPageControl. Returns the DSL instance.
     */

@@ -15,6 +15,7 @@ public struct AlacrityLabelDSL {
 
     // MARK: Stored Properties
     public let label: UILabel
+    
 }
 
 public extension AlacrityLabelDSL {
