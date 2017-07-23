@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13335BF597DF14E61D49DAB5 /* Astral.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Astral.podspec; path = ../Astral/Astral.podspec; sourceTree = "<group>"; };
+		13335BF597DF14E61D49DAB5 /* Alacrity.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Alacrity.podspec; sourceTree = "<group>"; };
 		140DB8C21F20F36000999761 /* UILabel+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Alacrity.swift"; sourceTree = "<group>"; };
 		140DB8C31F20F36000999761 /* UITextField+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Alacrity.swift"; sourceTree = "<group>"; };
 		140DB8C41F20F36000999761 /* UITextView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Alacrity.swift"; sourceTree = "<group>"; };
@@ -62,8 +62,8 @@
 		1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityTextViewDSL.swift; sourceTree = "<group>"; };
 		1425EAF71F239586004E65BD /* AlacrityButtonDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityButtonDSL.swift; sourceTree = "<group>"; };
 		14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Alacrity.swift"; sourceTree = "<group>"; };
-		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../Astral/LICENSE; sourceTree = "<group>"; };
-		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../Astral/README.md; sourceTree = "<group>"; };
+		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,10 +155,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				140DB8C01F20F36000999761 /* Sources */,
 				140DB8E21F20F37C00999761 /* Supporiting Files */,
 				140DB8ED1F20F37C00999761 /* AlacrityTests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				140DB8C01F20F36000999761 /* Sources */,
 				8E30309E8DDE35D639DF7D51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				13335BF597DF14E61D49DAB5 /* Astral.podspec */,
+				13335BF597DF14E61D49DAB5 /* Alacrity.podspec */,
 				A9C9861167F8A7591FBBFC21 /* README.md */,
 				91C397FB3A0BBC18113356D8 /* LICENSE */,
 			);

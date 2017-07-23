@@ -7,7 +7,7 @@
 import UIKit
 
 public extension UIButton {
-    var abd: AlacrityButtonDSL {
+    var acy: AlacrityButtonDSL {
         return AlacrityButtonDSL(button: self)
     }
 }

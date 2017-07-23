@@ -7,7 +7,7 @@
 import UIKit
 
 public extension UITextField {
-    var atfd: AlacrityTextFieldDSL {
+    var acy: AlacrityTextFieldDSL {
         return AlacrityTextFieldDSL(textField: self)
     }
 }

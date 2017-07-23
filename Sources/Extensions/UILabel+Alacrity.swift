@@ -7,7 +7,7 @@
 import UIKit
 
 public extension UILabel {
-    var ald: AlacrityLabelDSL {
+    var acy: AlacrityLabelDSL {
         return AlacrityLabelDSL(label: self)
     }
 }
