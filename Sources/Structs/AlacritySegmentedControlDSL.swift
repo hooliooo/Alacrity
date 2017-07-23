@@ -4,7 +4,6 @@
 //  Licensed under the MIT license. See LICENSE file
 //
 
-
 import UIKit
 
 public struct AlacritySegmentedControlDSL {

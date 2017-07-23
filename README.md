@@ -1,4 +1,5 @@
 # Alacrity
+Alacrity is a library that brings a fluent interface for UIView and its subclasses.
 
 [![CI Status](http://img.shields.io/travis/hooliooo/Alacrity.svg?style=flat)](https://travis-ci.org/hooliooo/Alacrity)
 [![Version](https://img.shields.io/cocoapods/v/Alacrity.svg?style=flat)](http://cocoapods.org/pods/Alacrity)
