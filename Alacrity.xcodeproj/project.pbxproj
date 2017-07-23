@@ -24,6 +24,8 @@
 		1425EAF21F2336C0004E65BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF11F2336C0004E65BD /* UIKit.framework */; };
 		1425EAF41F2336C8004E65BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF31F2336C8004E65BD /* Foundation.framework */; };
 		1425EAF61F2358A2004E65BD /* AlacrityTextViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */; };
+		1425EAF81F239586004E65BD /* AlacrityButtonDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425EAF71F239586004E65BD /* AlacrityButtonDSL.swift */; };
+		14A62BAD1F245EE600CA75CB /* UIButton+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		1425EAF11F2336C0004E65BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1425EAF31F2336C8004E65BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityTextViewDSL.swift; sourceTree = "<group>"; };
+		1425EAF71F239586004E65BD /* AlacrityButtonDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityButtonDSL.swift; sourceTree = "<group>"; };
+		14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Alacrity.swift"; sourceTree = "<group>"; };
 		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../Astral/LICENSE; sourceTree = "<group>"; };
 		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../Astral/README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,10 +100,11 @@
 		140DB8C11F20F36000999761 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				140DB8C51F20F36000999761 /* UIView+Alacrity.swift */,
 				140DB8C21F20F36000999761 /* UILabel+Alacrity.swift */,
 				140DB8C31F20F36000999761 /* UITextField+Alacrity.swift */,
 				140DB8C41F20F36000999761 /* UITextView+Alacrity.swift */,
-				140DB8C51F20F36000999761 /* UIView+Alacrity.swift */,
+				14A62BAC1F245EE600CA75CB /* UIButton+Alacrity.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				140DB8CD1F20F36000999761 /* AlacrityLabelDSL.swift */,
 				140DB8CE1F20F36000999761 /* AlacrityTextFieldDSL.swift */,
 				1425EAF51F2358A2004E65BD /* AlacrityTextViewDSL.swift */,
+				1425EAF71F239586004E65BD /* AlacrityButtonDSL.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 			files = (
 				140DB9021F20F44A00999761 /* AlacrityLabelDSL.swift in Sources */,
 				140DB8FC1F20F43A00999761 /* UITextView+Alacrity.swift in Sources */,
+				14A62BAD1F245EE600CA75CB /* UIButton+Alacrity.swift in Sources */,
 				140DB9011F20F43E00999761 /* TextManagingViewDSL.swift in Sources */,
 				140DB8FD1F20F43A00999761 /* UIView+Alacrity.swift in Sources */,
 				140DB9041F20F44A00999761 /* AlacrityViewDSL.swift in Sources */,
@@ -310,6 +317,7 @@
 				140DB8FA1F20F43A00999761 /* UILabel+Alacrity.swift in Sources */,
 				140DB9001F20F43E00999761 /* TextManagingView.swift in Sources */,
 				140DB8FE1F20F43E00999761 /* AdjustableTextManagingView.swift in Sources */,
+				1425EAF81F239586004E65BD /* AlacrityButtonDSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,7 +6,8 @@
 
 import UIKit
 
-extension UITextView {
-
-
+public extension UITextView {
+    var atvd: AlacrityTextViewDSL {
+        return AlacrityTextViewDSL(textView: self)
+    }
 }

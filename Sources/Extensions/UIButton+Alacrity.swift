@@ -6,9 +6,8 @@
 
 import UIKit
 
-public extension UIView {
-    var avd: AlacrityViewDSL {
-        return AlacrityViewDSL(view: self)
+public extension UIButton {
+    var abd: AlacrityButtonDSL {
+        return AlacrityButtonDSL(button: self)
     }
 }
-
