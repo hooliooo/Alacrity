@@ -1,6 +1,6 @@
 //
 //  Alacrity
-//  Copyright © 2017 Julio Alorro
+//  Copyright (c) 2017 Julio Miguel Alorro
 //  Licensed under the MIT license. See LICENSE file
 //
 
