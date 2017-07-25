@@ -7,6 +7,9 @@
 import UIKit
 
 public extension UIView {
+    /**
+     AlacrityViewDSL instance to access the Alacrity fluent interface
+    */
     var avd: AlacrityViewDSL {
         return AlacrityViewDSL(view: self)
     }

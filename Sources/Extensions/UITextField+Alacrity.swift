@@ -7,6 +7,9 @@
 import UIKit
 
 public extension UITextField {
+    /**
+     AlacrityTextFieldDSL instance to access the Alacrity fluent interface
+    */
     var acy: AlacrityTextFieldDSL {
         return AlacrityTextFieldDSL(textField: self)
     }

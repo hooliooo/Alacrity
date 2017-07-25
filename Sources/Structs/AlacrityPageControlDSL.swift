@@ -56,4 +56,22 @@ public extension AlacrityPageControlDSL {
         return self
     }
 
+    /**
+     Sets the pageIndicatorTintColor property of underlying UIPageControl. Returns the DSL instance.
+    */
+    @discardableResult
+    func pageIndicatorTintColor(_ pageIndicatorTintColor: UIColor) -> AlacrityPageControlDSL {
+        self.pageControl.pageIndicatorTintColor = pageIndicatorTintColor
+        return self
+    }
+
+    /**
+     Sets the currentPageIndicatorTintColor property of underlying UIPageControl. Returns the DSL instance.
+    */
+    @discardableResult
+    func currentPageIndicatorTintColor(_ currentPageIndicatorTintColor: UIColor) -> AlacrityPageControlDSL {
+        self.pageControl.currentPageIndicatorTintColor = currentPageIndicatorTintColor
+        return self
+    }
+
 }

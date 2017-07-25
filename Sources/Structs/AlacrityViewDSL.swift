@@ -18,8 +18,8 @@ public struct AlacrityViewDSL {
 
 }
 
-// MARK: - UIView Methods
 public extension AlacrityViewDSL {
+
     /**
      Sets the alpha property of underlying UIView. Returns the DSL instance.
     */

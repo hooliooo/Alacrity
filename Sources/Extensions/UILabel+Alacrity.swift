@@ -7,6 +7,9 @@
 import UIKit
 
 public extension UILabel {
+    /**
+     AlacrityUILabelDSL instance to access the Alacrity fluent interface
+    */
     var acy: AlacrityLabelDSL {
         return AlacrityLabelDSL(label: self)
     }
