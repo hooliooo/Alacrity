@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityPageControlDSL {
+public struct AlacrityPageControlDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(pageControl: UIPageControl) {
-        self.pageControl = pageControl
+        self.view = pageControl
     }
 
     // MARK: Stored Properties
-    public let pageControl: UIPageControl
+    public let view: UIPageControl
 
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityPageControlDSL {
     */
     @discardableResult
     func numberOfPages(_ numberOfPages: Int) -> AlacrityPageControlDSL {
-        self.pageControl.numberOfPages = numberOfPages
+        self.view.numberOfPages = numberOfPages
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityPageControlDSL {
     */
     @discardableResult
     func currentPage(_ currentPage: Int) -> AlacrityPageControlDSL {
-        self.pageControl.currentPage = currentPage
+        self.view.currentPage = currentPage
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityPageControlDSL {
     */
     @discardableResult
     func hidesForSinglePage(_ hidesForSinglePage: Bool) -> AlacrityPageControlDSL {
-        self.pageControl.hidesForSinglePage = hidesForSinglePage
+        self.view.hidesForSinglePage = hidesForSinglePage
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacrityPageControlDSL {
     */
     @discardableResult
     func defersCurrentPageDisplay(_ defersCurrentPageDisplay: Bool) -> AlacrityPageControlDSL {
-        self.pageControl.defersCurrentPageDisplay = defersCurrentPageDisplay
+        self.view.defersCurrentPageDisplay = defersCurrentPageDisplay
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacrityPageControlDSL {
     */
     @discardableResult
     func pageIndicatorTintColor(_ pageIndicatorTintColor: UIColor) -> AlacrityPageControlDSL {
-        self.pageControl.pageIndicatorTintColor = pageIndicatorTintColor
+        self.view.pageIndicatorTintColor = pageIndicatorTintColor
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacrityPageControlDSL {
     */
     @discardableResult
     func currentPageIndicatorTintColor(_ currentPageIndicatorTintColor: UIColor) -> AlacrityPageControlDSL {
-        self.pageControl.currentPageIndicatorTintColor = currentPageIndicatorTintColor
+        self.view.currentPageIndicatorTintColor = currentPageIndicatorTintColor
         return self
     }
 

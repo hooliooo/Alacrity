@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacritySliderDSL {
+public struct AlacritySliderDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(slider: UISlider) {
-        self.slider = slider
+        self.view = slider
     }
 
     // MARK: Stored Properties
-    public let slider: UISlider
+    public let view: UISlider
 
 }
 
@@ -25,7 +25,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func value(_ value: Float) -> AlacritySliderDSL {
-        self.slider.value = value
+        self.view.value = value
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func minimumValue(_ minimumValue: Float) -> AlacritySliderDSL {
-        self.slider.minimumValue = minimumValue
+        self.view.minimumValue = minimumValue
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func maximumValue(_ maximumValue: Float) -> AlacritySliderDSL {
-        self.slider.maximumValue = maximumValue
+        self.view.maximumValue = maximumValue
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func minimumValueImage(_ minimumValueImage: UIImage) -> AlacritySliderDSL {
-        self.slider.minimumValueImage = minimumValueImage
+        self.view.minimumValueImage = minimumValueImage
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func maximumValueImage(_ maximumValueImage: UIImage) -> AlacritySliderDSL {
-        self.slider.maximumValueImage = maximumValueImage
+        self.view.maximumValueImage = maximumValueImage
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func isContinuous(_ isContinuous: Bool) -> AlacritySliderDSL {
-        self.slider.isContinuous = isContinuous
+        self.view.isContinuous = isContinuous
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func minimumTrackTintColor(_ minimumTrackTintColor: UIColor) -> AlacritySliderDSL {
-        self.slider.minimumTrackTintColor = minimumTrackTintColor
+        self.view.minimumTrackTintColor = minimumTrackTintColor
         return self
     }
 
@@ -88,7 +88,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func maximumTrackTintColor(_ maximumTrackTintColor: UIColor) -> AlacritySliderDSL {
-        self.slider.maximumTrackTintColor = maximumTrackTintColor
+        self.view.maximumTrackTintColor = maximumTrackTintColor
         return self
     }
 
@@ -97,7 +97,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func thumbTintColor(_ thumbTintColor: UIColor) -> AlacritySliderDSL {
-        self.slider.thumbTintColor = thumbTintColor
+        self.view.thumbTintColor = thumbTintColor
         return self
     }
 
@@ -106,7 +106,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func setThumbImage(_ image: UIImage?, for state: UIControlState) -> AlacritySliderDSL {
-        self.slider.setThumbImage(image, for: state)
+        self.view.setThumbImage(image, for: state)
         return self
     }
 
@@ -115,7 +115,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func setMinimumTrackImage(_ image: UIImage?, for state: UIControlState) -> AlacritySliderDSL {
-        self.slider.setMinimumTrackImage(image, for: state)
+        self.view.setMinimumTrackImage(image, for: state)
         return self
     }
 
@@ -124,7 +124,7 @@ public extension AlacritySliderDSL {
     */
     @discardableResult
     func setMaximumTrackImage(_ image: UIImage?, for state: UIControlState) -> AlacritySliderDSL {
-        self.slider.setMaximumTrackImage(image, for: state)
+        self.view.setMaximumTrackImage(image, for: state)
         return self
     }
 

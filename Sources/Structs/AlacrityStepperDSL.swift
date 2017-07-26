@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityStepperDSL {
+public struct AlacrityStepperDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(stepper: UIStepper) {
-        self.stepper = stepper
+        self.view = stepper
     }
 
     // MARK: Stored Properties
-    public let stepper: UIStepper
+    public let view: UIStepper
 
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func isContinuous(_ isContinuous: Bool) -> AlacrityStepperDSL {
-        self.stepper.isContinuous = isContinuous
+        self.view.isContinuous = isContinuous
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func autorepeat(_ autorepeat: Bool) -> AlacrityStepperDSL {
-        self.stepper.autorepeat = autorepeat
+        self.view.autorepeat = autorepeat
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func wraps(_ wraps: Bool) -> AlacrityStepperDSL {
-        self.stepper.wraps = wraps
+        self.view.wraps = wraps
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func value(_ value: Double) -> AlacrityStepperDSL {
-        self.stepper.value = value
+        self.view.value = value
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func minimumValue(_ minimumValue: Double) -> AlacrityStepperDSL {
-        self.stepper.minimumValue = minimumValue
+        self.view.minimumValue = minimumValue
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func maximumValue(_ maximumValue: Double) -> AlacrityStepperDSL {
-        self.stepper.maximumValue = maximumValue
+        self.view.maximumValue = maximumValue
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func stepValue(_ stepValue: Double) -> AlacrityStepperDSL {
-        self.stepper.stepValue = stepValue
+        self.view.stepValue = stepValue
         return self
     }
 
@@ -88,7 +88,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func setBackgroundImage(_ image: UIImage?, for state: UIControlState) -> AlacrityStepperDSL {
-        self.stepper.setBackgroundImage(image, for: state)
+        self.view.setBackgroundImage(image, for: state)
         return self
     }
 
@@ -97,7 +97,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func setDividerImage(_ image: UIImage?, forLeftSegmentState leftState: UIControlState, rightSegmentState rightState: UIControlState) -> AlacrityStepperDSL {
-        self.stepper.setDividerImage(image, forLeftSegmentState: leftState, rightSegmentState: rightState)
+        self.view.setDividerImage(image, forLeftSegmentState: leftState, rightSegmentState: rightState)
         return self
     }
 
@@ -106,7 +106,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func setIncrementImage(_ image: UIImage?, for state: UIControlState) -> AlacrityStepperDSL {
-        self.stepper.setIncrementImage(image, for: state)
+        self.view.setIncrementImage(image, for: state)
         return self
     }
 
@@ -115,7 +115,7 @@ public extension AlacrityStepperDSL {
     */
     @discardableResult
     func setDecrementImage(_ image: UIImage?, for state: UIControlState) -> AlacrityStepperDSL {
-        self.stepper.setDecrementImage(image, for: state)
+        self.view.setDecrementImage(image, for: state)
         return self
     }
 

@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityWebViewDSL {
+public struct AlacrityWebViewDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(webView: UIWebView) {
-        self.webView = webView
+        self.view = webView
     }
 
     // MARK: Stored Properties
-    public let webView: UIWebView
+    public let view: UIWebView
     
 }
 
@@ -24,7 +24,7 @@ public extension AlacrityWebViewDSL {
      Sets the scalesPageToFit property of underlying UIWebView. Returns the DSL instance.
     */
     func scalesPageToFit(_ scalesPageToFit: Bool) -> AlacrityWebViewDSL {
-        self.webView.scalesPageToFit = scalesPageToFit
+        self.view.scalesPageToFit = scalesPageToFit
         return self
     }
 
@@ -32,7 +32,7 @@ public extension AlacrityWebViewDSL {
      Sets the dataDetectorTypes property of underlying UIWebView. Returns the DSL instance.
     */
     func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> AlacrityWebViewDSL {
-        self.webView.dataDetectorTypes = dataDetectorTypes
+        self.view.dataDetectorTypes = dataDetectorTypes
         return self
     }
 
@@ -40,7 +40,7 @@ public extension AlacrityWebViewDSL {
      Sets the allowsInlineMediaPlayback property of underlying UIWebView. Returns the DSL instance.
     */
     func allowsInlineMediaPlayback(_ allowsInlineMediaPlayback: Bool) -> AlacrityWebViewDSL {
-        self.webView.allowsInlineMediaPlayback = allowsInlineMediaPlayback
+        self.view.allowsInlineMediaPlayback = allowsInlineMediaPlayback
         return self
     }
 
@@ -48,7 +48,7 @@ public extension AlacrityWebViewDSL {
      Sets the mediaPlaybackRequiresUserAction property of underlying UIWebView. Returns the DSL instance.
     */
     func mediaPlaybackRequiresUserAction(_ mediaPlaybackRequiresUserAction: Bool) -> AlacrityWebViewDSL {
-        self.webView.mediaPlaybackRequiresUserAction = mediaPlaybackRequiresUserAction
+        self.view.mediaPlaybackRequiresUserAction = mediaPlaybackRequiresUserAction
         return self
     }
 
@@ -56,7 +56,7 @@ public extension AlacrityWebViewDSL {
      Sets the mediaPlaybackAllowsAirPlay property of underlying UIWebView. Returns the DSL instance.
     */
     func mediaPlaybackAllowsAirPlay(_ mediaPlaybackAllowsAirPlay: Bool) -> AlacrityWebViewDSL {
-        self.webView.mediaPlaybackAllowsAirPlay = mediaPlaybackAllowsAirPlay
+        self.view.mediaPlaybackAllowsAirPlay = mediaPlaybackAllowsAirPlay
         return self
     }
 
@@ -64,7 +64,7 @@ public extension AlacrityWebViewDSL {
      Sets the suppressesIncrementalRendering property of underlying UIWebView. Returns the DSL instance.
     */
     func suppressesIncrementalRendering(_ suppressesIncrementalRendering: Bool) -> AlacrityWebViewDSL {
-        self.webView.suppressesIncrementalRendering = suppressesIncrementalRendering
+        self.view.suppressesIncrementalRendering = suppressesIncrementalRendering
         return self
     }
 
@@ -72,7 +72,7 @@ public extension AlacrityWebViewDSL {
      Sets the keyboardDisplayRequiresUserAction property of underlying UIWebView. Returns the DSL instance.
     */
     func keyboardDisplayRequiresUserAction(_ keyboardDisplayRequiresUserAction: Bool) -> AlacrityWebViewDSL {
-        self.webView.keyboardDisplayRequiresUserAction = keyboardDisplayRequiresUserAction
+        self.view.keyboardDisplayRequiresUserAction = keyboardDisplayRequiresUserAction
         return self
     }
 
@@ -80,7 +80,7 @@ public extension AlacrityWebViewDSL {
      Sets the paginationMode property of underlying UIWebView. Returns the DSL instance.
     */
     func paginationMode(_ paginationMode: UIWebPaginationMode) -> AlacrityWebViewDSL {
-        self.webView.paginationMode = paginationMode
+        self.view.paginationMode = paginationMode
         return self
     }
 
@@ -88,7 +88,7 @@ public extension AlacrityWebViewDSL {
      Sets the paginationBreakingMode property of underlying UIWebView. Returns the DSL instance.
     */
     func paginationBreakingMode(_ paginationBreakingMode: UIWebPaginationBreakingMode) -> AlacrityWebViewDSL {
-        self.webView.paginationBreakingMode = paginationBreakingMode
+        self.view.paginationBreakingMode = paginationBreakingMode
         return self
     }
 
@@ -96,7 +96,7 @@ public extension AlacrityWebViewDSL {
      Sets the pageLength property of underlying UIWebView. Returns the DSL instance.
     */
     func pageLength(_ pageLength: CGFloat) -> AlacrityWebViewDSL {
-        self.webView.pageLength = pageLength
+        self.view.pageLength = pageLength
         return self
     }
 
@@ -104,7 +104,7 @@ public extension AlacrityWebViewDSL {
      Sets the gapBetweenPages property of underlying UIWebView. Returns the DSL instance.
     */
     func gapBetweenPages(_ gapBetweenPages: CGFloat) -> AlacrityWebViewDSL {
-        self.webView.gapBetweenPages = gapBetweenPages
+        self.view.gapBetweenPages = gapBetweenPages
         return self
     }
 
@@ -112,7 +112,7 @@ public extension AlacrityWebViewDSL {
      Sets the allowsPictureInPictureMediaPlayback property of underlying UIWebView. Returns the DSL instance.
     */
     func allowsPictureInPictureMediaPlayback(_ allowsPictureInPictureMediaPlayback: Bool) -> AlacrityWebViewDSL {
-        self.webView.allowsPictureInPictureMediaPlayback = allowsPictureInPictureMediaPlayback
+        self.view.allowsPictureInPictureMediaPlayback = allowsPictureInPictureMediaPlayback
         return self
     }
 
@@ -120,7 +120,7 @@ public extension AlacrityWebViewDSL {
      Sets the allowsLinkPreview property of underlying UIWebView. Returns the DSL instance.
     */
     func allowsLinkPreview(_ allowsLinkPreview: Bool) -> AlacrityWebViewDSL {
-        self.webView.allowsLinkPreview = allowsLinkPreview
+        self.view.allowsLinkPreview = allowsLinkPreview
         return self
     }
 

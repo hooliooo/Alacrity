@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityDatePickerDSL {
+public struct AlacrityDatePickerDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(datePicker: UIDatePicker) {
-        self.datePicker = datePicker
+        self.view = datePicker
     }
 
     // MARK: Stored Properties
-    public let datePicker: UIDatePicker
+    public let view: UIDatePicker
     
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func datePickerMode(_ datePickerMode: UIDatePickerMode) -> AlacrityDatePickerDSL {
-        self.datePicker.datePickerMode = datePickerMode
+        self.view.datePickerMode = datePickerMode
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func locale(_ locale: Locale) -> AlacrityDatePickerDSL {
-        self.datePicker.locale = locale
+        self.view.locale = locale
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func calendar(_ calendar: Calendar) -> AlacrityDatePickerDSL {
-        self.datePicker.calendar = calendar
+        self.view.calendar = calendar
         return self
     }
     /**
@@ -51,7 +51,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func timeZone(_ timeZone: TimeZone) -> AlacrityDatePickerDSL {
-        self.datePicker.timeZone = timeZone
+        self.view.timeZone = timeZone
         return self
     }
 
@@ -60,7 +60,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func date(_ date: Date) -> AlacrityDatePickerDSL {
-        self.datePicker.date = date
+        self.view.date = date
         return self
     }
 
@@ -69,7 +69,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func minimumDate(_ minimumDate: Date) -> AlacrityDatePickerDSL {
-        self.datePicker.minimumDate = minimumDate
+        self.view.minimumDate = minimumDate
         return self
     }
 
@@ -78,7 +78,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func maximumDate(_ maximumDate: Date) -> AlacrityDatePickerDSL {
-        self.datePicker.maximumDate = maximumDate
+        self.view.maximumDate = maximumDate
         return self
     }
 
@@ -87,7 +87,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func countDownDuration(_ countDownDuration: TimeInterval) -> AlacrityDatePickerDSL {
-        self.datePicker.countDownDuration = countDownDuration
+        self.view.countDownDuration = countDownDuration
         return self
     }
 
@@ -96,7 +96,7 @@ public extension AlacrityDatePickerDSL {
     */
     @discardableResult
     func minuteInterval(_ minuteInterval: Int) -> AlacrityDatePickerDSL {
-        self.datePicker.minuteInterval = minuteInterval
+        self.view.minuteInterval = minuteInterval
         return self
     }
 

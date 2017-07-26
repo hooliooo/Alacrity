@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityTextViewDSL {
+public struct AlacrityTextViewDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(textView: UITextView) {
-        self.textView = textView
+        self.view = textView
     }
 
     // MARK: Stored Properties
-    public let textView: UITextView
+    public let view: UITextView
 
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func allowsEditingTextAttributes(_ bool: Bool) -> AlacrityTextViewDSL {
-        self.textView.allowsEditingTextAttributes = bool
+        self.view.allowsEditingTextAttributes = bool
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func attributedText(_ attributedText: NSAttributedString) -> AlacrityTextViewDSL {
-        self.textView.attributedText = attributedText
+        self.view.attributedText = attributedText
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func clearsOnInsertion(_ bool: Bool) -> AlacrityTextViewDSL {
-        self.textView.clearsOnInsertion = bool
+        self.view.clearsOnInsertion = bool
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func dataDetectorTypes(_ types: UIDataDetectorTypes) -> AlacrityTextViewDSL {
-        self.textView.dataDetectorTypes = types
+        self.view.dataDetectorTypes = types
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func font(_ font: UIFont) -> AlacrityTextViewDSL {
-        self.textView.font = font
+        self.view.font = font
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func inputAccessoryView(_ view: UIView) -> AlacrityTextViewDSL {
-        self.textView.inputAccessoryView = view
+        self.view.inputAccessoryView = view
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func inputView(_ view: UIView) -> AlacrityTextViewDSL {
-        self.textView.inputView = view
+        self.view.inputView = view
         return self
     }
 
@@ -88,7 +88,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func isEditable(_ bool: Bool) -> AlacrityTextViewDSL {
-        self.textView.isEditable = bool
+        self.view.isEditable = bool
         return self
     }
 
@@ -97,7 +97,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func isSelectable(_ bool: Bool) -> AlacrityTextViewDSL {
-        self.textView.isSelectable = bool
+        self.view.isSelectable = bool
         return self
     }
 
@@ -106,7 +106,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func linkTextAttributes(_ linkTextAttributes: [String: Any]) -> AlacrityTextViewDSL {
-        self.textView.linkTextAttributes = linkTextAttributes
+        self.view.linkTextAttributes = linkTextAttributes
         return self
     }
 
@@ -115,7 +115,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func selectedRange(_ range: NSRange) -> AlacrityTextViewDSL {
-        self.textView.selectedRange = range
+        self.view.selectedRange = range
         return self
     }
 
@@ -124,7 +124,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func text(_ text: String) -> AlacrityTextViewDSL {
-        self.textView.text = text
+        self.view.text = text
         return self
     }
 
@@ -133,7 +133,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func textAlignment(_ textAlignment: NSTextAlignment) -> AlacrityTextViewDSL {
-        self.textView.textAlignment = textAlignment
+        self.view.textAlignment = textAlignment
         return self
     }
 
@@ -142,7 +142,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func textColor(_ textColor: UIColor) -> AlacrityTextViewDSL {
-        self.textView.textColor = textColor
+        self.view.textColor = textColor
         return self
     }
 
@@ -151,7 +151,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func textContainerInset(_ inset: UIEdgeInsets) -> AlacrityTextViewDSL {
-        self.textView.textContainerInset = inset
+        self.view.textContainerInset = inset
         return self
     }
 
@@ -160,7 +160,7 @@ public extension AlacrityTextViewDSL {
     */
     @discardableResult
     func typingAttributes(_ typingAttributes: [String: Any]) -> AlacrityTextViewDSL {
-        self.textView.typingAttributes = typingAttributes
+        self.view.typingAttributes = typingAttributes
         return self
     }
 }

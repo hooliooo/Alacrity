@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityTextFieldDSL {
+public struct AlacrityTextFieldDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(textField: UITextField) {
-        self.textField = textField
+        self.view = textField
     }
 
     // MARK: Stored Properties
-    public let textField: UITextField
+    public let view: UITextField
 
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func adjustsFontSizeToFitWidth(_ bool: Bool) -> AlacrityTextFieldDSL {
-        self.textField.adjustsFontSizeToFitWidth = bool
+        self.view.adjustsFontSizeToFitWidth = bool
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func allowsEditingTextAttributes(_ bool: Bool) -> AlacrityTextFieldDSL {
-        self.textField.allowsEditingTextAttributes = bool
+        self.view.allowsEditingTextAttributes = bool
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func attributedText(_ attributedText: NSAttributedString) -> AlacrityTextFieldDSL {
-        self.textField.attributedText = attributedText
+        self.view.attributedText = attributedText
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func attributedPlaceholder(_ attributedPlaceHolder: NSAttributedString) -> AlacrityTextFieldDSL {
-        self.textField.attributedPlaceholder = attributedPlaceHolder
+        self.view.attributedPlaceholder = attributedPlaceHolder
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func background(_ background: UIImage) -> AlacrityTextFieldDSL {
-        self.textField.background = background
+        self.view.background = background
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func borderStyle(_ borderStyle: UITextBorderStyle) -> AlacrityTextFieldDSL {
-        self.textField.borderStyle = borderStyle
+        self.view.borderStyle = borderStyle
         return self
     }
     /**
@@ -78,7 +78,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func clearButtonMode(_ mode: UITextFieldViewMode) -> AlacrityTextFieldDSL {
-        self.textField.clearButtonMode = mode
+        self.view.clearButtonMode = mode
         return self
     }
 
@@ -87,7 +87,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func clearsOnBeginEditing(_ bool: Bool) -> AlacrityTextFieldDSL {
-        self.textField.clearsOnBeginEditing = bool
+        self.view.clearsOnBeginEditing = bool
         return self
     }
 
@@ -96,7 +96,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func clearsOnInsertion(_ bool: Bool) -> AlacrityTextFieldDSL {
-        self.textField.clearsOnInsertion = bool
+        self.view.clearsOnInsertion = bool
         return self
     }
 
@@ -105,7 +105,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func defaultTextAttributes(_ defaultTextAttributes: [String: Any]) -> AlacrityTextFieldDSL {
-        self.textField.defaultTextAttributes = defaultTextAttributes
+        self.view.defaultTextAttributes = defaultTextAttributes
         return self
     }
 
@@ -114,7 +114,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func disabledBackground(_ disabledBackground: UIImage) -> AlacrityTextFieldDSL {
-        self.textField.disabledBackground = disabledBackground
+        self.view.disabledBackground = disabledBackground
         return self
     }
 
@@ -123,7 +123,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func font(_ font: UIFont) -> AlacrityTextFieldDSL {
-        self.textField.font = font
+        self.view.font = font
         return self
     }
 
@@ -132,7 +132,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func inputView(_ view: UIView) -> AlacrityTextFieldDSL {
-        self.textField.inputView = view
+        self.view.inputView = view
         return self
     }
 
@@ -141,7 +141,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func inputAccessoryView(_ view: UIView) -> AlacrityTextFieldDSL {
-        self.textField.inputAccessoryView = view
+        self.view.inputAccessoryView = view
         return self
     }
 
@@ -150,7 +150,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func leftView(_ view: UIView) -> AlacrityTextFieldDSL {
-        self.textField.leftView = view
+        self.view.leftView = view
         return self
     }
 
@@ -159,7 +159,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func leftViewMode(_ mode: UITextFieldViewMode) -> AlacrityTextFieldDSL {
-        self.textField.leftViewMode = mode
+        self.view.leftViewMode = mode
         return self
     }
 
@@ -168,7 +168,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func minimumFontSize(_ minimumFontSize: CGFloat) -> AlacrityTextFieldDSL {
-        self.textField.minimumFontSize = minimumFontSize
+        self.view.minimumFontSize = minimumFontSize
         return self
     }
 
@@ -177,7 +177,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func placeholder(_ placeholder: String) -> AlacrityTextFieldDSL {
-        self.textField.placeholder = placeholder
+        self.view.placeholder = placeholder
         return self
     }
 
@@ -186,7 +186,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func rightView(_ view: UIView) -> AlacrityTextFieldDSL {
-        self.textField.rightView = view
+        self.view.rightView = view
         return self
     }
 
@@ -195,7 +195,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func rightViewMode(_ mode: UITextFieldViewMode) -> AlacrityTextFieldDSL {
-        self.textField.rightViewMode = mode
+        self.view.rightViewMode = mode
         return self
     }
 
@@ -204,7 +204,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func text(_ text: String) -> AlacrityTextFieldDSL {
-        self.textField.text = text
+        self.view.text = text
         return self
     }
 
@@ -213,7 +213,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func textColor(_ textColor: UIColor) -> AlacrityTextFieldDSL {
-        self.textField.textColor = textColor
+        self.view.textColor = textColor
         return self
     }
 
@@ -222,7 +222,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func textAlignment(_ textAlignment: NSTextAlignment) -> AlacrityTextFieldDSL {
-        self.textField.textAlignment = textAlignment
+        self.view.textAlignment = textAlignment
         return self
     }
 
@@ -231,7 +231,7 @@ public extension AlacrityTextFieldDSL {
     */
     @discardableResult
     func typingAttributes(_ typingAttributes: [String: Any]) -> AlacrityTextFieldDSL {
-        self.textField.typingAttributes = typingAttributes
+        self.view.typingAttributes = typingAttributes
         return self
     }
 

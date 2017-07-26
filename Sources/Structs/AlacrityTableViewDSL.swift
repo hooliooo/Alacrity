@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityTableViewDSL {
+public struct AlacrityTableViewDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(tableView: UITableView) {
-        self.tableView = tableView
+        self.view = tableView
     }
 
     // MARK: Stored Properties
-    public let tableView: UITableView
+    public let view: UITableView
     
 }
 
@@ -23,7 +23,7 @@ public extension AlacrityTableViewDSL {
      Sets the dataSource property of underlying UITableView. Returns the DSL instance.
     */
     func dataSource(_ dataSource: UITableViewDataSource) -> AlacrityTableViewDSL {
-        self.tableView.dataSource = dataSource
+        self.view.dataSource = dataSource
         return self
     }
 
@@ -31,7 +31,7 @@ public extension AlacrityTableViewDSL {
      Sets the delegate property of underlying UITableView. Returns the DSL instance.
     */
     func delegate(_ delegate: UITableViewDelegate) -> AlacrityTableViewDSL {
-        self.tableView.delegate = delegate
+        self.view.delegate = delegate
         return self
     }
 
@@ -39,7 +39,7 @@ public extension AlacrityTableViewDSL {
      Sets the rowHeight property of underlying UITableView. Returns the DSL instance.
     */
     func rowHeight(_ rowHeight: CGFloat) -> AlacrityTableViewDSL {
-        self.tableView.rowHeight = rowHeight
+        self.view.rowHeight = rowHeight
         return self
     }
 
@@ -47,7 +47,7 @@ public extension AlacrityTableViewDSL {
      Sets the sectionHeaderHeight property of underlying UITableView. Returns the DSL instance.
     */
     func sectionHeaderHeight(_ sectionHeaderHeight: CGFloat) -> AlacrityTableViewDSL {
-        self.tableView.sectionHeaderHeight = sectionHeaderHeight
+        self.view.sectionHeaderHeight = sectionHeaderHeight
         return self
     }
 
@@ -55,7 +55,7 @@ public extension AlacrityTableViewDSL {
      Sets the sectionFooterHeight property of underlying UITableView. Returns the DSL instance.
     */
     func sectionFooterHeight(_ sectionFooterHeight: CGFloat) -> AlacrityTableViewDSL {
-        self.tableView.sectionFooterHeight = sectionFooterHeight
+        self.view.sectionFooterHeight = sectionFooterHeight
         return self
     }
 
@@ -63,7 +63,7 @@ public extension AlacrityTableViewDSL {
      Sets the estimatedRowHeight property of underlying UITableView. Returns the DSL instance.
     */
     func estimatedRowHeight(_ estimatedRowHeight: CGFloat) -> AlacrityTableViewDSL {
-        self.tableView.estimatedRowHeight = estimatedRowHeight
+        self.view.estimatedRowHeight = estimatedRowHeight
         return self
     }
 
@@ -71,7 +71,7 @@ public extension AlacrityTableViewDSL {
      Sets the estimatedSectionHeaderHeight property of underlying UITableView. Returns the DSL instance.
     */
     func estimatedSectionHeaderHeight(_ estimatedSectionHeaderHeight: CGFloat) -> AlacrityTableViewDSL {
-        self.tableView.estimatedSectionHeaderHeight = estimatedSectionHeaderHeight
+        self.view.estimatedSectionHeaderHeight = estimatedSectionHeaderHeight
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacrityTableViewDSL {
      Sets the estimatedSectionFooterHeight property of underlying UITableView. Returns the DSL instance.
     */
     func estimatedSectionFooterHeight(_ estimatedSectionFooterHeight: CGFloat) -> AlacrityTableViewDSL {
-        self.tableView.estimatedSectionFooterHeight = estimatedSectionFooterHeight
+        self.view.estimatedSectionFooterHeight = estimatedSectionFooterHeight
         return self
     }
 
@@ -87,7 +87,7 @@ public extension AlacrityTableViewDSL {
      Sets the separatorInset property of underlying UITableView. Returns the DSL instance.
     */
     func separatorInset(_ separatorInset: UIEdgeInsets) -> AlacrityTableViewDSL {
-        self.tableView.separatorInset = separatorInset
+        self.view.separatorInset = separatorInset
         return self
     }
 
@@ -95,7 +95,7 @@ public extension AlacrityTableViewDSL {
      Sets the backgroundView property of underlying UITableView. Returns the DSL instance.
     */
     func backgroundView(_ backgroundView: UIView) -> AlacrityTableViewDSL {
-        self.tableView.backgroundView = backgroundView
+        self.view.backgroundView = backgroundView
         return self
     }
 
@@ -103,7 +103,7 @@ public extension AlacrityTableViewDSL {
      Sets the isEditing property of underlying UITableView. Returns the DSL instance.
     */
     func isEditing(_ isEditing: Bool) -> AlacrityTableViewDSL {
-        self.tableView.isEditing = isEditing
+        self.view.isEditing = isEditing
         return self
     }
 
@@ -111,7 +111,7 @@ public extension AlacrityTableViewDSL {
      Calls the setEditing method of underlying UITableView. Returns the DSL instance.
     */
     func setEditing(_ editing: Bool, animated: Bool) -> AlacrityTableViewDSL {
-        self.tableView.setEditing(editing, animated: animated)
+        self.view.setEditing(editing, animated: animated)
         return self
     }
 
@@ -119,7 +119,7 @@ public extension AlacrityTableViewDSL {
      Sets the allowsSelection property of underlying UITableView. Returns the DSL instance.
     */
     func allowsSelection(_ allowsSelection: Bool) -> AlacrityTableViewDSL {
-        self.tableView.allowsSelection = allowsSelection
+        self.view.allowsSelection = allowsSelection
         return self
     }
 
@@ -127,7 +127,7 @@ public extension AlacrityTableViewDSL {
      Sets the allowsSelectionDuringEditing property of underlying UITableView. Returns the DSL instance.
     */
     func allowsSelectionDuringEditing(_ allowsSelectionDuringEditing: Bool) -> AlacrityTableViewDSL {
-        self.tableView.allowsSelectionDuringEditing = allowsSelectionDuringEditing
+        self.view.allowsSelectionDuringEditing = allowsSelectionDuringEditing
         return self
     }
 
@@ -135,7 +135,7 @@ public extension AlacrityTableViewDSL {
      Sets the allowsMultipleSelection property of underlying UITableView. Returns the DSL instance.
     */
     func allowsMultipleSelection(_ allowsMultipleSelection: Bool) -> AlacrityTableViewDSL {
-        self.tableView.allowsMultipleSelection = allowsMultipleSelection
+        self.view.allowsMultipleSelection = allowsMultipleSelection
         return self
     }
 
@@ -143,7 +143,7 @@ public extension AlacrityTableViewDSL {
      Sets the allowsMultipleSelectionDuringEditing property of underlying UITableView. Returns the DSL instance.
     */
     func allowsMultipleSelectionDuringEditing(_ allowsMultipleSelectionDuringEditing: Bool) -> AlacrityTableViewDSL {
-        self.tableView.allowsMultipleSelectionDuringEditing = allowsMultipleSelectionDuringEditing
+        self.view.allowsMultipleSelectionDuringEditing = allowsMultipleSelectionDuringEditing
         return self
     }
 
@@ -151,7 +151,7 @@ public extension AlacrityTableViewDSL {
      Sets the sectionIndexMinimumDisplayRowCount property of underlying UITableView. Returns the DSL instance.
     */
     func sectionIndexMinimumDisplayRowCount(_ sectionIndexMinimumDisplayRowCount: Int) -> AlacrityTableViewDSL {
-        self.tableView.sectionIndexMinimumDisplayRowCount = sectionIndexMinimumDisplayRowCount
+        self.view.sectionIndexMinimumDisplayRowCount = sectionIndexMinimumDisplayRowCount
         return self
     }
 
@@ -159,7 +159,7 @@ public extension AlacrityTableViewDSL {
      Sets the sectionIndexColor property of underlying UITableView. Returns the DSL instance.
     */
     func sectionIndexColor(_ sectionIndexColor: UIColor) -> AlacrityTableViewDSL {
-        self.tableView.sectionIndexColor = sectionIndexColor
+        self.view.sectionIndexColor = sectionIndexColor
         return self
     }
 
@@ -167,7 +167,7 @@ public extension AlacrityTableViewDSL {
      Sets the sectionIndexBackgroundColor property of underlying UITableView. Returns the DSL instance.
     */
     func sectionIndexBackgroundColor(_ sectionIndexBackgroundColor: UIColor) -> AlacrityTableViewDSL {
-        self.tableView.sectionIndexBackgroundColor = sectionIndexBackgroundColor
+        self.view.sectionIndexBackgroundColor = sectionIndexBackgroundColor
         return self
     }
 
@@ -175,7 +175,7 @@ public extension AlacrityTableViewDSL {
      Sets the sectionIndexTrackingBackgroundColor property of underlying UITableView. Returns the DSL instance.
     */
     func sectionIndexTrackingBackgroundColor(_ sectionIndexTrackingBackgroundColor: UIColor) -> AlacrityTableViewDSL {
-        self.tableView.sectionIndexTrackingBackgroundColor = sectionIndexTrackingBackgroundColor
+        self.view.sectionIndexTrackingBackgroundColor = sectionIndexTrackingBackgroundColor
         return self
     }
 
@@ -183,7 +183,7 @@ public extension AlacrityTableViewDSL {
      Sets the separatorStyle property of underlying UITableView. Returns the DSL instance.
     */
     func separatorStyle(_ separatorStyle: UITableViewCellSeparatorStyle) -> AlacrityTableViewDSL {
-        self.tableView.separatorStyle = separatorStyle
+        self.view.separatorStyle = separatorStyle
         return self
     }
 
@@ -191,7 +191,7 @@ public extension AlacrityTableViewDSL {
      Sets the separatorColor property of underlying UITableView. Returns the DSL instance.
     */
     func separatorColor(_ separatorColor: UIColor) -> AlacrityTableViewDSL {
-        self.tableView.separatorColor = separatorColor
+        self.view.separatorColor = separatorColor
         return self
     }
 
@@ -199,7 +199,7 @@ public extension AlacrityTableViewDSL {
      Sets the separatorEffect property of underlying UITableView. Returns the DSL instance.
     */
     func separatorEffect(_ separatorEffect: UIVisualEffect) -> AlacrityTableViewDSL {
-        self.tableView.separatorEffect = separatorEffect
+        self.view.separatorEffect = separatorEffect
         return self
     }
 
@@ -207,7 +207,7 @@ public extension AlacrityTableViewDSL {
      Sets the cellLayoutMarginsFollowReadableWidth property of underlying UITableView. Returns the DSL instance.
     */
     func cellLayoutMarginsFollowReadableWidth(_ cellLayoutMarginsFollowReadableWidth: Bool) -> AlacrityTableViewDSL {
-        self.tableView.cellLayoutMarginsFollowReadableWidth = cellLayoutMarginsFollowReadableWidth
+        self.view.cellLayoutMarginsFollowReadableWidth = cellLayoutMarginsFollowReadableWidth
         return self
     }
 
@@ -215,7 +215,7 @@ public extension AlacrityTableViewDSL {
      Sets the tableHeaderView property of underlying UITableView. Returns the DSL instance.
     */
     func tableHeaderView(_ tableHeaderView: UIView) -> AlacrityTableViewDSL {
-        self.tableView.tableHeaderView = tableHeaderView
+        self.view.tableHeaderView = tableHeaderView
         return self
     }
 
@@ -223,7 +223,7 @@ public extension AlacrityTableViewDSL {
      Sets the tableFooterView property of underlying UITableView. Returns the DSL instance.
     */
     func tableFooterView(_ tableFooterView: UIView) -> AlacrityTableViewDSL {
-        self.tableView.tableFooterView = tableFooterView
+        self.view.tableFooterView = tableFooterView
         return self
     }
 
@@ -231,7 +231,7 @@ public extension AlacrityTableViewDSL {
      Calls the register(_ UINib:, forCellReuseIdentifier:)  method of underlying UITableView. Returns the DSL instance.
     */
     func register(_ nib: UINib, forCellReuseIdentifier identifier: String) -> AlacrityTableViewDSL {
-        self.tableView.register(nib, forCellReuseIdentifier: identifier)
+        self.view.register(nib, forCellReuseIdentifier: identifier)
         return self
     }
 
@@ -239,7 +239,7 @@ public extension AlacrityTableViewDSL {
      Calls the register(_ cellClass:, forCellReuseIdentifier:)  method of underlying UITableView. Returns the DSL instance.
     */
     func register(_ cellClass: AnyClass, forCellReuseIdentifier identifier: String) -> AlacrityTableViewDSL {
-        self.tableView.register(cellClass, forCellReuseIdentifier: identifier)
+        self.view.register(cellClass, forCellReuseIdentifier: identifier)
         return self
     }
 
@@ -247,7 +247,7 @@ public extension AlacrityTableViewDSL {
      Calls the register(_ UINib:, forHeaderFooterViewReuseIdentifier:)  method of underlying UITableView. Returns the DSL instance.
     */
     func register(_ nib: UINib, forHeaderFooterViewReuseIdentifier identifier: String) -> AlacrityTableViewDSL {
-        self.tableView.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
+        self.view.register(nib, forHeaderFooterViewReuseIdentifier: identifier)
         return self
     }
 
@@ -255,7 +255,7 @@ public extension AlacrityTableViewDSL {
      Calls the register(_ cellClass:, forHeaderFooterViewReuseIdentifier:)  method of underlying UITableView. Returns the DSL instance.
     */
     func register(_ cellClass: AnyClass, forHeaderFooterViewReuseIdentifier identifier: String) -> AlacrityTableViewDSL {
-        self.tableView.register(cellClass, forHeaderFooterViewReuseIdentifier: identifier)
+        self.view.register(cellClass, forHeaderFooterViewReuseIdentifier: identifier)
         return self
     }
 
@@ -263,7 +263,7 @@ public extension AlacrityTableViewDSL {
      Sets the remembersLastFocusedIndexPath property of underlying UITableView. Returns the DSL instance.
     */
     func remembersLastFocusedIndexPath(_ remembersLastFocusedIndexPath: Bool) -> AlacrityTableViewDSL {
-        self.tableView.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
+        self.view.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
         return self
     }
 

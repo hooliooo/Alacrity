@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityLabelDSL {
+public struct AlacrityLabelDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(label: UILabel) {
-        self.label = label
+        self.view = label
     }
 
     // MARK: Stored Properties
-    public let label: UILabel
+    public let view: UILabel
     
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func adjustsFontForContentSizeCategory(_ bool: Bool) -> AlacrityLabelDSL {
-        self.label.adjustsFontForContentSizeCategory = bool
+        self.view.adjustsFontForContentSizeCategory = bool
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func adjustsFontSizeToFitWidth(_ bool: Bool) -> AlacrityLabelDSL {
-        self.label.adjustsFontSizeToFitWidth = bool
+        self.view.adjustsFontSizeToFitWidth = bool
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func allowsDefaultTighteningForTruncation(_ bool: Bool) -> AlacrityLabelDSL {
-        self.label.allowsDefaultTighteningForTruncation = bool
+        self.view.allowsDefaultTighteningForTruncation = bool
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func baselineAdjustment(_ baselineAdjustment: UIBaselineAdjustment) -> AlacrityLabelDSL {
-        self.label.baselineAdjustment = baselineAdjustment
+        self.view.baselineAdjustment = baselineAdjustment
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func font(_ font: UIFont) -> AlacrityLabelDSL {
-        self.label.font = font
+        self.view.font = font
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func highlightedTextColor(_ color: UIColor) -> AlacrityLabelDSL {
-        self.label.highlightedTextColor = color
+        self.view.highlightedTextColor = color
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func isEnabled(_ bool: Bool) -> AlacrityLabelDSL {
-        self.label.isEnabled = bool
+        self.view.isEnabled = bool
         return self
     }
 
@@ -88,7 +88,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func isHighlighted(_ bool: Bool) -> AlacrityLabelDSL {
-        self.label.isHighlighted = bool
+        self.view.isHighlighted = bool
         return self
     }
 
@@ -97,7 +97,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func lineBreakMode(_ lineBreakMode: NSLineBreakMode) -> AlacrityLabelDSL {
-        self.label.lineBreakMode = lineBreakMode
+        self.view.lineBreakMode = lineBreakMode
         return self
     }
 
@@ -106,7 +106,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func minimumScaleFactor(_ minimumScaleFactor: CGFloat) -> AlacrityLabelDSL {
-        self.label.minimumScaleFactor = minimumScaleFactor
+        self.view.minimumScaleFactor = minimumScaleFactor
         return self
     }
 
@@ -115,7 +115,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func numberOfLines(_ numberOfLines: Int) -> AlacrityLabelDSL {
-        self.label.numberOfLines = numberOfLines
+        self.view.numberOfLines = numberOfLines
         return self
     }
 
@@ -124,7 +124,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func preferredMaxLayoutWidth(_ preferredMaxLayoutWidth: CGFloat) -> AlacrityLabelDSL {
-        self.label.preferredMaxLayoutWidth = preferredMaxLayoutWidth
+        self.view.preferredMaxLayoutWidth = preferredMaxLayoutWidth
         return self
     }
 
@@ -133,7 +133,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func shadowColor(_ shadowColor: UIColor) -> AlacrityLabelDSL {
-        self.label.shadowColor = shadowColor
+        self.view.shadowColor = shadowColor
         return self
     }
 
@@ -142,7 +142,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func shadowOffset(_ shadowOffset: CGSize) -> AlacrityLabelDSL {
-        self.label.shadowOffset = shadowOffset
+        self.view.shadowOffset = shadowOffset
         return self
     }
 
@@ -151,7 +151,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func text(_ text: String) -> AlacrityLabelDSL {
-        self.label.text = text
+        self.view.text = text
         return self
     }
 
@@ -160,7 +160,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func textAlignment(_ textAlignment: NSTextAlignment) -> AlacrityLabelDSL {
-        self.label.textAlignment = textAlignment
+        self.view.textAlignment = textAlignment
         return self
     }
 
@@ -169,7 +169,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func textColor(_ textColor: UIColor) -> AlacrityLabelDSL {
-        self.label.textColor = textColor
+        self.view.textColor = textColor
         return self
     }
     

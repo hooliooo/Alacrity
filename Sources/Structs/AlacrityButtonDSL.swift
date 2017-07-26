@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityButtonDSL {
+public struct AlacrityButtonDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(button: UIButton) {
-        self.button = button
+        self.view = button
     }
 
     // MARK: Stored Properties
-    public let button: UIButton
+    public let view: UIButton
 
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func adjustsImageWhenDisabled(_ bool: Bool) -> AlacrityButtonDSL {
-        self.button.adjustsImageWhenDisabled = bool
+        self.view.adjustsImageWhenDisabled = bool
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func adjustsImageWhenHighlighted(_ bool: Bool) -> AlacrityButtonDSL {
-        self.button.adjustsImageWhenHighlighted = bool
+        self.view.adjustsImageWhenHighlighted = bool
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func contentEdgeInsets(_ insets: UIEdgeInsets) -> AlacrityButtonDSL {
-        self.button.contentEdgeInsets = insets
+        self.view.contentEdgeInsets = insets
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func imageEdgeInsets(_ insets: UIEdgeInsets) -> AlacrityButtonDSL {
-        self.button.imageEdgeInsets = insets
+        self.view.imageEdgeInsets = insets
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func reversesTitleShadowWhenHighlighted(_ bool: Bool) -> AlacrityButtonDSL {
-        self.button.reversesTitleShadowWhenHighlighted = bool
+        self.view.reversesTitleShadowWhenHighlighted = bool
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func setAttributedTitle(_ title: NSAttributedString, for state: UIControlState) -> AlacrityButtonDSL {
-        self.button.setAttributedTitle(title, for: state)
+        self.view.setAttributedTitle(title, for: state)
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func setBackgroundImage(_ image: UIImage?, for state: UIControlState) -> AlacrityButtonDSL {
-        self.button.setBackgroundImage(image, for: state)
+        self.view.setBackgroundImage(image, for: state)
         return self
     }
 
@@ -88,7 +88,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func setImage(_ image: UIImage?, for state: UIControlState) -> AlacrityButtonDSL {
-        self.button.setImage(image, for: state)
+        self.view.setImage(image, for: state)
         return self
     }
 
@@ -97,7 +97,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func setTitle(_ title: String, for state: UIControlState) -> AlacrityButtonDSL {
-        self.button.setTitle(title, for: state)
+        self.view.setTitle(title, for: state)
         return self
     }
 
@@ -106,7 +106,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func setTitleColor(_ color: UIColor, for state: UIControlState) -> AlacrityButtonDSL {
-        self.button.setTitleColor(color, for: state)
+        self.view.setTitleColor(color, for: state)
         return self
     }
 
@@ -115,7 +115,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func setTitleShadowColor(_ color: UIColor, for state: UIControlState) -> AlacrityButtonDSL {
-        self.button.setTitleShadowColor(color, for: state)
+        self.view.setTitleShadowColor(color, for: state)
         return self
     }
 
@@ -124,7 +124,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func showsTouchWhenHighlighted(_ bool: Bool) -> AlacrityButtonDSL {
-        self.button.showsTouchWhenHighlighted = bool
+        self.view.showsTouchWhenHighlighted = bool
         return self
     }
 
@@ -133,7 +133,7 @@ public extension AlacrityButtonDSL {
     */
     @discardableResult
     func titleEdgeInsets(_ insets: UIEdgeInsets) -> AlacrityButtonDSL {
-        self.button.titleEdgeInsets = insets
+        self.view.titleEdgeInsets = insets
         return self
     }
 

@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityImageViewDSL {
+public struct AlacrityImageViewDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(imageView: UIImageView) {
-        self.imageView = imageView
+        self.view = imageView
     }
 
     // MARK: Stored Properties
-    public let imageView: UIImageView
+    public let view: UIImageView
     
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityImageViewDSL {
     */
     @discardableResult
     func image(_ image: UIImage) -> AlacrityImageViewDSL {
-        self.imageView.image = image
+        self.view.image = image
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityImageViewDSL {
     */
     @discardableResult
     func highlightedImage(_ highlightedImage: UIImage) -> AlacrityImageViewDSL {
-        self.imageView.highlightedImage = highlightedImage
+        self.view.highlightedImage = highlightedImage
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityImageViewDSL {
     */
     @discardableResult
     func isHighlighted(_ isHighlighted: Bool) -> AlacrityImageViewDSL {
-        self.imageView.isHighlighted = isHighlighted
+        self.view.isHighlighted = isHighlighted
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacrityImageViewDSL {
     */
     @discardableResult
     func animationImages(_ animationImages: [UIImage]) -> AlacrityImageViewDSL {
-        self.imageView.animationImages = animationImages
+        self.view.animationImages = animationImages
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacrityImageViewDSL {
     */
     @discardableResult
     func highlightedAnimationImages(_ highlightedAnimationImages: [UIImage]) -> AlacrityImageViewDSL {
-        self.imageView.highlightedAnimationImages = highlightedAnimationImages
+        self.view.highlightedAnimationImages = highlightedAnimationImages
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacrityImageViewDSL {
     */
     @discardableResult
     func animationDuration(_ animationDuration: TimeInterval) -> AlacrityImageViewDSL {
-        self.imageView.animationDuration = animationDuration
+        self.view.animationDuration = animationDuration
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacrityImageViewDSL {
     */
     @discardableResult
     func animationRepeatCount(_ animationRepeatCount: Int) -> AlacrityImageViewDSL {
-        self.imageView.animationRepeatCount = animationRepeatCount
+        self.view.animationRepeatCount = animationRepeatCount
         return self
     }
 

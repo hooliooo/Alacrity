@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityPickerViewDSL {
+public struct AlacrityPickerViewDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(picker: UIPickerView) {
-        self.picker = picker
+        self.view = picker
     }
 
     // MARK: Stored Properties
-    public let picker: UIPickerView
+    public let view: UIPickerView
     
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityPickerViewDSL {
     */
     @discardableResult
     func dataSource(_ dataSource: UIPickerViewDataSource) -> AlacrityPickerViewDSL {
-        self.picker.dataSource = dataSource
+        self.view.dataSource = dataSource
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityPickerViewDSL {
     */
     @discardableResult
     func delegate(_ delegate: UIPickerViewDelegate) -> AlacrityPickerViewDSL {
-        self.picker.delegate = delegate
+        self.view.delegate = delegate
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityPickerViewDSL {
     */
     @discardableResult
     func showsSelectionIndicator(_ showsSelectionIndicator: Bool) -> AlacrityPickerViewDSL {
-        self.picker.showsSelectionIndicator = showsSelectionIndicator
+        self.view.showsSelectionIndicator = showsSelectionIndicator
         return self
     }
 

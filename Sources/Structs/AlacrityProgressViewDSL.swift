@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityProgressViewDSL {
+public struct AlacrityProgressViewDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(progressView: UIProgressView) {
-        self.progressView = progressView
+        self.view = progressView
     }
 
     // MARK: Stored Properties
-    public let progressView: UIProgressView
+    public let view: UIProgressView
     
 }
 
@@ -24,7 +24,7 @@ public extension AlacrityProgressViewDSL {
      Sets the progressViewStyle property of underlying UIProgressView. Returns the DSL instance.
     */
     func progressViewStyle(_ progressViewStyle: UIProgressViewStyle) -> AlacrityProgressViewDSL {
-        self.progressView.progressViewStyle = progressViewStyle
+        self.view.progressViewStyle = progressViewStyle
         return self
     }
 
@@ -32,7 +32,7 @@ public extension AlacrityProgressViewDSL {
      Sets the progress property of underlying UIProgressView. Returns the DSL instance.
     */
     func progress(_ progress: Float) -> AlacrityProgressViewDSL {
-        self.progressView.progress = progress
+        self.view.progress = progress
         return self
     }
 
@@ -40,7 +40,7 @@ public extension AlacrityProgressViewDSL {
      Sets the progressTintColor property of underlying UIProgressView. Returns the DSL instance.
     */
     func progressTintColor(_ progressTintColor: UIColor) -> AlacrityProgressViewDSL {
-        self.progressView.progressTintColor = progressTintColor
+        self.view.progressTintColor = progressTintColor
         return self
     }
 
@@ -48,7 +48,7 @@ public extension AlacrityProgressViewDSL {
      Sets the trackTintColor property of underlying UIProgressView. Returns the DSL instance.
     */
     func trackTintColor(_ trackTintColor: UIColor) -> AlacrityProgressViewDSL {
-        self.progressView.trackTintColor = trackTintColor
+        self.view.trackTintColor = trackTintColor
         return self
     }
 
@@ -56,7 +56,7 @@ public extension AlacrityProgressViewDSL {
      Sets the progressImage property of underlying UIProgressView. Returns the DSL instance.
     */
     func progressImage(_ progressImage: UIImage) -> AlacrityProgressViewDSL {
-        self.progressView.progressImage = progressImage
+        self.view.progressImage = progressImage
         return self
     }
 
@@ -64,7 +64,7 @@ public extension AlacrityProgressViewDSL {
      Sets the trackImage property of underlying UIProgressView. Returns the DSL instance.
     */
     func trackImage(_ trackImage: UIImage) -> AlacrityProgressViewDSL {
-        self.progressView.trackImage = trackImage
+        self.view.trackImage = trackImage
         return self
     }
 
@@ -72,7 +72,7 @@ public extension AlacrityProgressViewDSL {
      Calls the setProgress method of underlying UIProgressView. Returns the DSL instance.
     */
     func setProgress(_ progress: Float, animated: Bool) -> AlacrityProgressViewDSL {
-        self.progressView.setProgress(progress, animated: animated)
+        self.view.setProgress(progress, animated: animated)
         return self
     }
 
@@ -80,7 +80,7 @@ public extension AlacrityProgressViewDSL {
      Sets the observedProgress property of underlying UIProgressView. Returns the DSL instance.
     */
     func observedProgress(_ observedProgress: Progress) -> AlacrityProgressViewDSL {
-        self.progressView.observedProgress = observedProgress
+        self.view.observedProgress = observedProgress
         return self
     }
 

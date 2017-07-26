@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacritySegmentedControlDSL {
+public struct AlacritySegmentedControlDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(segmentedControl: UISegmentedControl) {
-        self.segmentedControl = segmentedControl
+        self.view = segmentedControl
     }
 
     // MARK: Stored Properties
-    public let segmentedControl: UISegmentedControl
+    public let view: UISegmentedControl
     
 }
 
@@ -25,7 +25,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func isMomentary(_ isMomentary: Bool) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.isMomentary = isMomentary
+        self.view.isMomentary = isMomentary
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func apportionsSegmentWidthsByContent(_ apportionsSegmentWidthsByContent: Bool) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.apportionsSegmentWidthsByContent = apportionsSegmentWidthsByContent
+        self.view.apportionsSegmentWidthsByContent = apportionsSegmentWidthsByContent
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setTitle(_ title: String?, forSegmentAt segment: Int) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setTitle(title, forSegmentAt: segment)
+        self.view.setTitle(title, forSegmentAt: segment)
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setImage(_ image: UIImage?, forSegmentAt segment: Int) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setImage(image, forSegmentAt: segment)
+        self.view.setImage(image, forSegmentAt: segment)
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setWidth(_ width: CGFloat, forSegmentAt segment: Int) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setWidth(width, forSegmentAt: segment)
+        self.view.setWidth(width, forSegmentAt: segment)
         return self
     }
 
@@ -70,7 +70,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setContentOffset(_ offset: CGSize, forSegmentAt segment: Int) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setContentOffset(offset, forSegmentAt: segment)
+        self.view.setContentOffset(offset, forSegmentAt: segment)
         return self
     }
 
@@ -79,7 +79,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setEnabled(_ enabled: Bool, forSegmentAt segment: Int) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setEnabled(enabled, forSegmentAt: segment)
+        self.view.setEnabled(enabled, forSegmentAt: segment)
         return self
     }
 
@@ -88,7 +88,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func selectedSegmentIndex(_ selectedSegmentIndex: Int) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.selectedSegmentIndex = selectedSegmentIndex
+        self.view.selectedSegmentIndex = selectedSegmentIndex
         return self
     }
 
@@ -97,7 +97,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setBackgroundImage(_ backgroundImage: UIImage?, for state: UIControlState, barMetrics: UIBarMetrics) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setBackgroundImage(backgroundImage, for: state, barMetrics: barMetrics)
+        self.view.setBackgroundImage(backgroundImage, for: state, barMetrics: barMetrics)
         return self
 
     }
@@ -107,7 +107,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setTitleTextAttributes(_ attributes: [AnyHashable : Any]?, for state: UIControlState) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setTitleTextAttributes(attributes, for: state)
+        self.view.setTitleTextAttributes(attributes, for: state)
         return self
     }
 
@@ -116,7 +116,7 @@ public extension AlacritySegmentedControlDSL {
     */
     @discardableResult
     func setContentPositionAdjustment(_ adjustment: UIOffset, forSegmentType leftCenterRightOrAlone: UISegmentedControlSegment, barMetrics: UIBarMetrics) -> AlacritySegmentedControlDSL {
-        self.segmentedControl.setContentPositionAdjustment(adjustment, forSegmentType: leftCenterRightOrAlone, barMetrics: barMetrics)
+        self.view.setContentPositionAdjustment(adjustment, forSegmentType: leftCenterRightOrAlone, barMetrics: barMetrics)
         return self
     }
 

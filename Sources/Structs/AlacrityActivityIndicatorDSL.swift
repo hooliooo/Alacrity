@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacrityActivityIndicatorDSL {
+public struct AlacrityActivityIndicatorDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(indicator: UIActivityIndicatorView) {
-        self.indicator = indicator
+        self.view = indicator
     }
 
     // MARK: Stored Properties
-    public let indicator: UIActivityIndicatorView
+    public let view: UIActivityIndicatorView
     
 }
 
@@ -25,7 +25,7 @@ public extension AlacrityActivityIndicatorDSL {
     */
     @discardableResult
     func activityIndicatorViewStyle(_ activityIndicatorViewStyle: UIActivityIndicatorViewStyle) -> AlacrityActivityIndicatorDSL {
-        self.indicator.activityIndicatorViewStyle = activityIndicatorViewStyle
+        self.view.activityIndicatorViewStyle = activityIndicatorViewStyle
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacrityActivityIndicatorDSL {
     */
     @discardableResult
     func hidesWhenStopped(_ hidesWhenStopped: Bool) -> AlacrityActivityIndicatorDSL {
-        self.indicator.hidesWhenStopped = hidesWhenStopped
+        self.view.hidesWhenStopped = hidesWhenStopped
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacrityActivityIndicatorDSL {
     */
     @discardableResult
     func color(_ color: UIColor) -> AlacrityActivityIndicatorDSL {
-        self.indicator.color = color
+        self.view.color = color
         return self
     }
 

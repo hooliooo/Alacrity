@@ -6,15 +6,15 @@
 
 import UIKit
 
-public struct AlacritySwitchDSL {
+public struct AlacritySwitchDSL: ViewDSL {
 
     // MARK: Initializer
     internal init(control: UISwitch) {
-        self.control = control
+        self.view = control
     }
 
     // MARK: Stored Properties
-    public let control: UISwitch
+    public let view: UISwitch
     
 }
 
@@ -25,7 +25,7 @@ public extension AlacritySwitchDSL {
     */
     @discardableResult
     func onTintColor(_ onTintColor: UIColor) -> AlacritySwitchDSL {
-        self.control.onTintColor = onTintColor
+        self.view.onTintColor = onTintColor
         return self
     }
 
@@ -34,7 +34,7 @@ public extension AlacritySwitchDSL {
     */
     @discardableResult
     func thumbTintColor(_ thumbTintColor: UIColor) -> AlacritySwitchDSL {
-        self.control.thumbTintColor = thumbTintColor
+        self.view.thumbTintColor = thumbTintColor
         return self
     }
 
@@ -43,7 +43,7 @@ public extension AlacritySwitchDSL {
     */
     @discardableResult
     func onImage(_ onImage: UIImage) -> AlacritySwitchDSL {
-        self.control.onImage = onImage
+        self.view.onImage = onImage
         return self
     }
 
@@ -52,7 +52,7 @@ public extension AlacritySwitchDSL {
     */
     @discardableResult
     func offImage(_ offImage: UIImage) -> AlacritySwitchDSL {
-        self.control.offImage = offImage
+        self.view.offImage = offImage
         return self
     }
 
@@ -61,7 +61,7 @@ public extension AlacritySwitchDSL {
     */
     @discardableResult
     func isOn(_ isOn: Bool) -> AlacritySwitchDSL {
-        self.control.isOn = isOn
+        self.view.isOn = isOn
         return self
     }
 
