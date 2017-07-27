@@ -8,9 +8,28 @@
 
 import UIKit
 
-public protocol ViewDSL {
+internal protocol AlacrityDSL {
+    /**
+     The concrete UIView class or subclass the DSL will manage
+    */
     associatedtype View: UIView
 
+    /**
+     Initializer for the DSL
+    */
+    init(view: View)
+
+}
+
+public protocol ViewDSL {
+    /**
+     The UIView class or subclass the DSL will manage
+    */
+    associatedtype View: UIView
+
+    /**
+     The underlying UIView instance
+    */
     var view: View { get }
 
     /**

@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityPickerViewDSL: ViewDSL {
+public struct AlacrityPickerViewDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(picker: UIPickerView) {
-        self.view = picker
+    internal init(view: UIPickerView) {
+        self.view = view
     }
 
     // MARK: Stored Properties

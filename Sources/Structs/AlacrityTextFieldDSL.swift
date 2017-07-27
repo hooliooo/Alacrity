@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityTextFieldDSL: ViewDSL {
+public struct AlacrityTextFieldDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(textField: UITextField) {
-        self.view = textField
+    internal init(view: UITextField) {
+        self.view = view
     }
 
     // MARK: Stored Properties

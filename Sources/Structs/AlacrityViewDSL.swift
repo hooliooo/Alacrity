@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacrityViewDSL {
+public struct AlacrityViewDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
     internal init(view: UIView) {
@@ -18,6 +18,3 @@ public struct AlacrityViewDSL {
 
 }
 
-extension AlacrityViewDSL: ViewDSL {
-
-}

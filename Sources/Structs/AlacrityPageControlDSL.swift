@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityPageControlDSL: ViewDSL {
+public struct AlacrityPageControlDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(pageControl: UIPageControl) {
-        self.view = pageControl
+    internal init(view: UIPageControl) {
+        self.view = view
     }
 
     // MARK: Stored Properties

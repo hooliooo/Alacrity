@@ -11,6 +11,6 @@ public extension UIDatePicker {
      AlacrityDatePickerDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityDatePickerDSL {
-        return AlacrityDatePickerDSL(datePicker: self)
+        return AlacrityDatePickerDSL(view: self)
     }
 }

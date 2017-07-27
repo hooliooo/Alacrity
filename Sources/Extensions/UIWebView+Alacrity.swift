@@ -11,6 +11,6 @@ public extension UIWebView {
      AlacrityWebViewDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityWebViewDSL {
-        return AlacrityWebViewDSL(webView: self)
+        return AlacrityWebViewDSL(view: self)
     }
 }

@@ -11,6 +11,6 @@ public extension UIProgressView {
      AlacrityProgressViewDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityProgressViewDSL {
-        return AlacrityProgressViewDSL(progressView: self)
+        return AlacrityProgressViewDSL(view: self)
     }
 }

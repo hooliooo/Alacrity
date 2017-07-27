@@ -11,6 +11,6 @@ public extension UIButton {
      AlacrityButtonDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityButtonDSL {
-        return AlacrityButtonDSL(button: self)
+        return AlacrityButtonDSL(view: self)
     }
 }

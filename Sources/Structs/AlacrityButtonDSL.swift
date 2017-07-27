@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityButtonDSL: ViewDSL {
+public struct AlacrityButtonDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(button: UIButton) {
-        self.view = button
+    internal init(view: UIButton) {
+        self.view = view
     }
 
     // MARK: Stored Properties

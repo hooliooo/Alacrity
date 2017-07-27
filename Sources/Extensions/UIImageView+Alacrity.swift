@@ -11,6 +11,6 @@ public extension UIImageView {
      AlacrityImageViewDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityImageViewDSL {
-        return AlacrityImageViewDSL(imageView: self)
+        return AlacrityImageViewDSL(view: self)
     }
 }

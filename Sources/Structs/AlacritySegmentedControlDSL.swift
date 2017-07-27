@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacritySegmentedControlDSL: ViewDSL {
+public struct AlacritySegmentedControlDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(segmentedControl: UISegmentedControl) {
-        self.view = segmentedControl
+    internal init(view: UISegmentedControl) {
+        self.view = view
     }
 
     // MARK: Stored Properties

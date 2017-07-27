@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityImageViewDSL: ViewDSL {
+public struct AlacrityImageViewDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(imageView: UIImageView) {
-        self.view = imageView
+    internal init(view: UIImageView) {
+        self.view = view
     }
 
     // MARK: Stored Properties

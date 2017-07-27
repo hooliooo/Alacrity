@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityTableViewDSL: ViewDSL {
+public struct AlacrityTableViewDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(tableView: UITableView) {
-        self.view = tableView
+    internal init(view: UITableView) {
+        self.view = view
     }
 
     // MARK: Stored Properties

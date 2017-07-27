@@ -11,6 +11,6 @@ public extension UITableView {
      AlacrityTableViewDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityTableViewDSL {
-        return AlacrityTableViewDSL(tableView: self)
+        return AlacrityTableViewDSL(view: self)
     }
 }

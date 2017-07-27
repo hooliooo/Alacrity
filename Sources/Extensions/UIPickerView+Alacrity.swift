@@ -11,6 +11,6 @@ public extension UIPickerView {
      AlacrityPickerViewDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityPickerViewDSL {
-        return AlacrityPickerViewDSL(picker: self)
+        return AlacrityPickerViewDSL(view: self)
     }
 }

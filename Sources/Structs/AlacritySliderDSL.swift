@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacritySliderDSL: ViewDSL {
+public struct AlacritySliderDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(slider: UISlider) {
-        self.view = slider
+    internal init(view: UISlider) {
+        self.view = view
     }
 
     // MARK: Stored Properties

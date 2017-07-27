@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityDatePickerDSL: ViewDSL {
+public struct AlacrityDatePickerDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(datePicker: UIDatePicker) {
-        self.view = datePicker
+    internal init(view: UIDatePicker) {
+        self.view = view
     }
 
     // MARK: Stored Properties

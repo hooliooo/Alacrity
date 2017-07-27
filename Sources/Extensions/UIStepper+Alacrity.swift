@@ -11,6 +11,6 @@ public extension UIStepper {
      AlacrityStepperDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityStepperDSL {
-        return AlacrityStepperDSL(stepper: self)
+        return AlacrityStepperDSL(view: self)
     }
 }

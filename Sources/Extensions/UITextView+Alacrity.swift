@@ -11,6 +11,6 @@ public extension UITextView {
      AlacrityTextViewDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacrityTextViewDSL {
-        return AlacrityTextViewDSL(textView: self)
+        return AlacrityTextViewDSL(view: self)
     }
 }

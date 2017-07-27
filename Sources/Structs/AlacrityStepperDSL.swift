@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityStepperDSL: ViewDSL {
+public struct AlacrityStepperDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(stepper: UIStepper) {
-        self.view = stepper
+    internal init(view: UIStepper) {
+        self.view = view
     }
 
     // MARK: Stored Properties

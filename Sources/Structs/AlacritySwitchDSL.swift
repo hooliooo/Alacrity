@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacritySwitchDSL: ViewDSL {
+public struct AlacritySwitchDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(control: UISwitch) {
-        self.view = control
+    internal init(view: UISwitch) {
+        self.view = view
     }
 
     // MARK: Stored Properties

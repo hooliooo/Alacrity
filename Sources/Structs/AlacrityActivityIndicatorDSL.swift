@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityActivityIndicatorDSL: ViewDSL {
+public struct AlacrityActivityIndicatorDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(indicator: UIActivityIndicatorView) {
-        self.view = indicator
+    internal init(view: UIActivityIndicatorView) {
+        self.view = view
     }
 
     // MARK: Stored Properties

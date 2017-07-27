@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityProgressViewDSL: ViewDSL {
+public struct AlacrityProgressViewDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(progressView: UIProgressView) {
-        self.view = progressView
+    internal init(view: UIProgressView) {
+        self.view = view
     }
 
     // MARK: Stored Properties

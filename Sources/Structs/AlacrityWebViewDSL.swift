@@ -6,11 +6,11 @@
 
 import UIKit
 
-public struct AlacrityWebViewDSL: ViewDSL {
+public struct AlacrityWebViewDSL: AlacrityDSL, ViewDSL {
 
     // MARK: Initializer
-    internal init(webView: UIWebView) {
-        self.view = webView
+    internal init(view: UIWebView) {
+        self.view = view
     }
 
     // MARK: Stored Properties

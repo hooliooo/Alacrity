@@ -11,6 +11,6 @@ public extension UISegmentedControl {
      AlacritySegmentedControlDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacritySegmentedControlDSL {
-        return AlacritySegmentedControlDSL(segmentedControl: self)
+        return AlacritySegmentedControlDSL(view: self)
     }
 }

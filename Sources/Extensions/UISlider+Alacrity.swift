@@ -11,6 +11,6 @@ public extension UISlider {
      AlacritySliderDSL instance to access the Alacrity fluent interface
     */
     var acy: AlacritySliderDSL {
-        return AlacritySliderDSL(slider: self)
+        return AlacritySliderDSL(view: self)
     }
 }
