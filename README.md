@@ -51,7 +51,7 @@ class YourCustomView: UIView {
 }
 ```
 
-With Alacrity we can write something more succint, without the boilerplate of typical programmatic UI code by taking advantage of its fluent interface
+With Alacrity we can write something more succinct, without the boilerplate of typical programmatic UI code by taking advantage of its fluent interface
 
 ```swift
 class YourCustomView: UIView {
