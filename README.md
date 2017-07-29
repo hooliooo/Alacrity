@@ -8,7 +8,45 @@ Alacrity is a library that brings a fluent interface for UIView and its subclass
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+When writing UI code programmatically we would typically write code such as this:
+
+```swift
+class YourCustomView: UIView {
+    let aView: UIView = UIView()
+
+    func setUpUI() {
+        // Customize aView
+        aView.backgroundColor = UIColor.red
+        aView.layer.cornerRadius = 5.0
+        aView.clipToBounds = true
+    }
+}
+```
+
+or
+
+```swift
+class YourCustomView: UIView {
+    let aView: UIView = {
+        let view: UIView = UIView()
+        view.backgroundColor = UIColor.red
+        view.layer.cornerRadius = 5.0
+        view.clipToBounds = true
+       return view
+    }()
+}
+```
+
+With Alacrity we can write something more succint, without the boilerplate of typical programmatic UI code by taking advantage of its fluent interface
+
+```swift
+class YourCustomView: UIView {
+    let aView: UIView = UIView().avd
+        .backgroundColor(UIColor.red)
+        .cornerRadius(5.0)
+        .view
+}
+```
 
 ## Requirements
 
