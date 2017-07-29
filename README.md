@@ -13,12 +13,18 @@ When writing UI code programmatically we would typically write code such as this
 ```swift
 class YourCustomView: UIView {
     let aView: UIView = UIView()
+    let aLabel: UILabel = UILabel()
 
     func setUpUI() {
         // Customize aView
         aView.backgroundColor = UIColor.red
         aView.layer.cornerRadius = 5.0
         aView.clipToBounds = true
+        
+        // Customize aLabel
+        aLabel.text = "Your text"
+        aLabel.font = UIFont.boldSystemFont(ofSize: 19.0)
+        aLabel.textAlignment = .center
     }
 }
 ```
@@ -32,7 +38,15 @@ class YourCustomView: UIView {
         view.backgroundColor = UIColor.red
         view.layer.cornerRadius = 5.0
         view.clipToBounds = true
-       return view
+        return view
+    }()
+
+    let aLabel: UILabel = {
+        let label: UILabel = UILabel()
+        label.text = "Your text"
+        label.font = UIFont.boldSystemFont(ofSize: 19.0)
+        label.textAlignment = .center
+        return label
     }()
 }
 ```
@@ -45,19 +59,28 @@ class YourCustomView: UIView {
         .backgroundColor(UIColor.red)
         .cornerRadius(5.0)
         .view
+    
+    let aLabel: UILabel = UILabel().acy
+        .text("Your text")
+        .font(UIFont.boldSystemFont(ofSize: 19.0))
+        .textAlignment(.center)
+        .view
+    
 }
 ```
 
 ## Requirements
+Alacrity requires iOS 10.0 or higher and Swift 3.x
 
 ## Installation
 
-Alacrity is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+1. Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html):
 
 ```ruby
-pod "Alacrity"
+pod 'Alacrity'
 ```
+2. Integrate your dependencies using frameworks: add `use_frameworks!` to your Podfile. 
+3. Run `pod install`.
 
 ## Author
 
