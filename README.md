@@ -25,6 +25,7 @@ class YourCustomView: UIView {
         aLabel.text = "Your text"
         aLabel.font = UIFont.boldSystemFont(ofSize: 19.0)
         aLabel.textAlignment = .center
+        aLabel.backgroundColor = .orange
     }
 }
 ```
@@ -46,6 +47,7 @@ class YourCustomView: UIView {
         label.text = "Your text"
         label.font = UIFont.boldSystemFont(ofSize: 19.0)
         label.textAlignment = .center
+        label.backgroundColor = .orange
         return label
     }()
 }
@@ -64,6 +66,7 @@ class YourCustomView: UIView {
         .text("Your text")
         .font(UIFont.boldSystemFont(ofSize: 19.0))
         .textAlignment(.center)
+        .backgroundColor(.orange)
         .view
     
 }
