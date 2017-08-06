@@ -19,6 +19,7 @@ public struct AlacrityTableViewDSL: AlacrityDSL, ViewDSL {
 }
 
 public extension AlacrityTableViewDSL {
+    
     /**
      Sets the dataSource property of underlying UITableView. Returns the DSL instance.
     */

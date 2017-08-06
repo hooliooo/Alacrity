@@ -19,6 +19,7 @@ public struct AlacrityScrollViewDSL: AlacrityDSL, ViewDSL {
 }
 
 public extension AlacrityScrollViewDSL {
+    
 	/**
      Sets the contentOffset property of underlying UIScrollView. Returns the DSL instance.
 	*/

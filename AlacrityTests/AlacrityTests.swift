@@ -29,6 +29,7 @@ class AlacrityTests: XCTestCase {
 
         let label: UILabel = UILabel().acy.tintColor(UIColor.blue).view
 
+
         XCTAssert(label.tintColor == UIColor.blue)
         XCTAssert(view.backgroundColor == UIColor.green)
         XCTAssert(view.alpha == 0.5)

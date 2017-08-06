@@ -34,160 +34,160 @@ public protocol ViewDSL {
 
     /**
      Sets the alpha property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func alpha(_ value: CGFloat) -> Self
 
     /**
      Sets the autoresizesSubviews property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func autoresizesSubviews(_ bool: Bool) -> Self
 
     /**
      Sets the autoresizingMask property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func autoresizingMask(_ autoresizingMask: UIViewAutoresizing) -> Self
 
     /**
      Sets the backgroundColor property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func backgroundColor(_ backgroundColor: UIColor) -> Self
 
     /**
      Sets the bounds property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func bounds(_ bounds: CGRect) -> Self
 
     /**
      Sets the center property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func center(_ center: CGPoint) -> Self
 
     /**
      Sets the clearsContextBeforeDrawing property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func clearsContextBeforeDrawing(_ bool: Bool) -> Self
 
     /**
      Sets the clipsToBounds property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func clipsToBounds(_ bool: Bool) -> Self
 
     /**
      Sets the contentMode property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func contentMode(_ contentMode: UIViewContentMode) -> Self
 
     /**
      Sets the contentScaleFactor property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func contentScaleFactor(_ contentScaleFactor: CGFloat) -> Self
 
     /**
      Sets the cornerRadius property of underlying UIView and sets the clipToBounds property to true. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func cornerRadius(_ cornerRadius: CGFloat) -> Self
 
     /**
      Sets the frame property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func frame(_ frame: CGRect) -> Self
 
     /**
      Sets the isExclusiveTouch property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func isExclusiveTouch(_ bool: Bool) -> Self
 
     /**
      Sets the isHidden property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func isHidden(_ bool: Bool) -> Self
 
     /**
      Sets the isMultipleTouchEnabled property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func isMultipleTouchEnabled(_ bool: Bool) -> Self
 
     /**
      Sets the isOpaque property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func isOpaque(_ bool: Bool) -> Self
 
     /**
      Sets the isUserInteractionEnabled property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func isUserInteractionEnabled(_ bool: Bool) -> Self
 
     /**
      Sets the preservesSuperviewLayoutMargins property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func preservesSuperviewLayoutMargins(_ bool: Bool) -> Self
 
     /**
      Removes the underlying UIView from its superview. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func removeFromSuperview() -> Self
 
     /**
      Sets the tag property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func tag(_ tag: Int) -> Self
 
     /**
      Sets the tintColor property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func tintColor(_ color: UIColor) -> Self
 
     /**
      Sets the translatesAutoresizingMaskIntoConstraints property of underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func translatesAutoresizingMaskIntoConstraints(_ bool: Bool) -> Self
 
     /**
      Adds a subview to underlying UIView. Returns the DSL instance.
-     */
+    */
     @discardableResult
     func addSubview(_ view: UIView) -> Self
 
     /**
      Adds a subview to the underlying UIView and sets that subview's translatesAutoresizingMaskIntoConstraints to false.
      Returns the DSL instance.
-     */
+    */
     @discardableResult
     func subview(forAutoLayout subview: UIView) -> Self
 
     /**
      Adds subviews to the underlying UIView and sets those subviews' translatesAutoresizingMaskIntoConstraints to false.
      Returns the DSL instance.
-     */
+    */
     @discardableResult
     func subviews(forAutoLayout subviews: [UIView]) -> Self
 
     /**
      Adds subviews to the underlying UIView and sets those subviews' translatesAutoresizingMaskIntoConstraints to false.
      Returns the DSL instance. Variadic version.
-     */
+    */
     @discardableResult
     func subviews(forAutoLayout subviews: UIView...) -> Self
 }
