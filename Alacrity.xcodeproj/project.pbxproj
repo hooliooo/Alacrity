@@ -46,6 +46,8 @@
 		14A62BB51F2469C000CA75CB /* UIPageControl+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BB41F2469C000CA75CB /* UIPageControl+Alacrity.swift */; };
 		14A62BB71F246B0900CA75CB /* AlacritySegmentedControlDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BB61F246B0900CA75CB /* AlacritySegmentedControlDSL.swift */; };
 		14A62BB91F246F9A00CA75CB /* UISegmentedControl+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62BB81F246F9A00CA75CB /* UISegmentedControl+Alacrity.swift */; };
+		14A62CE51F3B4FD400BF8A0E /* UICollectionViewCell+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62CE41F3B4FD400BF8A0E /* UICollectionViewCell+Alacrity.swift */; };
+		14A62CE71F3B500400BF8A0E /* AlacrityCollectionViewCellDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A62CE61F3B500400BF8A0E /* AlacrityCollectionViewCellDSL.swift */; };
 		14EDA1B21F28D9DC0060D71E /* ViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EDA1B11F28D9DC0060D71E /* ViewDSL.swift */; };
 		14F96FFE1F27764200942A1A /* UIProgressView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F96FFD1F27764200942A1A /* UIProgressView+Alacrity.swift */; };
 		14F970001F27766700942A1A /* AlacrityProgressViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F96FFF1F27766700942A1A /* AlacrityProgressViewDSL.swift */; };
@@ -109,6 +111,8 @@
 		14A62BB41F2469C000CA75CB /* UIPageControl+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+Alacrity.swift"; sourceTree = "<group>"; };
 		14A62BB61F246B0900CA75CB /* AlacritySegmentedControlDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AlacritySegmentedControlDSL.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		14A62BB81F246F9A00CA75CB /* UISegmentedControl+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Alacrity.swift"; sourceTree = "<group>"; };
+		14A62CE41F3B4FD400BF8A0E /* UICollectionViewCell+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Alacrity.swift"; sourceTree = "<group>"; };
+		14A62CE61F3B500400BF8A0E /* AlacrityCollectionViewCellDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlacrityCollectionViewCellDSL.swift; sourceTree = "<group>"; };
 		14EDA1B11F28D9DC0060D71E /* ViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDSL.swift; sourceTree = "<group>"; };
 		14F96FFD1F27764200942A1A /* UIProgressView+Alacrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Alacrity.swift"; sourceTree = "<group>"; };
 		14F96FFF1F27766700942A1A /* AlacrityProgressViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AlacrityProgressViewDSL.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -174,6 +178,7 @@
 				147B2F591F36FBAA00942952 /* UICollectionView+Alacrity.swift */,
 				147B2F5F1F371AC500942952 /* UIScrollView+Alacrity.swift */,
 				147B2F611F3746D500942952 /* UITableViewCell+Alacrity.swift */,
+				14A62CE41F3B4FD400BF8A0E /* UICollectionViewCell+Alacrity.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				147B2F5B1F36FC1900942952 /* AlacrityCollectionViewDSL.swift */,
 				147B2F5D1F3711CF00942952 /* AlacrityScrollViewDSL.swift */,
 				147B2F631F37470B00942952 /* AlacrityTableViewCellDSL.swift */,
+				14A62CE61F3B500400BF8A0E /* AlacrityCollectionViewCellDSL.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				149751BD1F24CB55002572E0 /* AlacritySliderDSL.swift in Sources */,
 				140DB9021F20F44A00999761 /* AlacrityLabelDSL.swift in Sources */,
 				14A62BB91F246F9A00CA75CB /* UISegmentedControl+Alacrity.swift in Sources */,
+				14A62CE51F3B4FD400BF8A0E /* UICollectionViewCell+Alacrity.swift in Sources */,
 				147B2F5A1F36FBAA00942952 /* UICollectionView+Alacrity.swift in Sources */,
 				149751CF1F24DB9F002572E0 /* UIImageView+Alacrity.swift in Sources */,
 				140DB8FC1F20F43A00999761 /* UITextView+Alacrity.swift in Sources */,
@@ -417,6 +424,7 @@
 				1425EAF61F2358A2004E65BD /* AlacrityTextViewDSL.swift in Sources */,
 				149751C91F24D805002572E0 /* AlacrityActivityIndicatorDSL.swift in Sources */,
 				147B2F621F3746D500942952 /* UITableViewCell+Alacrity.swift in Sources */,
+				14A62CE71F3B500400BF8A0E /* AlacrityCollectionViewCellDSL.swift in Sources */,
 				14F96FFE1F27764200942A1A /* UIProgressView+Alacrity.swift in Sources */,
 				140DB8FA1F20F43A00999761 /* UILabel+Alacrity.swift in Sources */,
 				149751C51F24D262002572E0 /* AlacritySwitchDSL.swift in Sources */,

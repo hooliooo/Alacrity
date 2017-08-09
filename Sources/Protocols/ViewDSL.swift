@@ -1,9 +1,7 @@
 //
-//  ViewDSL.swift
 //  Alacrity
-//
-//  Created by Julio Alorro on 7/26/17.
-//  Copyright © 2017 CocoaPods. All rights reserved.
+//  Copyright (c) 2017 Julio Miguel Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import UIKit
