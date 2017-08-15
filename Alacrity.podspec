@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Alacrity'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = 'Fluent interface approach to modifying UIViews'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/hooliooo/Alacrity.git', :tag => s.version }
 
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'Sources/**/*.swift'
 
