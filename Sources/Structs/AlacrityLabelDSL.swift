@@ -166,16 +166,18 @@ public extension AlacrityLabelDSL {
     
 }
 
-@available(iOS 10.0, *)
 public extension AlacrityLabelDSL {
 
     /**
      Sets the adjustsFontForContentSizeCategory property of underlying UILabel. Returns the DSL instance.
     */
-    @available(iOS 10.0, *)
     @discardableResult
     func adjustsFontForContentSizeCategory(_ bool: Bool) -> AlacrityLabelDSL {
-        self.view.adjustsFontForContentSizeCategory = bool
+        if #available(iOS 10.0, *) {
+            self.view.adjustsFontForContentSizeCategory = bool
+        } else {
+            // Fallback on earlier versions
+        }
         return self
     }
 }
