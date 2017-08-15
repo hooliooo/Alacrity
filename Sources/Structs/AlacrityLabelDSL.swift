@@ -21,16 +21,6 @@ public struct AlacrityLabelDSL: AlacrityDSL, ViewDSL {
 public extension AlacrityLabelDSL {
 
     /**
-     Sets the adjustsFontForContentSizeCategory property of underlying UILabel. Returns the DSL instance.
-    */
-    @available(iOS 10.0, *)
-    @discardableResult
-    func adjustsFontForContentSizeCategory(_ bool: Bool) -> AlacrityLabelDSL {
-        self.view.adjustsFontForContentSizeCategory = bool
-        return self
-    }
-
-    /**
      Sets the adjustsFontSizeToFitWidth property of underlying UILabel. Returns the DSL instance.
     */
     @discardableResult
@@ -174,4 +164,18 @@ public extension AlacrityLabelDSL {
         return self
     }
     
+}
+
+@available(iOS 10.0, *)
+public extension AlacrityLabelDSL {
+
+    /**
+     Sets the adjustsFontForContentSizeCategory property of underlying UILabel. Returns the DSL instance.
+    */
+    @available(iOS 10.0, *)
+    @discardableResult
+    func adjustsFontForContentSizeCategory(_ bool: Bool) -> AlacrityLabelDSL {
+        self.view.adjustsFontForContentSizeCategory = bool
+        return self
+    }
 }

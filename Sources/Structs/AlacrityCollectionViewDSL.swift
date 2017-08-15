@@ -48,26 +48,6 @@ public extension AlacrityCollectionViewDSL {
     }
 
     /**
-     Sets the prefetchDataSource property of underlying UICollectionView. Returns the DSL instance.
-    */
-    @available(iOS 10.0, *)
-    @discardableResult
-    func prefetchDataSource(_ prefetchDataSource: UICollectionViewDataSourcePrefetching) -> AlacrityCollectionViewDSL {
-        self.view.prefetchDataSource = prefetchDataSource
-        return self
-    }
-
-    /**
-     Sets the isPrefetchingEnabled property of underlying UICollectionView. Returns the DSL instance.
-    */
-    @available(iOS 10.0, *)
-    @discardableResult
-    func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool ) -> AlacrityCollectionViewDSL {
-        self.view.isPrefetchingEnabled = isPrefetchingEnabled
-        return self
-    }
-
-    /**
      Sets the backgroundView property of underlying UICollectionView. Returns the DSL instance.
     */
     @discardableResult
@@ -330,6 +310,31 @@ public extension AlacrityCollectionViewDSL {
     @discardableResult
     func remembersLastFocusedIndexPath(_ remembersLastFocusedIndexPath: Bool) -> AlacrityCollectionViewDSL {
         self.view.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
+        return self
+    }
+
+}
+
+@available(iOS 10.0, *)
+public extension AlacrityCollectionViewDSL {
+
+    /**
+     Sets the prefetchDataSource property of underlying UICollectionView. Returns the DSL instance.
+    */
+    @available(iOS 10.0, *)
+    @discardableResult
+    func prefetchDataSource(_ prefetchDataSource: UICollectionViewDataSourcePrefetching) -> AlacrityCollectionViewDSL {
+        self.view.prefetchDataSource = prefetchDataSource
+        return self
+    }
+
+    /**
+     Sets the isPrefetchingEnabled property of underlying UICollectionView. Returns the DSL instance.
+    */
+    @available(iOS 10.0, *)
+    @discardableResult
+    func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool ) -> AlacrityCollectionViewDSL {
+        self.view.isPrefetchingEnabled = isPrefetchingEnabled
         return self
     }
 
