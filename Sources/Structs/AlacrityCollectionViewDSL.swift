@@ -315,26 +315,32 @@ public extension AlacrityCollectionViewDSL {
 
 }
 
-@available(iOS 10.0, *)
+
 public extension AlacrityCollectionViewDSL {
 
     /**
      Sets the prefetchDataSource property of underlying UICollectionView. Returns the DSL instance.
     */
-    @available(iOS 10.0, *)
     @discardableResult
     func prefetchDataSource(_ prefetchDataSource: UICollectionViewDataSourcePrefetching) -> AlacrityCollectionViewDSL {
-        self.view.prefetchDataSource = prefetchDataSource
+        if #available(iOS 10.0, *) {
+            self.view.prefetchDataSource = prefetchDataSource
+        } else {
+            // Fallback on earlier versions
+        }
         return self
     }
 
     /**
      Sets the isPrefetchingEnabled property of underlying UICollectionView. Returns the DSL instance.
     */
-    @available(iOS 10.0, *)
     @discardableResult
     func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool ) -> AlacrityCollectionViewDSL {
-        self.view.isPrefetchingEnabled = isPrefetchingEnabled
+        if #available(iOS 10.0, *) {
+            self.view.isPrefetchingEnabled = isPrefetchingEnabled
+        } else {
+            // Fallback on earlier versions
+        }
         return self
     }
 
