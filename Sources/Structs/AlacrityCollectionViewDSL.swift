@@ -315,7 +315,7 @@ public extension AlacrityCollectionViewDSL {
 
 }
 
-
+@available(iOS 10.0, *)
 public extension AlacrityCollectionViewDSL {
 
     /**
@@ -323,11 +323,7 @@ public extension AlacrityCollectionViewDSL {
     */
     @discardableResult
     func prefetchDataSource(_ prefetchDataSource: UICollectionViewDataSourcePrefetching) -> AlacrityCollectionViewDSL {
-        if #available(iOS 10.0, *) {
-            self.view.prefetchDataSource = prefetchDataSource
-        } else {
-            // Fallback on earlier versions
-        }
+        self.view.prefetchDataSource = prefetchDataSource
         return self
     }
 
@@ -336,11 +332,7 @@ public extension AlacrityCollectionViewDSL {
     */
     @discardableResult
     func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool ) -> AlacrityCollectionViewDSL {
-        if #available(iOS 10.0, *) {
-            self.view.isPrefetchingEnabled = isPrefetchingEnabled
-        } else {
-            // Fallback on earlier versions
-        }
+        self.view.isPrefetchingEnabled = isPrefetchingEnabled
         return self
     }
 

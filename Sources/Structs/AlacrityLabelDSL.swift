@@ -166,6 +166,7 @@ public extension AlacrityLabelDSL {
     
 }
 
+@available(iOS 10.0, *)
 public extension AlacrityLabelDSL {
 
     /**
@@ -173,11 +174,7 @@ public extension AlacrityLabelDSL {
     */
     @discardableResult
     func adjustsFontForContentSizeCategory(_ bool: Bool) -> AlacrityLabelDSL {
-        if #available(iOS 10.0, *) {
-            self.view.adjustsFontForContentSizeCategory = bool
-        } else {
-            // Fallback on earlier versions
-        }
+        self.view.adjustsFontForContentSizeCategory = bool
         return self
     }
 }
