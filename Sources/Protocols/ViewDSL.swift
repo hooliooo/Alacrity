@@ -163,12 +163,6 @@ public protocol ViewDSL {
     func translatesAutoresizingMaskIntoConstraints(_ bool: Bool) -> Self
 
     /**
-     Sets the semanticContentAttribute property of underlying UIView. Returns the DSL instance.
-    */
-    @discardableResult
-    func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> Self
-
-    /**
      Adds a subview to underlying UIView. Returns the DSL instance.
     */
     @discardableResult
@@ -194,6 +188,13 @@ public protocol ViewDSL {
     */
     @discardableResult
     func subviews(forAutoLayout subviews: UIView...) -> Self
+
+    /**
+     Sets the semanticContentAttribute property of underlying UIView. Returns the DSL instance.
+    */
+    @discardableResult
+    func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> Self
+
 }
 
 public extension ViewDSL {
@@ -332,12 +333,6 @@ public extension ViewDSL {
     }
 
     @discardableResult
-    func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> Self {
-        self.view.semanticContentAttribute = semanticContentAttribute
-        return self
-    }
-
-    @discardableResult
     func addSubview(_ view: UIView) -> Self {
         self.view.addSubview(view)
         return self
@@ -358,5 +353,11 @@ public extension ViewDSL {
     @discardableResult
     func subviews(forAutoLayout subviews: UIView...) -> Self {
         return self.subviews(forAutoLayout: subviews)
+    }
+
+    @discardableResult
+    func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> Self {
+        self.view.semanticContentAttribute = semanticContentAttribute
+        return self
     }
 }
