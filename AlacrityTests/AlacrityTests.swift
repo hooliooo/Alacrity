@@ -25,14 +25,25 @@ class AlacrityTests: XCTestCase {
         let view: UIView = UIView().avd
             .backgroundColor(UIColor.green)
             .alpha(0.5)
+            .perform { (view: UIView) -> Void in
+                print("Performing")
+                let aLabel: UILabel = UILabel()
+                view.avd.subview(forAutoLayout: aLabel)
+                aLabel.backgroundColor = UIColor.yellow
+                aLabel.text = "Hello, World"
+                print("Stopped")
+            }
             .view
 
         let label: UILabel = UILabel().acy.tintColor(UIColor.blue).view
 
-
+        print("Start Assertions")
         XCTAssert(label.tintColor == UIColor.blue)
         XCTAssert(view.backgroundColor == UIColor.green)
         XCTAssert(view.alpha == 0.5)
+        XCTAssert((view.subviews.filter({$0 is UILabel}).first as! UILabel).backgroundColor == UIColor.yellow)
+        XCTAssert((view.subviews.filter({$0 is UILabel}).first as! UILabel).text == "Hello, World")
+
 
     }
     

@@ -195,6 +195,12 @@ public protocol ViewDSL {
     @discardableResult
     func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> Self
 
+    /**
+     Executes closure. Use this method for miscellaneous code associated with mutating the UIView instance.
+     Returns the DSL Instance
+    */
+    @discardableResult
+    func perform(_ closure: (UIView) -> Void) -> Self
 }
 
 public extension ViewDSL {
@@ -358,6 +364,12 @@ public extension ViewDSL {
     @discardableResult
     func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> Self {
         self.view.semanticContentAttribute = semanticContentAttribute
+        return self
+    }
+
+    @discardableResult
+    func perform(_ closure: (UIView) -> Void) -> Self {
+        closure(self.view)
         return self
     }
 }
