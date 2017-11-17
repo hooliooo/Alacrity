@@ -31,6 +31,10 @@ class AlacrityTests: XCTestCase {
                 view.avd.subview(forAutoLayout: aLabel)
                 aLabel.backgroundColor = UIColor.yellow
                 aLabel.text = "Hello, World"
+                aLabel.acy.perform { (aView: UIView) -> Void in
+                    print("This")
+                    print("That")
+                }
                 print("Stopped")
             }
             .view
