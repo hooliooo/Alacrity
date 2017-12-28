@@ -381,7 +381,7 @@ public extension ViewDSL {
 
     @discardableResult
     public func apply<View>(_ style: Style<View>) -> Self {
-        guard let view = self as? View else {
+        guard let view = self.view as? View else {
             print("Could not apply Style instance for \(View.self) to \(type(of: self.view))")
             return self
         }
