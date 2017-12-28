@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacritySegmentedControlDSL: AlacrityDSL, ViewDSL {
+public struct AlacritySegmentedControlDSL: AlacrityDSL, ControlDSL {
 
     // MARK: Initializer
     internal init(view: UISegmentedControl) {

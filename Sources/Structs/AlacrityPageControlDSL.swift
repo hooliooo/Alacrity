@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacrityPageControlDSL: AlacrityDSL, ViewDSL {
+public struct AlacrityPageControlDSL: AlacrityDSL, ControlDSL {
 
     // MARK: Initializer
     internal init(view: UIPageControl) {

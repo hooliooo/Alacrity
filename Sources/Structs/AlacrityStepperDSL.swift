@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacrityStepperDSL: AlacrityDSL, ViewDSL {
+public struct AlacrityStepperDSL: AlacrityDSL, ControlDSL {
 
     // MARK: Initializer
     internal init(view: UIStepper) {

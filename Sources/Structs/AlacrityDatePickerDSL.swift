@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacrityDatePickerDSL: AlacrityDSL, ViewDSL {
+public struct AlacrityDatePickerDSL: AlacrityDSL, ControlDSL {
 
     // MARK: Initializer
     internal init(view: UIDatePicker) {

@@ -6,7 +6,8 @@
 
 import UIKit
 
-public struct AlacrityTextFieldDSL: AlacrityDSL, ViewDSL {
+public struct AlacrityTextFieldDSL: AlacrityDSL, ControlDSL {
+
 
     // MARK: Initializer
     internal init(view: UITextField) {

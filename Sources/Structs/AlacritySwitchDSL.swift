@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacritySwitchDSL: AlacrityDSL, ViewDSL {
+public struct AlacritySwitchDSL: AlacrityDSL, ControlDSL {
 
     // MARK: Initializer
     internal init(view: UISwitch) {

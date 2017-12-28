@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacritySliderDSL: AlacrityDSL, ViewDSL {
+public struct AlacritySliderDSL: AlacrityDSL, ControlDSL {
 
     // MARK: Initializer
     internal init(view: UISlider) {

@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct AlacrityButtonDSL: AlacrityDSL, ViewDSL {
+public struct AlacrityButtonDSL: AlacrityDSL, ControlDSL {
 
     // MARK: Initializer
     internal init(view: UIButton) {
