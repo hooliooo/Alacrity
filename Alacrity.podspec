@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Alacrity'
-  s.version          = '0.3.5'
+  s.version          = '0.3.6'
   s.summary          = 'Fluent interface approach to modifying UIViews'
 
 # This description is used to generate tags and improve search results.
@@ -33,5 +33,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.swift'
 
   s.frameworks = 'UIKit'
+
+  s.swift_version = '4.0'
 
 end
