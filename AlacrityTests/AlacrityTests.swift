@@ -25,13 +25,13 @@ class AlacrityTests: XCTestCase {
         let view: UIView = UIView().avd
             .backgroundColor(UIColor.green)
             .alpha(0.5)
-            .perform { (view: UIView) -> Void in
+            .apply { (view: UIView) -> Void in
                 print("Performing")
                 let aLabel: UILabel = UILabel()
                 view.avd.subview(forAutoLayout: aLabel)
                 aLabel.backgroundColor = UIColor.yellow
                 aLabel.text = "Hello, World"
-                aLabel.acy.perform { (aView: UIView) -> Void in
+                aLabel.acy.apply { (aView: UILabel) -> Void in
                     print("This")
                     print("That")
                 }
@@ -39,16 +39,26 @@ class AlacrityTests: XCTestCase {
             }
             .view
 
-        let label: UILabel = UILabel().acy.tintColor(UIColor.blue).view
+        let label: UILabel = UILabel().acy
+            .tintColor(UIColor.blue)
+            .view
 
-        print("Start Assertions")
-        XCTAssert(label.tintColor == UIColor.blue)
-        XCTAssert(view.backgroundColor == UIColor.green)
-        XCTAssert(view.alpha == 0.5)
-        XCTAssert((view.subviews.filter({$0 is UILabel}).first as! UILabel).backgroundColor == UIColor.yellow)
-        XCTAssert((view.subviews.filter({$0 is UILabel}).first as! UILabel).text == "Hello, World")
+        let t: MyCustomView = MyCustomView().avd
+            .apply { (view: MyCustomView) -> Void in
+                view.borderWidth = 5.0
+            }
+            .view as! MyCustomView
+
+        
+        XCTAssert(t.borderWidth == 5.0)
 
 
     }
     
+}
+
+class MyCustomView: UIView {
+
+    var borderWidth: CGFloat = 0.0
+
 }

@@ -196,17 +196,16 @@ public protocol ViewDSL {
     func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) -> Self
 
     /**
-     Executes closure. Use this method for miscellaneous code associated with mutating the UIView instance.
-     Returns the DSL Instance
-    */
-    @discardableResult
-    func perform(_ closure: (UIView) -> Void) -> Self
-
-    /**
-     Applies a Style's closer to the
+     Applies a Style's closure to the underlying view
     */
     @discardableResult
     func apply<View>(_ style: Style<View>) -> Self
+
+    /**
+     Applies a closure to the underlying view
+    */
+    @discardableResult
+    func apply<T: UIView>(_ closure: (T) -> Void) -> Self
 }
 
 public extension ViewDSL {
@@ -374,18 +373,19 @@ public extension ViewDSL {
     }
 
     @discardableResult
-    func perform(_ closure: (UIView) -> Void) -> Self {
-        closure(self.view)
-        return self
-    }
-
-    @discardableResult
-    public func apply<View>(_ style: Style<View>) -> Self {
+    func apply<View>(_ style: Style<View>) -> Self {
         guard let view = self.view as? View else {
             print("Could not apply Style instance for \(View.self) to \(type(of: self.view))")
             return self
         }
         style.apply(to: view)
+        return self
+    }
+
+    @discardableResult
+    func apply<T: UIView>(_ closure: (T) -> Void) -> Self {
+        guard let view = self.view as? T else { fatalError("Unable to cast Self.View to type \(type(of: T.self))") }
+        closure(view)
         return self
     }
 }

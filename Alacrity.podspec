@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Alacrity'
-  s.version          = '0.3.7'
+  s.version          = '0.3.8'
   s.summary          = 'Fluent interface approach to modifying UIViews'
 
 # This description is used to generate tags and improve search results.
