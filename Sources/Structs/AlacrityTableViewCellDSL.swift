@@ -52,7 +52,7 @@ public extension AlacrityTableViewCellDSL {
      Sets the selectionStyle property of underlying UITableViewCell. Returns the DSL instance.
 	*/
 	@discardableResult
-    func selectionStyle(_ selectionStyle: UITableViewCellSelectionStyle) -> AlacrityTableViewCellDSL {
+    func selectionStyle(_ selectionStyle: UITableViewCell.SelectionStyle) -> AlacrityTableViewCellDSL {
 		self.view.selectionStyle = selectionStyle
 		return self
 	}
@@ -116,7 +116,7 @@ public extension AlacrityTableViewCellDSL {
      Sets the accessoryType property of underlying UITableViewCell. Returns the DSL instance.
 	*/
 	@discardableResult
-    func accessoryType(_ accessoryType: UITableViewCellAccessoryType) -> AlacrityTableViewCellDSL {
+    func accessoryType(_ accessoryType: UITableViewCell.AccessoryType) -> AlacrityTableViewCellDSL {
 		self.view.accessoryType = accessoryType
 		return self
 	}
@@ -134,7 +134,7 @@ public extension AlacrityTableViewCellDSL {
      Sets the editingAccessoryType property of underlying UITableViewCell. Returns the DSL instance.
 	*/
 	@discardableResult
-    func editingAccessoryType(_ editingAccessoryType: UITableViewCellAccessoryType) -> AlacrityTableViewCellDSL {
+    func editingAccessoryType(_ editingAccessoryType: UITableViewCell.AccessoryType) -> AlacrityTableViewCellDSL {
 		self.view.editingAccessoryType = editingAccessoryType
 		return self
 	}
@@ -199,7 +199,7 @@ public extension AlacrityTableViewCellDSL {
     */
     @available(iOS 9.0, *)
     @discardableResult
-    func focusStyle(_ focusStyle: UITableViewCellFocusStyle) -> AlacrityTableViewCellDSL {
+    func focusStyle(_ focusStyle: UITableViewCell.FocusStyle) -> AlacrityTableViewCellDSL {
 		self.view.focusStyle = focusStyle
 		return self
 	}
@@ -209,7 +209,7 @@ public extension AlacrityTableViewCellDSL {
     */
     @available(iOS 3.0, *)
     @discardableResult
-    func willTransition(to state: UITableViewCellStateMask) -> AlacrityTableViewCellDSL {
+    func willTransition(to state: UITableViewCell.StateMask) -> AlacrityTableViewCellDSL {
 		self.view.willTransition(to: state)
 		return self
 	}
@@ -219,7 +219,7 @@ public extension AlacrityTableViewCellDSL {
     */
     @available(iOS 3.0, *)
     @discardableResult
-    func didTransition(to state: UITableViewCellStateMask) -> AlacrityTableViewCellDSL {
+    func didTransition(to state: UITableViewCell.StateMask) -> AlacrityTableViewCellDSL {
 		self.view.didTransition(to: state)
 		return self
 	}

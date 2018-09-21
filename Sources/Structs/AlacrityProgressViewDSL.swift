@@ -24,7 +24,7 @@ public extension AlacrityProgressViewDSL {
      Sets the progressViewStyle property of underlying UIProgressView. Returns the DSL instance.
     */
     @discardableResult
-    func progressViewStyle(_ progressViewStyle: UIProgressViewStyle) -> AlacrityProgressViewDSL {
+    func progressViewStyle(_ progressViewStyle: UIProgressView.Style) -> AlacrityProgressViewDSL {
         self.view.progressViewStyle = progressViewStyle
         return self
     }

@@ -24,8 +24,8 @@ public extension AlacrityActivityIndicatorDSL {
      Sets the activityIndicatorViewStyle property of underlying UIActivityIndicatorView. Returns the DSL instance.
     */
     @discardableResult
-    func activityIndicatorViewStyle(_ activityIndicatorViewStyle: UIActivityIndicatorViewStyle) -> AlacrityActivityIndicatorDSL {
-        self.view.activityIndicatorViewStyle = activityIndicatorViewStyle
+    func activityIndicatorViewStyle(_ activityIndicatorViewStyle: UIActivityIndicatorView.Style) -> AlacrityActivityIndicatorDSL {
+        self.view.style = activityIndicatorViewStyle
         return self
     }
 

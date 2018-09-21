@@ -46,7 +46,7 @@ public protocol ViewDSL {
      Sets the autoresizingMask property of underlying UIView. Returns the DSL instance.
     */
     @discardableResult
-    func autoresizingMask(_ autoresizingMask: UIViewAutoresizing) -> Self
+    func autoresizingMask(_ autoresizingMask: UIView.AutoresizingMask) -> Self
 
     /**
      Sets the backgroundColor property of underlying UIView. Returns the DSL instance.
@@ -82,7 +82,7 @@ public protocol ViewDSL {
      Sets the contentMode property of underlying UIView. Returns the DSL instance.
     */
     @discardableResult
-    func contentMode(_ contentMode: UIViewContentMode) -> Self
+    func contentMode(_ contentMode: UIView.ContentMode) -> Self
 
     /**
      Sets the contentScaleFactor property of underlying UIView. Returns the DSL instance.
@@ -223,7 +223,7 @@ public extension ViewDSL {
     }
 
     @discardableResult
-    func autoresizingMask(_ autoresizingMask: UIViewAutoresizing) -> Self {
+    func autoresizingMask(_ autoresizingMask: UIView.AutoresizingMask) -> Self {
         self.view.autoresizingMask = autoresizingMask
         return self
     }
@@ -259,7 +259,7 @@ public extension ViewDSL {
     }
 
     @discardableResult
-    func contentMode(_ contentMode: UIViewContentMode) -> Self {
+    func contentMode(_ contentMode: UIView.ContentMode) -> Self {
         self.view.contentMode = contentMode
         return self
     }

@@ -96,7 +96,7 @@ public extension AlacritySegmentedControlDSL {
      Calls the setBackgroundImage method of underlying UISegmentedControl. Returns the DSL instance.
     */
     @discardableResult
-    func setBackgroundImage(_ backgroundImage: UIImage?, for state: UIControlState, barMetrics: UIBarMetrics) -> AlacritySegmentedControlDSL {
+    func setBackgroundImage(_ backgroundImage: UIImage?, for state: UIControl.State, barMetrics: UIBarMetrics) -> AlacritySegmentedControlDSL {
         self.view.setBackgroundImage(backgroundImage, for: state, barMetrics: barMetrics)
         return self
 
@@ -106,7 +106,7 @@ public extension AlacritySegmentedControlDSL {
      Calls the setTitleTextAttributes method of underlying UISegmentedControl. Returns the DSL instance.
     */
     @discardableResult
-    func setTitleTextAttributes(_ attributes: [AnyHashable : Any]?, for state: UIControlState) -> AlacritySegmentedControlDSL {
+    func setTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]?, for state: UIControl.State) -> AlacritySegmentedControlDSL {
         self.view.setTitleTextAttributes(attributes, for: state)
         return self
     }
@@ -115,7 +115,7 @@ public extension AlacritySegmentedControlDSL {
      Calls the setContentPositionAdjustment method of underlying UISegmentedControl. Returns the DSL instance.
     */
     @discardableResult
-    func setContentPositionAdjustment(_ adjustment: UIOffset, forSegmentType leftCenterRightOrAlone: UISegmentedControlSegment, barMetrics: UIBarMetrics) -> AlacritySegmentedControlDSL {
+    func setContentPositionAdjustment(_ adjustment: UIOffset, forSegmentType leftCenterRightOrAlone: UISegmentedControl.Segment, barMetrics: UIBarMetrics) -> AlacritySegmentedControlDSL {
         self.view.setContentPositionAdjustment(adjustment, forSegmentType: leftCenterRightOrAlone, barMetrics: barMetrics)
         return self
     }

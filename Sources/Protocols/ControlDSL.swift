@@ -32,13 +32,13 @@ public protocol ControlDSL: ViewDSL where View: UIControl {
      Sets the contentVerticalAlignment property of underlying UIControl. Returns the DSL instance.
      */
     @discardableResult
-    func contentVerticalAlignment(_ contentVerticalAlignment: UIControlContentVerticalAlignment) -> Self 
+    func contentVerticalAlignment(_ contentVerticalAlignment: UIControl.ContentVerticalAlignment) -> Self 
 
     /**
      Sets the contentHorizontalAlignment property of underlying UIControl. Returns the DSL instance.
      */
     @discardableResult
-    func contentHorizontalAlignment(_ contentHorizontalAlignment: UIControlContentHorizontalAlignment) -> Self 
+    func contentHorizontalAlignment(_ contentHorizontalAlignment: UIControl.ContentHorizontalAlignment) -> Self 
 
     /**
      Calls the beginTracking method of underlying UIControl. Returns the DSL instance.
@@ -68,13 +68,13 @@ public protocol ControlDSL: ViewDSL where View: UIControl {
      Calls the addTarget method of underlying UIControl. Returns the DSL instance.
      */
     @discardableResult
-    func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControlEvents) -> Self
+    func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event) -> Self
 
     /**
      Calls the removeTarget method of underlying UIControl. Returns the DSL instance.
      */
     @discardableResult
-    func removeTarget(_ target: Any?, action: Selector, for controlEvents: UIControlEvents) -> Self
+    func removeTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event) -> Self
 
     /**
      Calls the sendAction method of underlying UIControl. Returns the DSL instance.
@@ -86,7 +86,7 @@ public protocol ControlDSL: ViewDSL where View: UIControl {
      Calls the sendActions method of underlying UIControl. Returns the DSL instance.
     */
     @discardableResult
-    func sendActions(for controlEvents: UIControlEvents) -> Self
+    func sendActions(for controlEvents: UIControl.Event) -> Self
 
 }
 
@@ -111,13 +111,13 @@ public extension ControlDSL {
     }
 
     @discardableResult
-    func contentVerticalAlignment(_ contentVerticalAlignment: UIControlContentVerticalAlignment) -> Self {
+    func contentVerticalAlignment(_ contentVerticalAlignment: UIControl.ContentVerticalAlignment) -> Self {
         self.view.contentVerticalAlignment = contentVerticalAlignment
         return self
     }
 
     @discardableResult
-    func contentHorizontalAlignment(_ contentHorizontalAlignment: UIControlContentHorizontalAlignment) -> Self {
+    func contentHorizontalAlignment(_ contentHorizontalAlignment: UIControl.ContentHorizontalAlignment) -> Self {
         self.view.contentHorizontalAlignment = contentHorizontalAlignment
         return self
     }
@@ -147,13 +147,13 @@ public extension ControlDSL {
     }
 
     @discardableResult
-    func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControlEvents) -> Self {
+    func addTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event) -> Self {
         self.view.addTarget(target, action: action, for: controlEvents)
         return self
     }
 
     @discardableResult
-    func removeTarget(_ target: Any?, action: Selector, for controlEvents: UIControlEvents) -> Self {
+    func removeTarget(_ target: Any?, action: Selector, for controlEvents: UIControl.Event) -> Self {
         self.view.removeTarget(target, action: action, for: controlEvents)
         return self
     }
@@ -165,7 +165,7 @@ public extension ControlDSL {
     }
 
     @discardableResult
-    func sendActions(for controlEvents: UIControlEvents) -> Self {
+    func sendActions(for controlEvents: UIControl.Event) -> Self {
         self.view.sendActions(for: controlEvents)
         return self
     }

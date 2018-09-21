@@ -105,7 +105,7 @@ public extension AlacritySliderDSL {
      Calls the setThumbImage method of underlying UISlider. Returns the DSL instance.
     */
     @discardableResult
-    func setThumbImage(_ image: UIImage?, for state: UIControlState) -> AlacritySliderDSL {
+    func setThumbImage(_ image: UIImage?, for state: UIControl.State) -> AlacritySliderDSL {
         self.view.setThumbImage(image, for: state)
         return self
     }
@@ -114,7 +114,7 @@ public extension AlacritySliderDSL {
      Calls the setMinimumTrackImage method of underlying UISlider. Returns the DSL instance.
     */
     @discardableResult
-    func setMinimumTrackImage(_ image: UIImage?, for state: UIControlState) -> AlacritySliderDSL {
+    func setMinimumTrackImage(_ image: UIImage?, for state: UIControl.State) -> AlacritySliderDSL {
         self.view.setMinimumTrackImage(image, for: state)
         return self
     }
@@ -123,7 +123,7 @@ public extension AlacritySliderDSL {
      Calls the setMaximumTrackImage method of underlying UISlider. Returns the DSL instance.
     */
     @discardableResult
-    func setMaximumTrackImage(_ image: UIImage?, for state: UIControlState) -> AlacritySliderDSL {
+    func setMaximumTrackImage(_ image: UIImage?, for state: UIControl.State) -> AlacritySliderDSL {
         self.view.setMaximumTrackImage(image, for: state)
         return self
     }

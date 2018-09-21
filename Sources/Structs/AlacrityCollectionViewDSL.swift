@@ -123,7 +123,7 @@ public extension AlacrityCollectionViewDSL {
      Returns the DSL instance.
     */
     @discardableResult
-    func selectItem(at indexPath: IndexPath, animated: Bool, scrollPosition: UICollectionViewScrollPosition) -> AlacrityCollectionViewDSL {
+    func selectItem(at indexPath: IndexPath, animated: Bool, scrollPosition: UICollectionView.ScrollPosition) -> AlacrityCollectionViewDSL {
         self.view.selectItem(at: indexPath, animated: animated, scrollPosition: scrollPosition)
         return self
     }
@@ -185,7 +185,7 @@ public extension AlacrityCollectionViewDSL {
      Returns the DSL instance.
     */
     @discardableResult
-    func scrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionViewScrollPosition, animated: Bool) -> AlacrityCollectionViewDSL {
+    func scrollToItem(at indexPath: IndexPath, at scrollPosition: UICollectionView.ScrollPosition, animated: Bool) -> AlacrityCollectionViewDSL {
         self.view.scrollToItem(at: indexPath, at: scrollPosition, animated: animated)
         return self
     }

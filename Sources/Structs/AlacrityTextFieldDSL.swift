@@ -70,7 +70,7 @@ public extension AlacrityTextFieldDSL {
      Sets the borderStyle property of underlying UITextField. Returns the DSL instance.
     */
     @discardableResult
-    func borderStyle(_ borderStyle: UITextBorderStyle) -> AlacrityTextFieldDSL {
+    func borderStyle(_ borderStyle: UITextField.BorderStyle) -> AlacrityTextFieldDSL {
         self.view.borderStyle = borderStyle
         return self
     }
@@ -78,7 +78,7 @@ public extension AlacrityTextFieldDSL {
      Sets the clearButtonMode property of underlying UITextField. Returns the DSL instance.
     */
     @discardableResult
-    func clearButtonMode(_ mode: UITextFieldViewMode) -> AlacrityTextFieldDSL {
+    func clearButtonMode(_ mode: UITextField.ViewMode) -> AlacrityTextFieldDSL {
         self.view.clearButtonMode = mode
         return self
     }
@@ -105,7 +105,7 @@ public extension AlacrityTextFieldDSL {
      Sets the defaultTextAttributes property of underlying UITextField. Returns the DSL instance.
     */
     @discardableResult
-    func defaultTextAttributes(_ defaultTextAttributes: [String: Any]) -> AlacrityTextFieldDSL {
+    func defaultTextAttributes(_ defaultTextAttributes: [NSAttributedString.Key: Any]) -> AlacrityTextFieldDSL {
         self.view.defaultTextAttributes = defaultTextAttributes
         return self
     }
@@ -159,7 +159,7 @@ public extension AlacrityTextFieldDSL {
      Sets the leftViewMode property of underlying UITextField. Returns the DSL instance.
     */
     @discardableResult
-    func leftViewMode(_ mode: UITextFieldViewMode) -> AlacrityTextFieldDSL {
+    func leftViewMode(_ mode: UITextField.ViewMode) -> AlacrityTextFieldDSL {
         self.view.leftViewMode = mode
         return self
     }
@@ -195,7 +195,7 @@ public extension AlacrityTextFieldDSL {
      Sets the rightViewMode property of underlying UITextField. Returns the DSL instance.
     */
     @discardableResult
-    func rightViewMode(_ mode: UITextFieldViewMode) -> AlacrityTextFieldDSL {
+    func rightViewMode(_ mode: UITextField.ViewMode) -> AlacrityTextFieldDSL {
         self.view.rightViewMode = mode
         return self
     }
@@ -231,7 +231,7 @@ public extension AlacrityTextFieldDSL {
      Sets the typingAttributes property of underlying UITextField. Returns the DSL instance.
     */
     @discardableResult
-    func typingAttributes(_ typingAttributes: [String: Any]) -> AlacrityTextFieldDSL {
+    func typingAttributes(_ typingAttributes: [NSAttributedString.Key: Any]) -> AlacrityTextFieldDSL {
         self.view.typingAttributes = typingAttributes
         return self
     }

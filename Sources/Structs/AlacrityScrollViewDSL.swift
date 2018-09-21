@@ -141,7 +141,7 @@ public extension AlacrityScrollViewDSL {
      Sets the indicatorStyle property of underlying UIScrollView. Returns the DSL instance.
 	*/
 	@discardableResult
-	func indicatorStyle(_ indicatorStyle: UIScrollViewIndicatorStyle) -> AlacrityScrollViewDSL {
+    func indicatorStyle(_ indicatorStyle: UIScrollView.IndicatorStyle) -> AlacrityScrollViewDSL {
 		self.view.indicatorStyle = indicatorStyle
 		return self
 	}
@@ -152,7 +152,7 @@ public extension AlacrityScrollViewDSL {
     @available(iOS 3.0, *)
 	@discardableResult
 	func decelerationRate(_ decelerationRate: CGFloat) -> AlacrityScrollViewDSL {
-		self.view.decelerationRate = decelerationRate
+        self.view.decelerationRate = UIScrollView.DecelerationRate(rawValue: decelerationRate)
 		return self
 	}
 
@@ -160,7 +160,7 @@ public extension AlacrityScrollViewDSL {
      Sets the indexDisplayMode property of underlying UIScrollView. Returns the DSL instance.
 	*/
 	@discardableResult
-	func indexDisplayMode(_ indexDisplayMode: UIScrollViewIndexDisplayMode) -> AlacrityScrollViewDSL {
+    func indexDisplayMode(_ indexDisplayMode: UIScrollView.IndexDisplayMode) -> AlacrityScrollViewDSL {
 		self.view.indexDisplayMode = indexDisplayMode
 		return self
 	}
@@ -281,7 +281,7 @@ public extension AlacrityScrollViewDSL {
     */
     @available(iOS 7.0, *)
     @discardableResult
-    func keyboardDismissMode(_ keyboardDismissMode: UIScrollViewKeyboardDismissMode) -> AlacrityScrollViewDSL {
+    func keyboardDismissMode(_ keyboardDismissMode: UIScrollView.KeyboardDismissMode) -> AlacrityScrollViewDSL {
 		self.view.keyboardDismissMode = keyboardDismissMode
 		return self
 	}

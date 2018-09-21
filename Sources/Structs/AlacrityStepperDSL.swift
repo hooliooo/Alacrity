@@ -87,7 +87,7 @@ public extension AlacrityStepperDSL {
      Calls the setBackgroundImage method of underlying UIStepper. Returns the DSL instance.
     */
     @discardableResult
-    func setBackgroundImage(_ image: UIImage?, for state: UIControlState) -> AlacrityStepperDSL {
+    func setBackgroundImage(_ image: UIImage?, for state: UIControl.State) -> AlacrityStepperDSL {
         self.view.setBackgroundImage(image, for: state)
         return self
     }
@@ -96,7 +96,7 @@ public extension AlacrityStepperDSL {
      Calls the setDividerImage method of underlying UIStepper. Returns the DSL instance.
     */
     @discardableResult
-    func setDividerImage(_ image: UIImage?, forLeftSegmentState leftState: UIControlState, rightSegmentState rightState: UIControlState) -> AlacrityStepperDSL {
+    func setDividerImage(_ image: UIImage?, forLeftSegmentState leftState: UIControl.State, rightSegmentState rightState: UIControl.State) -> AlacrityStepperDSL {
         self.view.setDividerImage(image, forLeftSegmentState: leftState, rightSegmentState: rightState)
         return self
     }
@@ -105,7 +105,7 @@ public extension AlacrityStepperDSL {
      Calls the setIncrementImage method of underlying UIStepper. Returns the DSL instance.
     */
     @discardableResult
-    func setIncrementImage(_ image: UIImage?, for state: UIControlState) -> AlacrityStepperDSL {
+    func setIncrementImage(_ image: UIImage?, for state: UIControl.State) -> AlacrityStepperDSL {
         self.view.setIncrementImage(image, for: state)
         return self
     }
@@ -114,7 +114,7 @@ public extension AlacrityStepperDSL {
      Calls the setDecrementImage method of underlying UIStepper. Returns the DSL instance.
     */
     @discardableResult
-    func setDecrementImage(_ image: UIImage?, for state: UIControlState) -> AlacrityStepperDSL {
+    func setDecrementImage(_ image: UIImage?, for state: UIControl.State) -> AlacrityStepperDSL {
         self.view.setDecrementImage(image, for: state)
         return self
     }

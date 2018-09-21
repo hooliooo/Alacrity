@@ -105,7 +105,7 @@ public extension AlacrityTextViewDSL {
      Sets the linkTextAttributes property of underlying UITextView. Returns the DSL instance.
     */
     @discardableResult
-    func linkTextAttributes(_ linkTextAttributes: [String: Any]) -> AlacrityTextViewDSL {
+    func linkTextAttributes(_ linkTextAttributes: [NSAttributedString.Key: Any]) -> AlacrityTextViewDSL {
         self.view.linkTextAttributes = linkTextAttributes
         return self
     }
@@ -159,7 +159,7 @@ public extension AlacrityTextViewDSL {
      Sets the typingAttributes property of underlying UITextView. Returns the DSL instance.
     */
     @discardableResult
-    func typingAttributes(_ typingAttributes: [String: Any]) -> AlacrityTextViewDSL {
+    func typingAttributes(_ typingAttributes: [NSAttributedString.Key: Any]) -> AlacrityTextViewDSL {
         self.view.typingAttributes = typingAttributes
         return self
     }

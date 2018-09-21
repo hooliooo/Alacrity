@@ -87,7 +87,7 @@ public extension AlacrityWebViewDSL {
      Sets the paginationMode property of underlying UIWebView. Returns the DSL instance.
     */
     @discardableResult
-    func paginationMode(_ paginationMode: UIWebPaginationMode) -> AlacrityWebViewDSL {
+    func paginationMode(_ paginationMode: UIWebView.PaginationMode) -> AlacrityWebViewDSL {
         self.view.paginationMode = paginationMode
         return self
     }
@@ -96,7 +96,7 @@ public extension AlacrityWebViewDSL {
      Sets the paginationBreakingMode property of underlying UIWebView. Returns the DSL instance.
     */
     @discardableResult
-    func paginationBreakingMode(_ paginationBreakingMode: UIWebPaginationBreakingMode) -> AlacrityWebViewDSL {
+    func paginationBreakingMode(_ paginationBreakingMode: UIWebView.PaginationBreakingMode) -> AlacrityWebViewDSL {
         self.view.paginationBreakingMode = paginationBreakingMode
         return self
     }

@@ -24,7 +24,7 @@ public extension AlacrityDatePickerDSL {
      Sets the datePickerMode property of underlying UIDatePicker. Returns the DSL instance.
     */
     @discardableResult
-    func datePickerMode(_ datePickerMode: UIDatePickerMode) -> AlacrityDatePickerDSL {
+    func datePickerMode(_ datePickerMode: UIDatePicker.Mode) -> AlacrityDatePickerDSL {
         self.view.datePickerMode = datePickerMode
         return self
     }

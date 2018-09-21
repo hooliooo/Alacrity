@@ -222,7 +222,7 @@ public extension AlacrityTableViewDSL {
      Sets the separatorStyle property of underlying UITableView. Returns the DSL instance.
     */
 	@discardableResult
-	func separatorStyle(_ separatorStyle: UITableViewCellSeparatorStyle) -> AlacrityTableViewDSL {
+    func separatorStyle(_ separatorStyle: UITableViewCell.SeparatorStyle) -> AlacrityTableViewDSL {
         self.view.separatorStyle = separatorStyle
         return self
     }
