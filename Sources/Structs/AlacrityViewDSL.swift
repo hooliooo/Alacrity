@@ -18,20 +18,19 @@ public struct AlacrityViewDSL {
 
     // MARK: Instance Methods
     @discardableResult
-    public func apply<View: UIView>(_ style: AlacrityStyle<View>) -> AlacrityViewDSL {
+    public func apply<View: UIView>(_ style: AlacrityStyle<View>) -> View {
         guard let view = self.view as? View else {
-            print("Could not apply Style instance for \(View.self) to \(type(of: self.view))")
-            return self
+            fatalError("Could not apply Style instance for \(View.self) to \(type(of: self.view))")
         }
         style.apply(to: view)
-        return self
+        return view
     }
 
     @discardableResult
-    public func apply<View: UIView>(_ closure: (View) -> Void) -> AlacrityViewDSL {
+    public func apply<View: UIView>(_ closure: (View) -> Void) -> View {
         guard let view = self.view as? View else { fatalError("Unable to cast Self.View to type \(type(of: View.self))") }
         closure(view)
-        return self
+        return view
     }
 
 }
