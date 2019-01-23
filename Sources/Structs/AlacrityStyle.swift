@@ -6,7 +6,7 @@
 
 import UIKit
 
-public struct Style<View: UIView> {
+public struct AlacrityStyle<View: UIView> {
 
     /**
      The style applied to the UIView instance. A closure.
@@ -21,8 +21,14 @@ public struct Style<View: UIView> {
         self.style = style
     }
 
-    
     public func apply(to view: View) {
         self.style(view)
+    }
+
+    public func modifying(with closure: @escaping (View) -> Void) -> AlacrityStyle {
+        return AlacrityStyle { (view: View) -> Void in
+            self.apply(to: view)
+            closure(view)
+        }
     }
 }

@@ -22,37 +22,24 @@ class AlacrityTests: XCTestCase {
     }
     
     func testViewDSL() {
-        let view: UIView = UIView().avd
-            .backgroundColor(UIColor.green)
-            .alpha(0.5)
-            .apply { (view: UIView) -> Void in
-                print("Performing")
-                let aLabel: UILabel = UILabel()
-                view.avd.subview(forAutoLayout: aLabel)
-                aLabel.backgroundColor = UIColor.yellow
-                aLabel.text = "Hello, World"
-                aLabel.acy.apply { (aView: UILabel) -> Void in
-                    print("This")
-                    print("That")
-                }
-                print("Stopped")
-            }
-            .view
+        let buttonStyle: AlacrityStyle<UIButton> = AlacrityStyle {
+            $0.backgroundColor = .green
+        }
 
-        let label: UILabel = UILabel().acy
-            .tintColor(UIColor.blue)
-            .view
+        let labelStyle: AlacrityStyle<UILabel> = AlacrityStyle {
+            $0.backgroundColor = .blue
+        }
 
-        let t: MyCustomView = MyCustomView().avd
-            .apply { (view: MyCustomView) -> Void in
-                view.borderWidth = 5.0
-            }
-            .view as! MyCustomView
+        let button: UIButton = UIButton.avd.styled(with: buttonStyle) { (button: UIButton) -> Void in
+            button.layer.cornerRadius = 5.0
+        }
 
-        
-        XCTAssert(t.borderWidth == 5.0)
+        let label: UILabel = UILabel.avd.styled(with: labelStyle)
 
+        XCTAssertTrue(button.backgroundColor == .green)
+        XCTAssertTrue(button.layer.cornerRadius == 5.0)
 
+        XCTAssertTrue(label.backgroundColor == .blue)
     }
     
 }
