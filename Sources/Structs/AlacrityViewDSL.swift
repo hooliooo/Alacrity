@@ -1,6 +1,6 @@
 //
 //  Alacrity
-//  Copyright (c) 2017 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //  Licensed under the MIT license. See LICENSE file
 //
 
@@ -22,14 +22,7 @@ public struct AlacrityViewDSL {
         guard let view = self.view as? View else {
             fatalError("Could not apply Style instance for \(View.self) to \(type(of: self.view))")
         }
-        style.apply(to: view)
-        return view
-    }
-
-    @discardableResult
-    public func apply<View: UIView>(_ closure: (View) -> Void) -> View {
-        guard let view = self.view as? View else { fatalError("Unable to cast Self.View to type \(type(of: View.self))") }
-        closure(view)
+        style.applyStyle(to: view)
         return view
     }
 

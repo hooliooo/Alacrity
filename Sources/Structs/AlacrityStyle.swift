@@ -1,6 +1,6 @@
 //
 //  Alacrity
-//  Copyright (c) 2017 Julio Miguel Alorro
+//  Copyright (c) Julio Miguel Alorro
 //  Licensed under the MIT license. See LICENSE file
 //
 
@@ -15,20 +15,35 @@ public struct AlacrityStyle<View: UIView> {
 
     /**
      Initializer for creating a template style.
-     - parameter style: The closure containing the styling for the UIView instance.
+     - Parameters:
+        - style: The closure that will mutate the view's properties.
+        - view:  The UIView whose properties will be mutated by the style closure.
     */
-    public init(_ style: @escaping (View) -> Void) {
+    public init(_ style: @escaping (_ view: View) -> Void) {
         self.style = style
     }
 
-    public func apply(to view: View) {
+    /**
+     Executes the style closure on the UIView.
+     - Parameters:
+        - view: The UIView whose properties will be mutated by the style closure.
+    */
+    public func applyStyle(to view: View) {
         self.style(view)
     }
 
-    public func modifying(with closure: @escaping (View) -> Void) -> AlacrityStyle {
-        return AlacrityStyle { (view: View) -> Void in
-            self.apply(to: view)
-            closure(view)
+    /**
+     Creates a new AlacrityStyle instance that will execute another closure on the UIView AFTER the closure
+     of this instance.
+     - Parameters:
+        - style: closure that will mutate the view's properties.
+     - Returns:
+        A new AlacrityStyle instance with this instance's closure and the passed style closure.
+    */
+    public func modifying(with style: @escaping (View) -> Void) -> AlacrityStyle<View> {
+        return AlacrityStyle<View> { (view: View) -> Void in
+            self.applyStyle(to: view)
+            style(view)
         }
     }
 }
