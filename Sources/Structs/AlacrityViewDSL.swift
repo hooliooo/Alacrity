@@ -54,13 +54,13 @@ public struct AlacrityViewStaticDSL {
 
     internal init() {}
 
-    func styled<View: UIView>(with style: AlacrityStyle<View>) -> View {
+    public func styled<View: UIView>(with style: AlacrityStyle<View>) -> View {
         let view: View = View(frame: CGRect.zero)
         view.avd.styled(with: style)
         return view
     }
 
-    func styled<View: UIView>(with style: AlacrityStyle<View>, overriding closure: @escaping (View) -> Void) -> View {
+    public func styled<View: UIView>(with style: AlacrityStyle<View>, overriding closure: @escaping (View) -> Void) -> View {
         let newStyle: AlacrityStyle<View> = style.modifying(with: closure)
         return self.styled(with: newStyle)
     }
