@@ -25,7 +25,7 @@ public struct AlacrityViewDSL {
         The underlying UIView instance.
     */
     @discardableResult
-    public func apply<View: UIView>(_ style: AlacrityStyle<View>) -> View {
+    public func styled<View: UIView>(with style: AlacrityStyle<View>) -> View {
         guard let view = self.view as? View else {
             fatalError("Could not apply Style instance for \(View.self) to \(type(of: self.view))")
         }
@@ -39,13 +39,13 @@ public struct AlacrityViewDSL {
         - closure: The closure that will mutate the underlying UIView.
         - view:    The underlying UIView that will be mutated by the closure argument.
      - Returns:
-        This instance.
+        The underlying UIView.
     */
     @discardableResult
-    public func apply<View: UIView>(_ closure: (_ view: View) -> Void) -> AlacrityViewDSL {
+    public func apply<View: UIView>(_ closure: (_ view: View) -> Void) -> View {
         guard let view = self.view as? View else { fatalError("Unable to cast Self.View to type \(type(of: View.self))") }
         closure(view)
-        return self
+        return view
     }
 
 }
@@ -56,7 +56,7 @@ public struct AlacrityViewStaticDSL {
 
     func styled<View: UIView>(with style: AlacrityStyle<View>) -> View {
         let view: View = View(frame: CGRect.zero)
-        view.avd.apply(style)
+        view.avd.styled(with: style)
         return view
     }
 
