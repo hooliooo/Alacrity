@@ -17,6 +17,13 @@ public struct AlacrityViewDSL {
     public let view: UIView
 
     // MARK: Instance Methods
+    /**
+     Mutates the underlying UIView's properties based on the AlacrityStyle's style closure.
+     - Parameters:
+        - style: The AlacrityStyle instance whose closure will mutate the underlying UIView.
+     - Returns:
+        The underlying UIView instance.
+    */
     @discardableResult
     public func apply<View: UIView>(_ style: AlacrityStyle<View>) -> View {
         guard let view = self.view as? View else {
@@ -24,6 +31,21 @@ public struct AlacrityViewDSL {
         }
         style.applyStyle(to: view)
         return view
+    }
+
+    /**
+     Mutates the underlying UIView's properties based on the closure.
+     - Parameters:
+        - closure: The closure that will mutate the underlying UIView.
+        - view:    The underlying UIView that will be mutated by the closure argument.
+     - Returns:
+        This instance.
+    */
+    @discardableResult
+    public func apply<View: UIView>(_ closure: (_ view: View) -> Void) -> AlacrityViewDSL {
+        guard let view = self.view as? View else { fatalError("Unable to cast Self.View to type \(type(of: View.self))") }
+        closure(view)
+        return self
     }
 
 }
