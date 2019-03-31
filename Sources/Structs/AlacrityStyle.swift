@@ -46,4 +46,20 @@ public struct AlacrityStyle<View: UIView> {
             style(view)
         }
     }
+
+    /**
+     Creates a new AlacrityStyle instance that will combine the closures of this instance with another AlacrityStyle.
+     - Parameters:
+        - other: The other AlacrityStyle instance.
+     - Returns:
+        A new AlacrityStyle instance with this instance's closure and the other AlacrityStyle's closure.
+    */
+    public func combine(with other: AlacrityStyle<View>) -> AlacrityStyle<View> {
+        let currentStyle: (View) -> Void = self.style
+        let otherStyle: (View) -> Void = other.style
+        return AlacrityStyle<View> { (view: View) -> Void in
+            currentStyle(view)
+            otherStyle(view)
+        }
+    }
 }
