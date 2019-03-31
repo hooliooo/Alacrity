@@ -4,7 +4,8 @@
 //  Licensed under the MIT license. See LICENSE file
 //
 
-import UIKit
+import class UIKit.UIView
+import struct CoreGraphics.CGRect
 
 public struct AlacrityViewDSL {
 

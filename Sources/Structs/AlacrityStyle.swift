@@ -4,7 +4,7 @@
 //  Licensed under the MIT license. See LICENSE file
 //
 
-import UIKit
+import class UIKit.UIView
 
 public struct AlacrityStyle<View: UIView> {
 
