@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140DB8EF1F20F37C00999761 /* AlacrityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DB8EE1F20F37C00999761 /* AlacrityTests.swift */; };
+		140DB8EF1F20F37C00999761 /* AlacrityStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DB8EE1F20F37C00999761 /* AlacrityStyleTests.swift */; };
 		140DB8F11F20F37C00999761 /* Alacrity.h in Headers */ = {isa = PBXBuildFile; fileRef = 140DB8E31F20F37C00999761 /* Alacrity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		140DB8FD1F20F43A00999761 /* UIView+Alacrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DB8C51F20F36000999761 /* UIView+Alacrity.swift */; };
 		140DB9041F20F44A00999761 /* AlacrityViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140DB8CF1F20F36000999761 /* AlacrityViewDSL.swift */; };
@@ -15,6 +15,7 @@
 		1425EAF21F2336C0004E65BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF11F2336C0004E65BD /* UIKit.framework */; };
 		1425EAF41F2336C8004E65BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1425EAF31F2336C8004E65BD /* Foundation.framework */; };
 		143153472200C203001981C6 /* Applicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143153462200C203001981C6 /* Applicable.swift */; };
+		14A7EE0C2250CCB3007FAB4D /* AlacrityViewDSLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7EE0B2250CCB3007FAB4D /* AlacrityViewDSLTests.swift */; };
 		14B57A281FF4872400A6F3DC /* AlacrityStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B57A271FF4872400A6F3DC /* AlacrityStyle.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,11 +37,12 @@
 		140DB8E31F20F37C00999761 /* Alacrity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alacrity.h; sourceTree = "<group>"; };
 		140DB8E41F20F37C00999761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		140DB8E91F20F37C00999761 /* AlacrityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlacrityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		140DB8EE1F20F37C00999761 /* AlacrityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlacrityTests.swift; sourceTree = "<group>"; };
+		140DB8EE1F20F37C00999761 /* AlacrityStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlacrityStyleTests.swift; sourceTree = "<group>"; };
 		140DB8F01F20F37C00999761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1425EAF11F2336C0004E65BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1425EAF31F2336C8004E65BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		143153462200C203001981C6 /* Applicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applicable.swift; sourceTree = "<group>"; };
+		14A7EE0B2250CCB3007FAB4D /* AlacrityViewDSLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlacrityViewDSLTests.swift; sourceTree = "<group>"; };
 		14B57A271FF4872400A6F3DC /* AlacrityStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlacrityStyle.swift; sourceTree = "<group>"; };
 		91C397FB3A0BBC18113356D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A9C9861167F8A7591FBBFC21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -104,13 +106,14 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		140DB8ED1F20F37C00999761 /* AlacrityTests */ = {
+		140DB8ED1F20F37C00999761 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				140DB8EE1F20F37C00999761 /* AlacrityTests.swift */,
+				140DB8EE1F20F37C00999761 /* AlacrityStyleTests.swift */,
+				14A7EE0B2250CCB3007FAB4D /* AlacrityViewDSLTests.swift */,
 				140DB8F01F20F37C00999761 /* Info.plist */,
 			);
-			path = AlacrityTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		143153452200C068001981C6 /* Protocols */ = {
@@ -127,7 +130,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				140DB8C01F20F36000999761 /* Sources */,
 				140DB8E21F20F37C00999761 /* Supporiting Files */,
-				140DB8ED1F20F37C00999761 /* AlacrityTests */,
+				140DB8ED1F20F37C00999761 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				8E30309E8DDE35D639DF7D51 /* Frameworks */,
 			);
@@ -240,6 +243,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -287,7 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140DB8EF1F20F37C00999761 /* AlacrityTests.swift in Sources */,
+				140DB8EF1F20F37C00999761 /* AlacrityStyleTests.swift in Sources */,
+				14A7EE0C2250CCB3007FAB4D /* AlacrityViewDSLTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +374,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = S886WPSL95;
-				INFOPLIST_FILE = AlacrityTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.AlacrityTests;
@@ -388,7 +393,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEVELOPMENT_TEAM = S886WPSL95;
-				INFOPLIST_FILE = AlacrityTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.someenterprises.AlacrityTests;
