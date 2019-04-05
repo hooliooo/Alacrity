@@ -80,7 +80,7 @@ class YourCustomView: UIView {
     
     let aView: UIView = UIView().avd.styled(with: AppUI.yourDefaultStyle)
 
-    let aLabel: UILabel = UILabel().avd.style(with: AppUI.defaultLabelStyle)
+    let aLabel: UILabel = UILabel().avd.styled(with: AppUI.defaultLabelStyle)
     
 }
 ```
