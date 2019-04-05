@@ -1,5 +1,5 @@
 # Alacrity
-Alacrity is a library that brings a fluent interface for UIView and its subclasses.
+Alacrity is a library that styles UIViews in a functional way.
 
 [![CI Status](http://img.shields.io/travis/hooliooo/Alacrity.svg?style=flat)](https://travis-ci.org/hooliooo/Alacrity)
 [![Version](https://img.shields.io/cocoapods/v/Alacrity.svg?style=flat)](http://cocoapods.org/pods/Alacrity)
@@ -53,27 +53,42 @@ class YourCustomView: UIView {
 }
 ```
 
-With Alacrity we can write something more succinct, without the boilerplate of typical programmatic UI code by taking advantage of its fluent interface
+A lot of the time UIViews and its subclasses have similar styling in your projects. Alacrity makes it easy to style your subviews in a consistent way and get rid
+of duplicate code.
+
+With Alacrity we can write something more succinct, without the boilerplate of typical programmatic UI code by taking advantage of closures
 
 ```swift
-class YourCustomView: UIView {
-    let aView: UIView = UIView().avd
-        .backgroundColor(UIColor.red)
-        .cornerRadius(5.0)
-        .view
+
+// In your styling file like AppUI.
+// Used an enum with no cases for the namespacing.
+public enum AppUI {
     
-    let aLabel: UILabel = UILabel().acy
-        .text("Your text")
-        .font(UIFont.boldSystemFont(ofSize: 19.0))
-        .textAlignment(.center)
-        .backgroundColor(.orange)
-        .view
+    public static let defaultLabelStyle: AlacrityStyle<UILabel> = AlacrityStyle<UILabel> {
+        ... your styling logic here ...
+    }
+    
+    public static let defaultTextFieldStyle: AlacrityStyle<UITextField> = AlacrityStyle<UITextField> {
+        ... your styling logic here ...
+    }
+    
+    ... other styles ...
+
+}
+
+class YourCustomView: UIView {
+    
+    let aView: UIView = UIView().avd.styled(with: AppUI.yourDefaultStyle)
+
+    let aLabel: UILabel = UILabel().avd.style(with: AppUI.defaultLabelStyle)
     
 }
 ```
 
+With the above pattern, you can make themes easily.
+
 ## Requirements
-Alacrity requires iOS 10.0 or higher and Swift 3.x
+Alacrity requires iOS 9.3 or higher and Swift 5.x
 
 ## Installation
 
